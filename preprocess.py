@@ -1,13 +1,16 @@
 import pandas as pd
 import re
 import string
+from nltk import tokenize
 a = pd.read_csv('restaurants_train_data.tsv', delimiter='\t')
 b = pd.read_csv('restaurants_test_data.tsv', delimiter='\t')
 
 def clean(s):
     s = re.sub('([' + string.punctuation + '])', r' \1 ', s)
     s = re.sub('\s{2,}', ' ', s)
-    s = s.lower().split()
+    tokenizer = tokenize.WhitespaceTokenizer()
+    s = tokenizer.tokenize(s)
+    #s = s.lower().split()
     return s
 
 a['text'] = a['text'].apply(clean)
