@@ -130,7 +130,7 @@ def clean(s):
     s = re.sub('\s{2,}', ' ', s)
     print s
     tokenizer = nltk.tokenize.TreebankWordTokenizer()
-    s = tokenizer.tokenize(s)
+    print tokenizer.tokenize(s)
 
 
 
