@@ -86,4 +86,4 @@ if __name__ == '__main__':
         pickle.dump(text_vector, f, protocol=pickle.HIGHEST_PROTOCOL)
     with open('aspect_vector.pkl', 'wb') as f:
         pickle.dump(aspect_vector, f, protocol=pickle.HIGHEST_PROTOCOL)
-    print aspect_vector
+    #print aspect_vector
