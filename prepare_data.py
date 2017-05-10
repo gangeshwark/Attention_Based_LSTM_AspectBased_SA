@@ -101,8 +101,8 @@ if __name__ == '__main__':
     # get_laptop_data()
     restaurants_train_data = get_restaurants_train_data()
     print restaurants_train_data.groupby('polarity').count()
-    restaurants_train_data.to_csv('data/restaurants_train_data.tsv', '\t')
+    #restaurants_train_data.to_csv('data/restaurants_train_data.tsv', '\t')
 
     restaurants_test_data = get_restaurants_test_data()
     print restaurants_test_data
-    restaurants_test_data.to_csv('data/restaurants_test_data.tsv', "\t")
+    #restaurants_test_data.to_csv('data/restaurants_test_data.tsv', "\t")
