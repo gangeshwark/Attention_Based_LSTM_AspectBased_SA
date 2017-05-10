@@ -8,7 +8,7 @@ import pandas as pd
 # print b['food']
 
 def get_word_vector_hdf5(hdf5_file, word):
-    if hdf5_file[word]:
+    if word in hdf5_file:
         return hdf5_file[word][:]
     else:
         return None
@@ -25,6 +25,6 @@ def get_all_word_vectors_hdf5(hdf5_file):
 # totally 4665 words vectors are available
 if __name__ == '__main__':
     h = h5py.File('data/text_vector.hdf5')
-    print get_word_vector_hdf5(h, 'hello')
+    print(get_word_vector_hdf5(h, 'food'))
     word_vectors = get_all_word_vectors_hdf5(h)
-    print len(word_vectors)
+    print(len(word_vectors))
