@@ -169,6 +169,7 @@ class AspectLevelModel():
             self.inputs_embedded_final = tf.reshape(self.inputs_embedded_final,
                                                     [int(s[0]), int(s[1]), self.embedding_size])
 
+
     def _init_simple(self):
         with tf.variable_scope("RNN") as scope:
             def output_fn(outputs):
