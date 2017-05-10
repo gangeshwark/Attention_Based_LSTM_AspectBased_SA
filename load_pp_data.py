@@ -1,3 +1,4 @@
+import ast
 import pickle
 from time import time
 
@@ -6,11 +7,14 @@ import operator
 import h5py
 import pandas as pd
 import gensim
+import numpy as np
 
 
 def get_vocab():
-    a = pd.read_pickle('data/restaurants_train_data_processed.pkl')
-    b = pd.read_pickle('data/restaurants_test_data_processed.pkl')
+    a = pd.read_hdf('data/restaurants_train_data_processed.h5', 'table')
+    a['text'] = a['text'].apply(ast.literal_eval)
+    b = pd.read_hdf('data/restaurants_test_data_processed.h5', 'table')
+    b['text'] = b['text'].apply(ast.literal_eval)
     text_vocab = {}
     for x in a['text']:
         for word in x:
@@ -55,7 +59,9 @@ def get_vectors(text_vocab, aspect_vocab):
     model = gensim.models.KeyedVectors.load_word2vec_format(
         '/home/gangeshwark/test_Google/GoogleNews-vectors-negative300.bin', binary=True)
     print time() - st, " seconds to load the Google News vectors."
-    text_vector = {}
+
+    unk = np.random.uniform(-np.sqrt(3.0), np.sqrt(3.0), 300)
+    text_vector = {'__UNK__': unk}
     for i, word in enumerate(text_vocab):
         if word[0] in text_vector.keys():
             continue
@@ -64,7 +70,7 @@ def get_vectors(text_vocab, aspect_vocab):
         except:
             text_skipped += 1
 
-    aspect_vector = {}
+    aspect_vector = {'__UNK__': unk}
     for i, word in enumerate(aspect_vocab):
         if word[0] in aspect_vector.keys():
             continue
@@ -72,23 +78,38 @@ def get_vectors(text_vocab, aspect_vocab):
             aspect_vector[word[0]] = model[word[0]]
         except:
             aspect_skipped += 1
+
     print "Skipped %d words from text and %d words from aspects" % (text_skipped, aspect_skipped)
     return text_vector, aspect_vector
 
 
 if __name__ == '__main__':
+
     text_vocab, aspect_vocab = get_vocab()
     print text_vocab
     print len(text_vocab)
-    with open('data/text_vocab.vocab', 'w') as f:
+    # contains all the words
+    with open('data/all_text_vocab.vocab', 'w') as f:
         for i, word in enumerate(text_vocab):
             f.write('%d\t%s\n' % (i, word[0]))
+
     print aspect_vocab
     print len(aspect_vocab)
-    with open('data/aspect_vocab.vocab', 'w') as f:
+    with open('data/all_aspect_vocab.vocab', 'w') as f:
         for i, word in enumerate(aspect_vocab):
             f.write('%d\t%s\n' % (i, word[0]))
+
     text_vector, aspect_vector = get_vectors(text_vocab, aspect_vocab)
+
+    # contains only the words that have embeddings
+    with open('data/text_vocab.vocab', 'w') as f:
+        for i, word in enumerate(text_vector.keys()):
+            f.write('%d\t%s\n' % (i, word))
+
+    with open('data/aspect_vocab.vocab', 'w') as f:
+        for i, word in enumerate(aspect_vector.keys()):
+            f.write('%d\t%s\n' % (i, word))
+
     print len(text_vector), len(aspect_vector)
     with open('data/text_vector.pkl', 'wb') as f:
         pickle.dump(text_vector, f, protocol=pickle.HIGHEST_PROTOCOL)

@@ -139,15 +139,17 @@ def clean(s):
     s = tokenizer.tokenize(s)
     return s
 
-
+print a['text'][10]
 a['text'] = a['text'].apply(clean).astype(str)
 b['text'] = b['text'].apply(clean).astype(str)
 
 # save pre-processed data as pickle file
-a.to_hdf('data/restaurants_train_data_processed.h5', 'table', append=True)
-b.to_hdf('data/restaurants_test_data_processed.h5', 'table', append=True)
+a.to_hdf('data/restaurants_train_data_processed.h5', 'table')
+b.to_hdf('data/restaurants_test_data_processed.h5', 'table')
 # load pre-processed pickle data
 a = pd.read_hdf('data/restaurants_train_data_processed.h5', 'table')
 a['text'] = a['text'].apply(ast.literal_eval)
 b = pd.read_hdf('data/restaurants_test_data_processed.h5', 'table')
 b['text'] = b['text'].apply(ast.literal_eval)
+
+print a['text'][10]

@@ -1,5 +1,6 @@
-0	food
-1	miscellaneous
-2	service
-3	ambience
-4	price
+0	service
+1	__UNK__
+2	food
+3	price
+4	miscellaneous
+5	ambience
