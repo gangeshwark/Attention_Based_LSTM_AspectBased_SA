@@ -218,7 +218,8 @@ class AspectLevelModel():
 
             e = tf.contrib.layers.linear
 
-            self.y = tf.nn.softmax(tf.add(tf.reshape(tf.matmul(h_star, Ws), [h_star.shape[0], -1, 1]), tf.tile(bs, (h_star.shape[0],1,1))))
+            self.y = tf.nn.softmax(tf.add(tf.reshape(tf.matmul(h_star, Ws), [h_star.shape[0], -1, 1]),
+                                          tf.tile(bs, (h_star.shape[0], 1, 1))))
 
             self.logits_train = output_fn(self.outputs)
             self.prediction_train = tf.argmax(self.logits_train, axis=-1,

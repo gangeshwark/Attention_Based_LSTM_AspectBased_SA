@@ -3,6 +3,7 @@ import pandas as pd
 import re
 import string
 from nltk import tokenize
+
 a = pd.read_csv('restaurants_train_data.tsv', delimiter='\t')
 b = pd.read_csv('restaurants_test_data.tsv', delimiter='\t')
 
@@ -126,6 +127,7 @@ contractions = {
     "you've": "you have"
 }
 
+
 def clean(s):
     s = s.lower()
     for x, y in contractions.iteritems():
@@ -137,12 +139,13 @@ def clean(s):
     s = tokenizer.tokenize(s)
     return s
 
+
 a['text'] = a['text'].apply(clean)
 b['text'] = b['text'].apply(clean)
 
 # save pre-processed data as pickle file
-#a.to_hdf('restaurants_train_data_processed.h5', 'table', append=True)
-#b.to_hdf('restaurants_test_data_processed.h5', 'table', append=True)
+# a.to_hdf('restaurants_train_data_processed.h5', 'table', append=True)
+# b.to_hdf('restaurants_test_data_processed.h5', 'table', append=True)
 a.to_pickle('data/restaurants_train_data_processed.pkl')
 b.to_pickle('data/restaurants_test_data_processed.pkl')
 # load pre-processed pickle data

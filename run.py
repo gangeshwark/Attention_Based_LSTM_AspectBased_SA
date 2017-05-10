@@ -9,7 +9,8 @@ if __name__ == '__main__':
     resume_from_checkpoint = False
     with tf.Session() as session:
         hidden_size = 128
-        model = AspectLevelModel('lstm', hidden_size=128, vocab_size=1000, aspect_vocab_size=100, embedding_size=300, debug=True)
+        model = AspectLevelModel('lstm', hidden_size=128, vocab_size=1000, aspect_vocab_size=100, embedding_size=300,
+                                 debug=True)
 
         saver = tf.train.Saver()
 
