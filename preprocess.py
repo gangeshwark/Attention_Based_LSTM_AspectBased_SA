@@ -3,9 +3,10 @@ import pandas as pd
 import re
 import string
 from nltk import tokenize
+import ast
 
-a = pd.read_csv('restaurants_train_data.tsv', delimiter='\t')
-b = pd.read_csv('restaurants_test_data.tsv', delimiter='\t')
+a = pd.read_csv('data/restaurants_train_data.tsv', delimiter='\t')
+b = pd.read_csv('data/restaurants_test_data.tsv', delimiter='\t')
 
 contractions = {
     "ain't": "am not",
@@ -130,24 +131,23 @@ contractions = {
 
 def clean(s):
     s = s.lower()
-    for x, y in contractions.iteritems():
+    for x, y in contractions.items():
         s = s.replace(x, y)
     s = re.sub('([' + string.punctuation + '])', r' \1 ', s)
     s = re.sub('\s{2,}', ' ', s)
-    print s
     tokenizer = nltk.tokenize.TreebankWordTokenizer()
     s = tokenizer.tokenize(s)
     return s
 
 
-a['text'] = a['text'].apply(clean)
-b['text'] = b['text'].apply(clean)
+a['text'] = a['text'].apply(clean).astype(str)
+b['text'] = b['text'].apply(clean).astype(str)
 
 # save pre-processed data as pickle file
-# a.to_hdf('restaurants_train_data_processed.h5', 'table', append=True)
-# b.to_hdf('restaurants_test_data_processed.h5', 'table', append=True)
-a.to_pickle('data/restaurants_train_data_processed.pkl')
-b.to_pickle('data/restaurants_test_data_processed.pkl')
+a.to_hdf('data/restaurants_train_data_processed.h5', 'table', append=True)
+b.to_hdf('data/restaurants_test_data_processed.h5', 'table', append=True)
 # load pre-processed pickle data
-a = pd.read_pickle('data/restaurants_train_data_processed.pkl')
-b = pd.read_pickle('data/restaurants_test_data_processed.pkl')
+a = pd.read_hdf('data/restaurants_train_data_processed.h5', 'table')
+a['text'] = a['text'].apply(ast.literal_eval)
+b = pd.read_hdf('data/restaurants_test_data_processed.h5', 'table')
+b['text'] = b['text'].apply(ast.literal_eval)
