@@ -208,7 +208,7 @@ class Corpus:
 
 class BaselineAspectExtractor():
     '''Extract the aspects from a text.
-    Use the aspect terms from the train data, to tag any new (i.e., unseen) instances.'''
+    Use the aspect terms from the train raw_data, to tag any new (i.e., unseen) instances.'''
 
     def __init__(self, corpus):
         self.candidates = [a.lower() for a in corpus.top_aspect_terms]
@@ -241,7 +241,7 @@ class BaselineAspectExtractor():
 
 class BaselineCategoryDetector():
     '''Detect the category (or categories) of an instance.
-    For any new (i.e., unseen) instance, fetch the k-closest instances from the train data, and vote for the number of categories and the categories themselves.'''
+    For any new (i.e., unseen) instance, fetch the k-closest instances from the train raw_data, and vote for the number of categories and the categories themselves.'''
 
     def __init__(self, corpus):
         self.corpus = corpus
@@ -290,7 +290,7 @@ class BaselineStageI():
 class BaselineAspectPolarityEstimator():
     '''Estimate the polarity of an instance's aspects.
     This is a majority baseline.
-    Form the <aspect,polarity> tuples from the train data, and measure frequencies.
+    Form the <aspect,polarity> tuples from the train raw_data, and measure frequencies.
     Then, given a new instance, vote for the polarities of the aspect terms (given).'''
 
     def __init__(self, corpus):
@@ -328,7 +328,7 @@ class BaselineAspectPolarityEstimator():
 class BaselineAspectCategoryPolarityEstimator():
     '''Estimate the polarity of an instance's category (or categories).
     This is a majority baseline.
-    Form the <category,polarity> tuples from the train data, and measure frequencies.
+    Form the <category,polarity> tuples from the train raw_data, and measure frequencies.
     Then, given a new instance, vote for the polarities of the categories (given).'''
 
     def __init__(self, corpus):

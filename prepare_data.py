@@ -10,7 +10,7 @@ from pprint import pprint
 def get_laptop_data():
     laptop_df = pd.DataFrame(columns=('sentence_id', 'text', 'aspect', 'polarity', 'value_from', 'value_to'))
 
-    e = xml.etree.ElementTree.parse('data/SemEval14-ABSA-TrainData_v2/Laptop_Train_v2.xml').getroot()
+    e = xml.etree.ElementTree.parse('raw_data/SemEval14-ABSA-TrainData_v2/Laptop_Train_v2.xml').getroot()
 
     pprint(e)
     sentences = e.findall('sentence')
@@ -41,7 +41,7 @@ def get_laptop_data():
 def get_restaurants_train_data():
     restaurants_df = pd.DataFrame(
         columns=('sentence_id', 'text', 'aspect', 'polarity'))
-    e = xml.etree.ElementTree.parse('data/SemEval14-ABSA-TrainData_v2/Restaurants_Train_v2.xml').getroot()
+    e = xml.etree.ElementTree.parse('raw_data/SemEval14-ABSA-TrainData_v2/Restaurants_Train_v2.xml').getroot()
 
     pprint(e)
     sentences = e.findall('sentence')
@@ -69,8 +69,8 @@ def get_restaurants_train_data():
 def get_restaurants_test_data():
     restaurants_df = pd.DataFrame(
         columns=('sentence_id', 'text', 'aspect', 'polarity'))
-    e = xml.etree.ElementTree.parse('data/ABSA_TestData_PhaseB/Restaurants_Test_Data_phaseB.xml').getroot()
-    #e = xml.etree.ElementTree.parse('data/SemEval14-ABSA-TrainData_v2/restaurants-trial.xml').getroot()
+    e = xml.etree.ElementTree.parse('raw_data/ABSA_TestData_PhaseB/Restaurants_Test_Data_phaseB.xml').getroot()
+    #e = xml.etree.ElementTree.parse('raw_data/SemEval14-ABSA-TrainData_v2/restaurants-trial.xml').getroot()
 
     pprint(e)
     sentences = e.findall('sentence')
@@ -100,8 +100,8 @@ if __name__ == '__main__':
     #get_laptop_data()
     restaurants_train_data = get_restaurants_train_data()
     print restaurants_train_data.groupby('polarity').count()
-    restaurants_train_data.to_csv('restaurants_train_data.tsv', '\t')
+    restaurants_train_data.to_csv('data/restaurants_train_data.tsv', '\t')
 
     restaurants_test_data = get_restaurants_test_data()
     print restaurants_test_data
-    restaurants_test_data.to_csv('restaurants_test_data.tsv', "\t")
+    restaurants_test_data.to_csv('data/restaurants_test_data.tsv', "\t")

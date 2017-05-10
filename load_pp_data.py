@@ -72,7 +72,7 @@ def get_vectors(text_vocab, aspect_vocab):
             aspect_vector[word[0]] = model[word[0]]
         except:
             aspect_skipped += 1
-    print "Skipped %d words from text and %d words from aspects"%(text_skipped, aspect_skipped)
+    print "Skipped %d words from text and %d words from aspects" % (text_skipped, aspect_skipped)
     return text_vector, aspect_vector
 
 
@@ -80,21 +80,27 @@ if __name__ == '__main__':
     text_vocab, aspect_vocab = get_vocab()
     print text_vocab
     print len(text_vocab)
+    with open('data/text_vocab.vocab') as f:
+        for i, word in enumerate(text_vocab):
+            f.write('%d\t%s' % (i, word))
     print aspect_vocab
     print len(aspect_vocab)
+    with open('data/aspect_vocab.vocab') as f:
+        for i, word in enumerate(aspect_vocab):
+            f.write('%d\t%s' % (i, word))
     text_vector, aspect_vector = get_vectors(text_vocab, aspect_vocab)
     print len(text_vector), len(aspect_vector)
-    with open('text_vector.pkl', 'wb') as f:
+    with open('data/text_vector.pkl', 'wb') as f:
         pickle.dump(text_vector, f, protocol=pickle.HIGHEST_PROTOCOL)
-    with open('aspect_vector.pkl', 'wb') as f:
+    with open('data/aspect_vector.pkl', 'wb') as f:
         pickle.dump(aspect_vector, f, protocol=pickle.HIGHEST_PROTOCOL)
 
-    h = h5py.File('text_vector.hdf5')
+    h = h5py.File('data/text_vector.hdf5')
     for x in text_vector.keys():
         h[x] = text_vector[x]
     h.close()
 
-    h = h5py.File('aspect_vector.hdf5')
+    h = h5py.File('data/aspect_vector.hdf5')
     for x in aspect_vector.keys():
         h[x] = aspect_vector[x]
     h.close()
