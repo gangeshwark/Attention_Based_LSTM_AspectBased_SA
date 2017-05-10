@@ -9,8 +9,8 @@ import gensim
 
 
 def get_vocab():
-    a = pd.read_pickle('restaurants_train_data_processed.pkl')
-    b = pd.read_pickle('restaurants_test_data_processed.pkl')
+    a = pd.read_pickle('data/restaurants_train_data_processed.pkl')
+    b = pd.read_pickle('data/restaurants_test_data_processed.pkl')
     text_vocab = {}
     for x in a['text']:
         for word in x:
@@ -80,14 +80,14 @@ if __name__ == '__main__':
     text_vocab, aspect_vocab = get_vocab()
     print text_vocab
     print len(text_vocab)
-    with open('data/text_vocab.vocab') as f:
+    with open('data/text_vocab.vocab', 'w') as f:
         for i, word in enumerate(text_vocab):
-            f.write('%d\t%s' % (i, word))
+            f.write('%d\t%s\n' % (i, word[0]))
     print aspect_vocab
     print len(aspect_vocab)
-    with open('data/aspect_vocab.vocab') as f:
+    with open('data/aspect_vocab.vocab', 'w') as f:
         for i, word in enumerate(aspect_vocab):
-            f.write('%d\t%s' % (i, word))
+            f.write('%d\t%s\n' % (i, word[0]))
     text_vector, aspect_vector = get_vectors(text_vocab, aspect_vocab)
     print len(text_vector), len(aspect_vector)
     with open('data/text_vector.pkl', 'wb') as f:
@@ -95,12 +95,12 @@ if __name__ == '__main__':
     with open('data/aspect_vector.pkl', 'wb') as f:
         pickle.dump(aspect_vector, f, protocol=pickle.HIGHEST_PROTOCOL)
 
-    h = h5py.File('data/text_vector.hdf5')
+    h = h5py.File('data/text_vector.hdf5', 'w')
     for x in text_vector.keys():
         h[x] = text_vector[x]
     h.close()
 
-    h = h5py.File('data/aspect_vector.hdf5')
+    h = h5py.File('data/aspect_vector.hdf5', 'w')
     for x in aspect_vector.keys():
         h[x] = aspect_vector[x]
     h.close()
