@@ -1,6 +1,5 @@
 import tensorflow as tf
 import numpy as np
-from tensorflow.contrib.legacy_seq2seq.python.ops import seq2seq
 from tensorflow.contrib.rnn import LSTMStateTuple
 
 

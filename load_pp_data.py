@@ -2,6 +2,8 @@ import pickle
 from time import time
 
 import operator
+
+import h5py
 import pandas as pd
 import gensim
 
@@ -86,4 +88,13 @@ if __name__ == '__main__':
         pickle.dump(text_vector, f, protocol=pickle.HIGHEST_PROTOCOL)
     with open('aspect_vector.pkl', 'wb') as f:
         pickle.dump(aspect_vector, f, protocol=pickle.HIGHEST_PROTOCOL)
-    #print aspect_vector
+
+    h = h5py.File('text_vector.hdf5')
+    for x in text_vector.keys():
+        h[x] = text_vector[x]
+    h.close()
+
+    h = h5py.File('aspect_vector.hdf5')
+    for x in aspect_vector.keys():
+        h[x] = aspect_vector[x]
+    h.close()

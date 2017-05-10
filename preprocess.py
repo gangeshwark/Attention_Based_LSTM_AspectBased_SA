@@ -127,7 +127,7 @@ contractions = {
 }
 
 def clean(s):
-    print s
+    s = s.lower()
     for x, y in contractions.iteritems():
         s = s.replace(x, y)
     s = re.sub('([' + string.punctuation + '])', r' \1 ', s)
@@ -141,6 +141,8 @@ a['text'] = a['text'].apply(clean)
 b['text'] = b['text'].apply(clean)
 
 # save pre-processed data as pickle file
+#a.to_hdf('restaurants_train_data_processed.h5', 'table', append=True)
+#b.to_hdf('restaurants_test_data_processed.h5', 'table', append=True)
 a.to_pickle('restaurants_train_data_processed.pkl')
 b.to_pickle('restaurants_test_data_processed.pkl')
 # load pre-processed pickle data

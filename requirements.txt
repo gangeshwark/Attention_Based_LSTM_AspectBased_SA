@@ -1,0 +1,8 @@
+h5py
+pandas
+numpy
+tensorflow-gpu
+nltk
+gensim
+tqdm
+lxml
