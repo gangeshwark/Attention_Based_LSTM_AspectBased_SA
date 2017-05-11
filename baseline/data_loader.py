@@ -56,7 +56,7 @@ class TestData():
         x = self.a['text'][self.i:self.i + self.bz]
         a = self.a['aspect'][self.i:self.i + self.bz]
         x_len = self.a['seq_len'][self.i:self.i + self.bz]
-        self.i += self.bz
+        #self.i += self.bz
 
         x_ = []
         a_ = []

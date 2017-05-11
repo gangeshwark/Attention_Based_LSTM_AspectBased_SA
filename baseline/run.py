@@ -1,6 +1,7 @@
 import tensorflow as tf
 import numpy as np
 import h5py
+from tqdm import tqdm
 
 from data_loader import TrainData, TestData
 from prepare_data import get_w2i, get_a2i
@@ -33,37 +34,35 @@ def load_emb():
         for line in lines:
             i, word = line.strip().split('\t')
             a_emb.append(get_emb(word, h))
-        #print len(a_emb), len(a_emb[0])
+        # print len(a_emb), len(a_emb[0])
         a_emb = np.asarray(a_emb)
-        #print a_emb.shape
+        # print a_emb.shape
     return emb, a_emb, emb.shape[0], a_emb.shape[0]
 
 
 def convert_ids_sent(ids, i2w):
-    sents = []
     sent = []
     for x in ids:
-        for i in x:
-            if i in i2w:
-                sent.append(i2w[x])
-            else:
-                sent.append('__UNK__')
-        sents.append(sent)
+        if str(x) in i2w:
+            sent.append(i2w[str(x)])
+        else:
+            sent.append('__UNK__')
     # print id
-    return sents
+    return sent
 
 
 if __name__ == '__main__':
     w2i, i2w = get_w2i()
+    print 'Len i2w', len(i2w)
     a2i, i2a = get_a2i()
     embedding, aspect_embedding, vocab_size, aspect_vocab_size = load_emb()
     tf.reset_default_graph()
     tf.set_random_seed(1)
     resume_from_checkpoint = False
     with tf.Session() as session:
-        hidden_size = 256
-        batch_size = 32
-        #infered from the dataset
+        hidden_size = 128
+        batch_size = 25
+        # infered from the dataset
         input_len = 80
         model = AspectLevelModel('lstm', hidden_size=hidden_size, vocab_size=vocab_size,
                                  aspect_vocab_size=aspect_vocab_size,
@@ -83,47 +82,58 @@ if __name__ == '__main__':
                     feed_dict={model.embedding_placeholder: embedding,
                                model.aspect_embedding_placeholder: aspect_embedding})
         loss = []
-        train_data = TrainData(batch_size=batch_size, input_len=input_len)
-        test_data = TestData(batch_size=batch_size, input_len=input_len)
+
         try:
-            b_i = 0
-            while (True):
-                x, x_len, a, y = next(train_data)
+            print "Training"
+            for epoch in xrange(5):
+                print "Epoch: ", epoch
+                train_data = TrainData(batch_size=batch_size, input_len=input_len)
+                test_data = TestData(batch_size=batch_size, input_len=input_len)
+                for batch in tqdm(xrange(110)):
 
-                if x.shape[0] <= 0:
-                    print "Training complete!"
-                    break
+                    x, x_len, a, y = next(train_data)
 
-                print type(x[0][0]), type(a[0]), type(y[0]), type(x_len[0])
-                fd = {
-                    model.inputs: x,
-                    model.inputs_length: x_len,
-                    model.input_aspect: a,
-                    model.targets: y,
-                }
-                _, l = session.run([model.train_op, model.loss], feed_dict=fd)
-                loss.append(l)
+                    if x.shape[0] < batch_size:
+                        print "Training complete!"
+                        break
 
-                if b_i % 5:
-                    minibatch_loss = session.run([model.loss], fd)
-                    x, x_len, a = next(test_data)
-                    if x.shape[0] <= 0:
-                        print "No more data to test with"
-                        continue
+                    # print type(x[0][0]), type(a[0]), type(y[0]), type(x_len[0])
 
                     fd = {
-                        model.inputs: np.asarray(x),
-                        model.inputs_length: np.asarray(x_len),
-                        model.input_aspect: np.asarray(a),
+                        model.inputs: x,
+                        model.inputs_length: x_len,
+                        model.input_aspect: a,
+                        model.targets: y,
                     }
-                    inference = session.run(model.logits_train, fd)
-                    input = fd[model.inputs]
-                    input_aspect = fd[model.input_aspect]
-                    target = model.targets
-                    print "Review: ", convert_ids_sent(input, i2w)
-                    print "Aspect: ", [i2a[i] for i in input_aspect]
-                    print target, inference
-                b_i += 1
+                    _, l = session.run([model.train_op, model.loss], feed_dict=fd)
+                    loss.append(l)
+
+                    if batch % 10 == 0:
+                        minibatch_loss = session.run([model.loss], fd)
+
+                        print "Minibatch loss: ", sum(minibatch_loss[0]) / len(minibatch_loss[0])
+                        x, x_len, a = next(test_data)
+                        if x.shape[0] < batch_size:
+                            print "No more data to test with"
+                            continue
+
+                        fd = {
+                            model.inputs: np.asarray(x),
+                            model.inputs_length: np.asarray(x_len),
+                            model.input_aspect: np.asarray(a),
+                        }
+                        inference = session.run(model.logits_train, fd)
+                        input = fd[model.inputs]
+                        input_aspect = fd[model.input_aspect]
+                        #print "Review: ", x[:2], input.shape
+                        c, d = batch_size-2,batch_size
+                        print "Len: ", x_len[c:d]
+                        m = [' '.join(convert_ids_sent(x1, i2w)) for x1 in x[c:d]]
+                        print "Review: ", input.shape  # ,convert_ids_sent(input, i2w)
+                        for n in m:
+                            print "\n", n
+                        print "Aspect: ", [i2a[str(i)] for i in input_aspect[c:d]]
+                        print [a for a in inference[c:d]]
 
         except KeyboardInterrupt:
             print "Training Interrupted"
