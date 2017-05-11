@@ -61,7 +61,8 @@ def get_vectors(text_vocab, aspect_vocab):
     print time() - st, " seconds to load the Google News vectors."
 
     unk = np.random.uniform(-np.sqrt(3.0), np.sqrt(3.0), 300)
-    text_vector = {'__UNK__': unk}
+    pad = np.random.uniform(-np.sqrt(3.0), np.sqrt(3.0), 300)
+    text_vector = {'__UNK__': unk, '__PAD__': pad}
     for i, word in enumerate(text_vocab):
         if word[0] in text_vector.keys():
             continue

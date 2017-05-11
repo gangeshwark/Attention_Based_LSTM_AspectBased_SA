@@ -1,6 +1,5 @@
-import tensorflow as tf
 import numpy as np
-from tensorflow.contrib.rnn import LSTMStateTuple
+import tensorflow as tf
 
 
 class Data():
@@ -13,6 +12,7 @@ def load_wv(file_path):
 
 class AspectLevelModel():
     def __init__(self, cell, hidden_size, vocab_size, aspect_vocab_size, embedding_size, aspect_embedding_size,
+                 input_length, batch_size,
                  bidirectional=False,
                  attention=False,
                  debug=False):
@@ -24,6 +24,10 @@ class AspectLevelModel():
 
         self.vocab_size = vocab_size
         self.embedding_size = embedding_size
+        self.N = input_length
+        self.batch_size = batch_size
+
+        self.class_size = 3
         if cell == 'lstm':
             self.cell = tf.contrib.rnn.BasicLSTMCell(hidden_size)
         elif cell == 'gru':
@@ -57,19 +61,20 @@ class AspectLevelModel():
              [1, 2, 3]]
         xl = [3, 2, 2, 3]
         a = [1, 4, 2, 5]
-        y = [[0, 1, 0], [1, 0, 0], [0, 0, 1], [0, 1, 0]]
-        yl = [1, 1, 1, 1]
+        y = [[0, 1, 0],
+             [1, 0, 0],
+             [0, 0, 1],
+             [0, 1, 0]]
         self.inputs = tf.constant(x, dtype=tf.int32, name='inputs')
         self.input_aspect = tf.constant(a, dtype=tf.int32, name='input_aspect')
         self.inputs_length = tf.constant(xl, dtype=tf.int32, name='inputs_length')
 
         self.targets = tf.constant(y, dtype=tf.int32, name='targets')
-        self.targets_length = tf.constant(yl, dtype=tf.int32, name='targets_length')
 
     def _init_placeholders(self):
-        """ Everything is time-major """
+        # input
         self.inputs = tf.placeholder(
-            shape=(None, None),
+            shape=(None, self.N),
             dtype=tf.int32,
             name='inputs',
         )
@@ -86,14 +91,9 @@ class AspectLevelModel():
 
         # required for training, not required for testing
         self.targets = tf.placeholder(
-            shape=(None, None),
+            shape=(None, self.class_size),
             dtype=tf.int32,
             name='targets'
-        )
-        self.targets_length = tf.placeholder(
-            shape=(None,),
-            dtype=tf.int32,
-            name='targets_length',
         )
 
     def _init_train_connectors(self):
@@ -103,22 +103,14 @@ class AspectLevelModel():
         Here we do a bit of plumbing to set this up.
         """
         with tf.name_scope('TrainFeeds'):
-            sequence_size, batch_size = tf.unstack(tf.shape(self.targets))
-
             self.train_inputs = self.inputs
             self.train_length = self.inputs_length
 
-            train_targets = self.targets
-
-            self.train_targets = train_targets
-
-            self.loss_weights = tf.ones([batch_size, tf.reduce_max(self.train_length)],
-                                        dtype=tf.float32, name="loss_weights")
+            self.train_targets = self.targets
 
     def _init_aspect_embeddings(self):
         with tf.variable_scope("AspectEmbedding") as scope:
-            input_shape = tf.shape(self.inputs)
-            print input_shape[0].eval(), input_shape[1].eval()
+            self.input_shape = tf.shape(self.inputs)
             # Uniform(-sqrt(3), sqrt(3)) has variance=1.
             sqrt3 = tf.sqrt(3.0)
             initializer = tf.random_uniform_initializer(-sqrt3, sqrt3)
@@ -139,14 +131,10 @@ class AspectLevelModel():
                 self.aspect_embedding_matrix, self.input_aspect)  # -> [batch_size, da]
             s = tf.shape(self.input_aspect_embedded)
             self.input_aspect_embedded_final = tf.tile(tf.reshape(self.input_aspect_embedded, (s[0], -1, s[1])),
-                                                       (1, input_shape[1], 1))  # -> [batch_size, N, da]
+                                                       (1, self.input_shape[1], 1))  # -> [batch_size, N, da]
 
     def _init_word_embeddings(self):
         with tf.variable_scope("WordEmbedding") as scope:
-            # Uniform(-sqrt(3), sqrt(3)) has variance=1.
-            sqrt3 = tf.sqrt(3.0)
-            initializer = tf.random_uniform_initializer(-sqrt3, sqrt3)
-
             """self.embedding_matrix = tf.get_variable(
                 name="word_embedding_matrix",
                 shape=[self.vocab_size, self.embedding_size],
@@ -163,18 +151,18 @@ class AspectLevelModel():
             self.inputs_embedded = tf.nn.embedding_lookup(
                 self.embedding_matrix, self.inputs)  # -> [batch_size, N, dw]
 
+
             self.inputs_embedded_final = tf.concat([self.inputs_embedded, self.input_aspect_embedded_final],
                                                    2)  # -> [batch_size, N, dw+da]
-            s = self.inputs_embedded_final.get_shape()
-            self.inputs_embedded_final = tf.reshape(self.inputs_embedded_final,
-                                                    [int(s[0]), int(s[1]), self.embedding_size])
 
+            #self.batch_size = int(self.inputs.get_shape()[0])
+            self.N = int(self.inputs.get_shape()[1])
+
+            self.inputs_embedded_final = tf.reshape(self.inputs_embedded_final,
+                                                    [self.batch_size, self.N, self.embedding_size+self.aspect_embedding_size])
 
     def _init_simple(self):
         with tf.variable_scope("RNN") as scope:
-            def output_fn(outputs):
-                return tf.contrib.layers.fully_connected(outputs, self.vocab_size, scope=scope)
-
             print "inputs_embedded_final : ", self.inputs_embedded_final.get_shape()
             # shape of state is [batch_size, cell.state_size]
             (self.outputs, self.state) = (
@@ -183,11 +171,10 @@ class AspectLevelModel():
                                   sequence_length=self.inputs_length,
                                   dtype=tf.float32)
             )
-            batch_size = int(self.outputs.get_shape()[0])
-            N = int(self.outputs.get_shape()[1])
+            batch_size = self.batch_size
+            N = self.N
             da = self.aspect_embedding_size
             d = self.hidden_size
-            self.class_size = 3
 
             """Not yet implemented - Does not work"""
             Wh = tf.Variable(
@@ -208,7 +195,7 @@ class AspectLevelModel():
             # input_aspect_embedded shape is [batch_size, da]
             b_ = tf.matmul(self.input_aspect_embedded, Wv)  # [batch_size, da] X [da, da] -> [batch_size, da]
 
-            b = tf.reshape(b_, [batch_size, 1, da])  # -> [batch_size, 1, da]
+            b = tf.reshape(b_, [-1, 1, da])  # -> [batch_size, 1, da]
             print "b: ", b.get_shape()
             b = tf.tile(b, (1, N, 1))  # [batch_size, N, da]
             print "b: ", b.get_shape()
@@ -306,29 +293,7 @@ class AspectLevelModel():
     """
 
     def _init_optimizer(self):
-        logits = tf.transpose(self.logits_train, [0, 1])
-        targets = tf.transpose(self.train_targets, [1, 0])
 
         self.loss = tf.nn.softmax_cross_entropy_with_logits(logits=self.logits_train, labels=self.train_targets)
 
-        # self.loss = seq2seq.sequence_loss(logits=logits, targets=targets, weights=self.loss_weights)
         self.train_op = tf.train.AdamOptimizer().minimize(self.loss)
-
-    """
-    def make_train_inputs(self, input_seq, target_seq):
-        inputs_, inputs_length_ = helpers.batch(input_seq)
-        targets_, targets_length_ = helpers.batch(target_seq)
-        return {
-            self.inputs: inputs_,
-            self.inputs_length: inputs_length_,
-            self.targets: targets_,
-            self.targets_length: targets_length_,
-        }
-
-    def make_inference_inputs(self, input_seq):
-        inputs_, inputs_length_ = helpers.batch(input_seq)
-        return {
-            self.inputs: inputs_,
-            self.inputs_length: inputs_length_,
-        }
-    """
