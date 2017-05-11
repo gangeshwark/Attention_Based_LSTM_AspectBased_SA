@@ -1,9 +1,10 @@
 import tensorflow as tf
 import numpy as np
 import h5py
+from time import time
 from tqdm import tqdm
 
-from data_loader import TrainData, TestData
+from data_loader import TrainData, TestData, EvalData
 from prepare_data import get_w2i, get_a2i
 from model import AspectLevelModel
 
@@ -60,7 +61,7 @@ if __name__ == '__main__':
     tf.set_random_seed(1)
     resume_from_checkpoint = False
     with tf.Session() as session:
-        hidden_size = 128
+        hidden_size = 300
         batch_size = 25
         # infered from the dataset
         input_len = 80
@@ -82,14 +83,16 @@ if __name__ == '__main__':
                     feed_dict={model.embedding_placeholder: embedding,
                                model.aspect_embedding_placeholder: aspect_embedding})
         loss = []
-
+        st = time()
         try:
             print "Training"
-            for epoch in xrange(5):
+
+            for epoch in xrange(1000):
                 print "Epoch: ", epoch
                 train_data = TrainData(batch_size=batch_size, input_len=input_len)
-                test_data = TestData(batch_size=batch_size, input_len=input_len)
-                for batch in tqdm(xrange(110)):
+                # test_data = TestData(batch_size=batch_size, input_len=input_len)
+                test_data = EvalData(batch_size=batch_size, input_len=input_len)
+                for batch in tqdm(xrange(140)):
 
                     x, x_len, a, y = next(train_data)
 
@@ -112,10 +115,19 @@ if __name__ == '__main__':
                         minibatch_loss = session.run([model.loss], fd)
 
                         print "Minibatch loss: ", sum(minibatch_loss[0]) / len(minibatch_loss[0])
-                        x, x_len, a = next(test_data)
+                        x, x_len, a, y = next(test_data)
                         if x.shape[0] < batch_size:
                             print "No more data to test with"
                             continue
+
+
+                        def accuracy(predictions, labels):
+                            diff = []
+                            for y, y_ in zip(labels, predictions):
+                                diff.append(1.00 * np.sum(np.argmax(y) == np.argmax(y_)))
+                            #print "Diff: ", diff
+                            return (sum(diff) / len(diff))
+
 
                         fd = {
                             model.inputs: np.asarray(x),
@@ -123,19 +135,21 @@ if __name__ == '__main__':
                             model.input_aspect: np.asarray(a),
                         }
                         inference = session.run(model.logits_train, fd)
+                        print "Accuracy: ", accuracy(inference, y)
                         input = fd[model.inputs]
                         input_aspect = fd[model.input_aspect]
-                        #print "Review: ", x[:2], input.shape
-                        c, d = batch_size-2,batch_size
+                        # print "Review: ", x[:2], input.shape
+                        c, d = batch_size - 2, batch_size
                         print "Len: ", x_len[c:d]
                         m = [' '.join(convert_ids_sent(x1, i2w)) for x1 in x[c:d]]
                         print "Review: ", input.shape  # ,convert_ids_sent(input, i2w)
                         for n in m:
                             print "\n", n
                         print "Aspect: ", [i2a[str(i)] for i in input_aspect[c:d]]
-                        print [a for a in inference[c:d]]
-
+                        print "Class", [a for a in inference[c:d]]
+            print time() - st, " seconds"
         except KeyboardInterrupt:
+            print time() - st, " seconds"
             print "Training Interrupted"
 
         import matplotlib.pyplot as plt

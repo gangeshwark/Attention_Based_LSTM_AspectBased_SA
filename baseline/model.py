@@ -134,7 +134,8 @@ class AspectLevelModel():
 
     def _init_word_embeddings(self):
         with tf.variable_scope("WordEmbedding") as scope:
-            """self.embedding_matrix = tf.get_variable(
+            """
+            self.embedding_matrix = tf.get_variable(
                 name="word_embedding_matrix",
                 shape=[self.vocab_size, self.embedding_size],
                 initializer=initializer,

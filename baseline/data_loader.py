@@ -5,19 +5,21 @@ import numpy as np
 class TrainData():
     def __init__(self, batch_size, input_len):
         # load training data
-        self.a = pd.read_hdf('../data/train_data_3classes.h5', 'table')
+        self.df = pd.read_hdf('../data/train_data_3classes.h5', 'table')[:]
         self.bz = batch_size
         self.i = 0
         self.len = input_len
+        l = self.df.shape[0] - self.bz
+        self.df = self.df.head(l)
 
     def __iter__(self):
         return self
 
     def next(self):
-        x = self.a['text'][self.i:self.i + self.bz]
-        a = self.a['aspect'][self.i:self.i + self.bz]
-        y = self.a['polarity'][self.i:self.i + self.bz]
-        x_len = self.a['seq_len'][self.i:self.i + self.bz]
+        x = self.df['text'][self.i:self.i + self.bz]
+        a = self.df['aspect'][self.i:self.i + self.bz]
+        y = self.df['polarity'][self.i:self.i + self.bz]
+        x_len = self.df['seq_len'][self.i:self.i + self.bz]
         # print x
         self.i += self.bz
 
@@ -38,7 +40,38 @@ class TrainData():
 
 
 class EvalData():
-    pass
+    def __init__(self, batch_size, input_len):
+        # load training data
+        self.a = pd.read_hdf('../data/train_data_3classes.h5', 'table')
+        self.bz = batch_size
+        self.i = 0
+        self.len = input_len
+
+    def __iter__(self):
+        return self
+
+    def next(self):
+        x = self.a['text'].tail(self.bz)
+        a = self.a['aspect'].tail(self.bz)
+
+        y = self.a['polarity'].tail(self.bz)
+        x_len = self.a['seq_len'].tail(self.bz)
+        # self.i += self.bz
+
+        x_ = []
+        a_ = []
+        y_ = []
+        for i in x:
+            x_.append(np.asarray(map(int, i)))
+        for i in y:
+            y_.append(np.asarray(map(int, i)))
+        for i in a:
+            a_.append(int(i))
+        x = np.asarray(x_)
+        a = np.asarray(a_)
+        x_len = np.asarray(x_len, dtype=np.int64)
+
+        return x, x_len, a, y
 
 
 class TestData():
@@ -56,7 +89,7 @@ class TestData():
         x = self.a['text'][self.i:self.i + self.bz]
         a = self.a['aspect'][self.i:self.i + self.bz]
         x_len = self.a['seq_len'][self.i:self.i + self.bz]
-        #self.i += self.bz
+        # self.i += self.bz
 
         x_ = []
         a_ = []
@@ -69,19 +102,17 @@ class TestData():
         a = np.asarray(a_)
         x_len = np.asarray(x_len, dtype=np.int64)
 
-
-        return x,x_len, a
-
+        return x, x_len, a
 
 
 # testing
 if __name__ == '__main__':
-    data = TrainData(32)
+    data = TrainData(25, 80)
     i = 0
     while (1):
         i += 1
-        x, a, y = next(data)
-        print a
+        x, x_len, a, y = next(data)
+        print a, y
         print len(x)
         if len(x) < 1:
             break
@@ -89,14 +120,14 @@ if __name__ == '__main__':
 
     print "i", i
 
-    data = TestData(32)
+    data = EvalData(25, 80)
     i = 0
     while (1):
         i += 1
-        x, a = next(data)
-        print len(x)
-        if len(x) < 1:
-            break
+        x, x_len, a, y = next(data)
+        print len(x), a
+
         print '______________________________________________________________________'
+        break
 
     print "i", i
