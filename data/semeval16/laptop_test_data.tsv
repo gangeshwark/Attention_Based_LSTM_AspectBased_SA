@@ -1,0 +1,802 @@
+	review_id	sentence_id	text	target	category	polarity
+0	B0074703CM_108_ANONYMOUS	B0074703CM_108_ANONYMOUS:0	Well, my first apple computer and I am impressed.		LAPTOP#GENERAL	positive
+1	B0074703CM_108_ANONYMOUS	B0074703CM_108_ANONYMOUS:1	Works well, fast and no reboots.		LAPTOP#OPERATION_PERFORMANCE	positive
+2	B0074703CM_108_ANONYMOUS	B0074703CM_108_ANONYMOUS:4	Glad I did so far.		COMPANY#GENERAL	positive
+3	B0074703CM_108_ANONYMOUS	B0074703CM_108_ANONYMOUS:4	Glad I did so far.		LAPTOP#GENERAL	positive
+4	B00GJUQ4Z0_10_ANONYMOUS	B00GJUQ4Z0_10_ANONYMOUS:0	s.... L .... o..... w....  rea......llllyy  slow.		LAPTOP#OPERATION_PERFORMANCE	negative
+5	B00GJUQ4Z0_10_ANONYMOUS	B00GJUQ4Z0_10_ANONYMOUS:1	like seriously  - really slow.		LAPTOP#OPERATION_PERFORMANCE	negative
+6	B00GJUQ4Z0_10_ANONYMOUS	B00GJUQ4Z0_10_ANONYMOUS:2	impossible to use.		LAPTOP#USABILITY	negative
+7	B00GJUQ4Z0_10_ANONYMOUS	B00GJUQ4Z0_10_ANONYMOUS:3	cant even read properly.		LAPTOP#USABILITY	negative
+8	B00GJUQ4Z0_10_ANONYMOUS	B00GJUQ4Z0_10_ANONYMOUS:4	plus - no russian input ??  wtf		LAPTOP#MISCELLANEOUS	negative
+9	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:0	What a great laptop, I can run my games and work really fast.		LAPTOP#GENERAL	positive
+10	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:0	What a great laptop, I can run my games and work really fast.		LAPTOP#MISCELLANEOUS	positive
+11	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:0	What a great laptop, I can run my games and work really fast.		LAPTOP#OPERATION_PERFORMANCE	positive
+12	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:1	Really light you can carry with you everywhere.		LAPTOP#DESIGN_FEATURES	positive
+13	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:1	Really light you can carry with you everywhere.		LAPTOP#PORTABILITY	positive
+14	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:2	Great battery life.		BATTERY#OPERATION_PERFORMANCE	positive
+15	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:3	Everything at a very great price.		LAPTOP#PRICE	positive
+16	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:4	I completely recommend it.		LAPTOP#GENERAL	positive
+17	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:0	Excellent value and a must buy for someone looking for a Macbook.		LAPTOP#PRICE	positive
+18	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:0	Excellent value and a must buy for someone looking for a Macbook.		LAPTOP#GENERAL	positive
+19	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:1	You can't get any better than this price and it come with an internal disk drive.		LAPTOP#PRICE	positive
+20	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:1	You can't get any better than this price and it come with an internal disk drive.		LAPTOP#DESIGN_FEATURES	positive
+21	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:3	Plus you get 500GB which is also a great feature.		HARD_DISC#DESIGN_FEATURES	positive
+22	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:4	Also, the resale value on this will keep.		LAPTOP#MISCELLANEOUS	positive
+23	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:5	I highly recommend you get one before they are gone.		LAPTOP#GENERAL	positive
+24	B0074703CM_240_ANONYMOUS	B0074703CM_240_ANONYMOUS:2	Got this on black friday with a very good discount and couldn't be happier.		LAPTOP#PRICE	positive
+25	B0074703CM_240_ANONYMOUS	B0074703CM_240_ANONYMOUS:2	Got this on black friday with a very good discount and couldn't be happier.		LAPTOP#GENERAL	positive
+26	B0074703CM_240_ANONYMOUS	B0074703CM_240_ANONYMOUS:3	The screen is great, I don't see the need for a retina display.		DISPLAY#QUALITY	positive
+27	B0074703CM_240_ANONYMOUS	B0074703CM_240_ANONYMOUS:4	I also really like the addition of the SD Card slot.		LAPTOP#DESIGN_FEATURES	positive
+28	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:0	This Macbook Pro is AMAZING!		LAPTOP#GENERAL	positive
+29	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:1	If you are afraid of it not having a disc player please don't be.		LAPTOP#DESIGN_FEATURES	positive
+30	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:4	I love the new high retina display, and because this computer lacks a disc player it makes it significantly lighter.		DISPLAY#QUALITY	positive
+31	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:4	I love the new high retina display, and because this computer lacks a disc player it makes it significantly lighter.		LAPTOP#DESIGN_FEATURES	positive
+32	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:5	Overall, this is a fast, light, practical computer and I highly recommend it.		LAPTOP#OPERATION_PERFORMANCE	positive
+33	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:5	Overall, this is a fast, light, practical computer and I highly recommend it.		LAPTOP#DESIGN_FEATURES	positive
+34	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:5	Overall, this is a fast, light, practical computer and I highly recommend it.		LAPTOP#USABILITY	positive
+35	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:5	Overall, this is a fast, light, practical computer and I highly recommend it.		LAPTOP#GENERAL	positive
+36	B0074703CM_210_ANONYMOUS	B0074703CM_210_ANONYMOUS:0	I bought my Macbook Pro in October of 2012 and 2 years later it still works as flawless as ever!		LAPTOP#QUALITY	positive
+37	B0074703CM_210_ANONYMOUS	B0074703CM_210_ANONYMOUS:0	I bought my Macbook Pro in October of 2012 and 2 years later it still works as flawless as ever!		LAPTOP#OPERATION_PERFORMANCE	positive
+38	B0074703CM_210_ANONYMOUS	B0074703CM_210_ANONYMOUS:1	I've never had any problems with the computer itself (The Macbook charger chords are another story, though).		LAPTOP#GENERAL	positive
+39	B0074703CM_210_ANONYMOUS	B0074703CM_210_ANONYMOUS:1	I've never had any problems with the computer itself (The Macbook charger chords are another story, though).		POWER_SUPPLY#GENERAL	negative
+40	B0074703CM_210_ANONYMOUS	B0074703CM_210_ANONYMOUS:2	I tried not to jump on the Apple bandwagon, but... you're just living in denial if you don't.		COMPANY#GENERAL	positive
+41	B0074703CM_210_ANONYMOUS	B0074703CM_210_ANONYMOUS:4	Happy buying!		COMPANY#GENERAL	positive
+42	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:0	Bought this laptop from best buy in January 2015.. still loving it.		LAPTOP#GENERAL	positive
+43	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:1	I can use it as a tablet,as a laptop, as whatever I want to!		LAPTOP#USABILITY	positive
+44	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:2	I play Sims 4 and 3 on it all the time, with very little issues.		LAPTOP#MISCELLANEOUS	positive
+45	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:3	The thing wakes up super fast and is always ready to go.		LAPTOP#OPERATION_PERFORMANCE	positive
+46	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:4	Music/videos sound great and look great.		MULTIMEDIA_DEVICES#QUALITY	positive
+47	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:4	Music/videos sound great and look great.		DISPLAY#QUALITY	positive
+48	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:5	I use it everyday.		LAPTOP#GENERAL	positive
+49	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:6	My favorite computer I've ever had!		LAPTOP#GENERAL	positive
+50	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:0	This computer overall is great!		LAPTOP#GENERAL	positive
+51	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:1	it runs fast!		LAPTOP#OPERATION_PERFORMANCE	positive
+52	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:2	ships fast!		SHIPPING#QUALITY	positive
+53	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:3	etc. but the company and seller lied to you and try to make an extra buck!		COMPANY#GENERAL	negative
+54	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:4	I bought this pc to play games and stream movies! it could handle all of that but my friend wanted me to put some music on a cd!		LAPTOP#MISCELLANEOUS	positive
+55	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:5	I could see the disk drive on the side but it didn't seem to have a button on it?		OPTICAL_DRIVES#DESIGN_FEATURES	negative
+56	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:9	A DISK DRIVE WITH BUTTONS ON IT!!!!!!		OPTICAL_DRIVES#DESIGN_FEATURES	negative
+57	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:12	And he said&quot; this computer does not have a disk drive and I was furious!		LAPTOP#DESIGN_FEATURES	negative
+58	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:13	So beware buyer, this computer has a useless piece of plastic on it.		LAPTOP#DESIGN_FEATURES	negative
+59	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:14	Thank you asus.(they don't deserve to be capitalized)		COMPANY#GENERAL	negative
+60	B0074703CM_21_ANONYMOUS	B0074703CM_21_ANONYMOUS:0	Great computer.		LAPTOP#GENERAL	positive
+61	B0074703CM_21_ANONYMOUS	B0074703CM_21_ANONYMOUS:1	Very great Apple product as expected.		LAPTOP#GENERAL	positive
+62	B0074703CM_21_ANONYMOUS	B0074703CM_21_ANONYMOUS:1	Very great Apple product as expected.		COMPANY#GENERAL	positive
+63	B0074703CM_21_ANONYMOUS	B0074703CM_21_ANONYMOUS:2	Good battery life.		BATTERY#OPERATION_PERFORMANCE	positive
+64	B0074703CM_21_ANONYMOUS	B0074703CM_21_ANONYMOUS:3	Great color on screen.		DISPLAY#QUALITY	positive
+65	B0074703CM_21_ANONYMOUS	B0074703CM_21_ANONYMOUS:4	Good speakers from laptop computer.		MULTIMEDIA_DEVICES#GENERAL	positive
+66	B0074703CM_145_ANONYMOUS	B0074703CM_145_ANONYMOUS:0	My new laptop is great.		LAPTOP#GENERAL	positive
+67	B0074703CM_145_ANONYMOUS	B0074703CM_145_ANONYMOUS:1	It has so much more speed and the screen is very sharp.		LAPTOP#OPERATION_PERFORMANCE	positive
+68	B0074703CM_145_ANONYMOUS	B0074703CM_145_ANONYMOUS:1	It has so much more speed and the screen is very sharp.		DISPLAY#QUALITY	positive
+69	B0074703CM_145_ANONYMOUS	B0074703CM_145_ANONYMOUS:3	I have to admit that the operating system is different and does take time to learn but I like it.		OS#USABILITY	neutral
+70	B0074703CM_145_ANONYMOUS	B0074703CM_145_ANONYMOUS:3	I have to admit that the operating system is different and does take time to learn but I like it.		OS#GENERAL	positive
+71	B0074703CM_145_ANONYMOUS	B0074703CM_145_ANONYMOUS:4	I would recommend it to anyone.		LAPTOP#GENERAL	positive
+72	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:1	This laptop is fine for those applications and basic websurfing.		LAPTOP#MISCELLANEOUS	positive
+73	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:2	The speakers are fairly basic, so this is probably not the computer to buy if your main aim is streaming music or watching movies.		MULTIMEDIA_DEVICES#GENERAL	neutral
+74	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:2	The speakers are fairly basic, so this is probably not the computer to buy if your main aim is streaming music or watching movies.		LAPTOP#MISCELLANEOUS	negative
+75	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:3	The touchpad is a little &quot;clunky&quot; for my taste; I use a small external mouse with laptops  in any event.		MOUSE#DESIGN_FEATURES	negative
+76	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:4	I appreciate the relatively large keyboard (with number pad) and screen size.		KEYBOARD#DESIGN_FEATURES	positive
+77	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:4	I appreciate the relatively large keyboard (with number pad) and screen size.		DISPLAY#DESIGN_FEATURES	positive
+78	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:5	I also found the track pad irritating until I disabled &quot;pinch zoom.&quot;		MOUSE#USABILITY	negative
+79	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:6	This is larger laptop, but is not too heavy.		LAPTOP#DESIGN_FEATURES	positive
+80	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:7	Battery life is great - though it is new.		BATTERY#OPERATION_PERFORMANCE	positive
+81	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:9	Overall, a solid laptop for its price.		LAPTOP#QUALITY	positive
+82	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:9	Overall, a solid laptop for its price.		LAPTOP#PRICE	neutral
+83	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:1	However, a few things are immediately occurring to me  I had read the other reviews here on amazon, but decided the specs and appearance looked good enough to go ahead.		LAPTOP#DESIGN_FEATURES	positive
+84	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:2	Well, my first impressions are that its OK, it certainly boots up quickly (thanks SSD!), and from the limited use so far (no games) its fast enough in normal usage.		LAPTOP#GENERAL	neutral
+85	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:2	Well, my first impressions are that its OK, it certainly boots up quickly (thanks SSD!), and from the limited use so far (no games) its fast enough in normal usage.		LAPTOP#OPERATION_PERFORMANCE	positive
+86	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:2	Well, my first impressions are that its OK, it certainly boots up quickly (thanks SSD!), and from the limited use so far (no games) its fast enough in normal usage.		HARD_DISC#GENERAL	positive
+87	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:3	It certainly looks nice, but that nice dark blue top is a fingerprint magnet as others have pointed out.		LAPTOP#DESIGN_FEATURES	positive
+88	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:3	It certainly looks nice, but that nice dark blue top is a fingerprint magnet as others have pointed out.		LAPTOP#QUALITY	negative
+89	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:4	Also I have found the touch pad to be awkward to use (could be I am pressing too hard perhaps), and the screen is    well   underwhelming.		MOUSE#USABILITY	negative
+90	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:4	Also I have found the touch pad to be awkward to use (could be I am pressing too hard perhaps), and the screen is    well   underwhelming.		DISPLAY#GENERAL	negative
+91	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:5	To be honest I am a little disappointed and considering returning it.		LAPTOP#GENERAL	negative
+92	B00L49X8E6_126_A24EWKFHT3EC4F	B00L49X8E6_126_A24EWKFHT3EC4F:0	This is a horrible laptop.		LAPTOP#GENERAL	negative
+93	B00L49X8E6_126_A24EWKFHT3EC4F	B00L49X8E6_126_A24EWKFHT3EC4F:1	Within a day of usage, it already slowed down significantly, virus entered the system right away.		LAPTOP#OPERATION_PERFORMANCE	negative
+94	B00L49X8E6_126_A24EWKFHT3EC4F	B00L49X8E6_126_A24EWKFHT3EC4F:1	Within a day of usage, it already slowed down significantly, virus entered the system right away.		LAPTOP#QUALITY	negative
+95	B00L49X8E6_126_A24EWKFHT3EC4F	B00L49X8E6_126_A24EWKFHT3EC4F:3	It's heavy.		LAPTOP#DESIGN_FEATURES	negative
+96	B00L49X8E6_126_A24EWKFHT3EC4F	B00L49X8E6_126_A24EWKFHT3EC4F:4	I regretted immediately.		LAPTOP#GENERAL	negative
+97	B00L49X8E6_126_A24EWKFHT3EC4F	B00L49X8E6_126_A24EWKFHT3EC4F:5	Nothing like the description says.		LAPTOP#GENERAL	negative
+98	B0074703CM_53_ANONYMOUS	B0074703CM_53_ANONYMOUS:0	My Apple mac book pro has crashed three times, since I purchased it.		LAPTOP#OPERATION_PERFORMANCE	negative
+99	B0074703CM_53_ANONYMOUS	B0074703CM_53_ANONYMOUS:0	My Apple mac book pro has crashed three times, since I purchased it.		LAPTOP#QUALITY	negative
+100	B0074703CM_53_ANONYMOUS	B0074703CM_53_ANONYMOUS:2	Each time, Apple can only uninstall to original factory settings for me to start over.		SUPPORT#QUALITY	negative
+101	B0074703CM_53_ANONYMOUS	B0074703CM_53_ANONYMOUS:3	I believe this MacBook Pro was a lemon right out the gate.		LAPTOP#QUALITY	negative
+102	B0074703CM_53_ANONYMOUS	B0074703CM_53_ANONYMOUS:5	:(		LAPTOP#GENERAL	negative
+103	B0074703CM_33_ANONYMOUS	B0074703CM_33_ANONYMOUS:0	This computer is like...  I'm lost for words.		LAPTOP#GENERAL	positive
+104	B0074703CM_33_ANONYMOUS	B0074703CM_33_ANONYMOUS:1	This is the best switch I have ever done.		LAPTOP#GENERAL	positive
+105	B0074703CM_33_ANONYMOUS	B0074703CM_33_ANONYMOUS:3	This has much more memory and ram memory.		MEMORY#DESIGN_FEATURES	positive
+106	B0074703CM_33_ANONYMOUS	B0074703CM_33_ANONYMOUS:3	This has much more memory and ram memory.		HARD_DISC#DESIGN_FEATURES	positive
+107	B0074703CM_33_ANONYMOUS	B0074703CM_33_ANONYMOUS:4	Even the battery life is like WOW!		BATTERY#OPERATION_PERFORMANCE	positive
+108	B0074703CM_33_ANONYMOUS	B0074703CM_33_ANONYMOUS:5	I love, LOVE, LOOOOVE!		LAPTOP#GENERAL	positive
+109	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:1	I can say that I am fully satisfied with the performance that the computer has supplied.		LAPTOP#OPERATION_PERFORMANCE	positive
+110	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:2	It contains a long battery life, incredible specs, and an overall enjoyable performance.		BATTERY#OPERATION_PERFORMANCE	positive
+111	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:2	It contains a long battery life, incredible specs, and an overall enjoyable performance.		LAPTOP#DESIGN_FEATURES	positive
+112	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:2	It contains a long battery life, incredible specs, and an overall enjoyable performance.		LAPTOP#OPERATION_PERFORMANCE	positive
+113	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:3	Upgrading from a toshiba laptop, I am fully impressed with all of the benefits that the mac operating system provides.		OS#GENERAL	positive
+114	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:4	The snappy processor allows for me to quickly upload photos and videos, as well as create movies for me and my colleagues to enjoy.		CPU#OPERATION_PERFORMANCE	positive
+115	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:4	The snappy processor allows for me to quickly upload photos and videos, as well as create movies for me and my colleagues to enjoy.		LAPTOP#USABILITY	positive
+116	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:5	In upgrading to this computer I can say I have found little to any flaws in the product, hence the 5 star review.		LAPTOP#GENERAL	positive
+117	B0146DD02G_19_ANONYMOUS	B0146DD02G_19_ANONYMOUS:0	Love this computer.		LAPTOP#GENERAL	positive
+118	B0146DD02G_19_ANONYMOUS	B0146DD02G_19_ANONYMOUS:1	It has done everything and more that I expected.		LAPTOP#GENERAL	positive
+119	B0146DD02G_19_ANONYMOUS	B0146DD02G_19_ANONYMOUS:2	I am sure it will be able to do all I need it to do in the future as well.		LAPTOP#GENERAL	positive
+120	B0146DD02G_19_ANONYMOUS	B0146DD02G_19_ANONYMOUS:3	The screen looks great in my opinion the sound is nice.		DISPLAY#QUALITY	positive
+121	B0146DD02G_19_ANONYMOUS	B0146DD02G_19_ANONYMOUS:3	The screen looks great in my opinion the sound is nice.		MULTIMEDIA_DEVICES#QUALITY	positive
+122	B0146DD02G_19_ANONYMOUS	B0146DD02G_19_ANONYMOUS:4	So far I have no complaints and dont expect many complaints in the future.		LAPTOP#GENERAL	positive
+123	B0074703CM_20_ANONYMOUS	B0074703CM_20_ANONYMOUS:2	This did give some set trouble and i had to call tech support.		LAPTOP#GENERAL	negative
+124	B0074703CM_20_ANONYMOUS	B0074703CM_20_ANONYMOUS:3	They were great.		SUPPORT#QUALITY	positive
+125	B0074703CM_20_ANONYMOUS	B0074703CM_20_ANONYMOUS:4	its been easy breezy since then.		LAPTOP#GENERAL	positive
+126	B0074703CM_20_ANONYMOUS	B0074703CM_20_ANONYMOUS:5	how could you not love a Mac		LAPTOP#GENERAL	positive
+127	B0074703CM_20_ANONYMOUS	B0074703CM_20_ANONYMOUS:5	how could you not love a Mac		COMPANY#GENERAL	positive
+128	B00O0W450A_16_ANONYMOUS	B00O0W450A_16_ANONYMOUS:0	so far so good, i have not encountered any issues with this computer.		LAPTOP#GENERAL	positive
+129	B00O0W450A_16_ANONYMOUS	B00O0W450A_16_ANONYMOUS:1	love the flip feature and the touch screen feature.		LAPTOP#DESIGN_FEATURES	positive
+130	B00O0W450A_16_ANONYMOUS	B00O0W450A_16_ANONYMOUS:1	love the flip feature and the touch screen feature.		DISPLAY#DESIGN_FEATURES	positive
+131	B00O0W450A_16_ANONYMOUS	B00O0W450A_16_ANONYMOUS:2	for the price that i paid i feel that i got good value.		LAPTOP#PRICE	neutral
+132	B00O0W450A_16_ANONYMOUS	B00O0W450A_16_ANONYMOUS:2	for the price that i paid i feel that i got good value.		LAPTOP#GENERAL	positive
+133	B00O0W450A_16_ANONYMOUS	B00O0W450A_16_ANONYMOUS:3	this lap top is not the lightest you can purchase, so if that is important to you maybe you should shop some more.		LAPTOP#DESIGN_FEATURES	negative
+134	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:0	To a prospective buyer,  08/10/2012  Once you go Mac, you'll never go back.		COMPANY#GENERAL	positive
+135	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:0	To a prospective buyer,  08/10/2012  Once you go Mac, you'll never go back.		LAPTOP#GENERAL	positive
+136	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:2	Was the best decision we ever made.		LAPTOP#GENERAL	positive
+137	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:3	It runs just as fast as the day we got it with no problems!		LAPTOP#QUALITY	positive
+138	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:3	It runs just as fast as the day we got it with no problems!		LAPTOP#OPERATION_PERFORMANCE	positive
+139	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:4	We don't have to de-frag, deliete cookies, run security programs, or any of the common PC problems that have to be delt with in order to keep you running and up to speed.		LAPTOP#OPERATION_PERFORMANCE	positive
+140	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:4	We don't have to de-frag, deliete cookies, run security programs, or any of the common PC problems that have to be delt with in order to keep you running and up to speed.		LAPTOP#QUALITY	positive
+141	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:5	You can't get a virus on Mac, so in the long run the cost of the Mac is saved by not buying security, and not having to replace your computer every year or two.		LAPTOP#QUALITY	positive
+142	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:8	Never had any issues, no frustrations just great easy wireless, all in one fun!		LAPTOP#GENERAL	positive
+143	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:8	Never had any issues, no frustrations just great easy wireless, all in one fun!		LAPTOP#CONNECTIVITY	positive
+144	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:0	It's great.		LAPTOP#GENERAL	positive
+145	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:1	because it is a touch screen you don't even need a mouse.		DISPLAY#DESIGN_FEATURES	positive
+146	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:1	because it is a touch screen you don't even need a mouse.		LAPTOP#USABILITY	positive
+147	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:2	You will probably never use it in tablet mode but it's nice to know you have that option.		LAPTOP#DESIGN_FEATURES	positive
+148	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:3	If you draw on the other hand i'm sure you will love using this in tablet mode.		LAPTOP#MISCELLANEOUS	positive
+149	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:4	Lastly, because it can flip 360 you can comfortably lay down in bed and have the keyboard facing down as you watch a show closer without having to adjust your sitting position for the keyboard.		LAPTOP#DESIGN_FEATURES	positive
+150	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:4	Lastly, because it can flip 360 you can comfortably lay down in bed and have the keyboard facing down as you watch a show closer without having to adjust your sitting position for the keyboard.		LAPTOP#USABILITY	positive
+151	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:4	Lastly, because it can flip 360 you can comfortably lay down in bed and have the keyboard facing down as you watch a show closer without having to adjust your sitting position for the keyboard.		KEYBOARD#USABILITY	positive
+152	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:3	This computer is great.		LAPTOP#GENERAL	positive
+153	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:4	I have a 250 GB SSD and 10 GB of RAM in it, which I installed myself.		HARD_DISC#DESIGN_FEATURES	neutral
+154	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:4	I have a 250 GB SSD and 10 GB of RAM in it, which I installed myself.		MEMORY#DESIGN_FEATURES	neutral
+155	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:5	It runs faster than it did when I got it.		LAPTOP#OPERATION_PERFORMANCE	positive
+156	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:6	I enjoy the simplicity and user-friendly interface of Yosemite.		OS#USABILITY	positive
+157	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:7	I'm excited for El Capitan.		OS#GENERAL	positive
+158	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:8	The apps are very easy to use.		SOFTWARE#USABILITY	positive
+159	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:9	The resolution is excellent.		DISPLAY#QUALITY	positive
+160	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:11	I am very satisfied with EVERYTHING about this machine.		LAPTOP#GENERAL	positive
+161	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:1	Like so many others who do this there is a learning curve and I'm excited to do it.		LAPTOP#GENERAL	positive
+162	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:1	Like so many others who do this there is a learning curve and I'm excited to do it.		LAPTOP#USABILITY	neutral
+163	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:2	This MBP is clean, neat, and simple.		LAPTOP#DESIGN_FEATURES	positive
+164	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:2	This MBP is clean, neat, and simple.		LAPTOP#USABILITY	positive
+165	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:3	I like that.		LAPTOP#GENERAL	positive
+166	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:4	It takes less time to power up, and if you just close the case it go into sleep mode.		LAPTOP#OPERATION_PERFORMANCE	positive
+167	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:5	WHen you open it wakes up almost immediately.		LAPTOP#OPERATION_PERFORMANCE	positive
+168	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:6	Very nice.		LAPTOP#GENERAL	positive
+169	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:7	I am pleased with my decision, however I have only had this for a few weeks.		LAPTOP#GENERAL	positive
+170	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:8	There are a few things I am dissappointed with though.		LAPTOP#GENERAL	negative
+171	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:9	Only 2 USB ports.		LAPTOP#DESIGN_FEATURES	negative
+172	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:11	No HDMI port.		LAPTOP#DESIGN_FEATURES	negative
+173	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:13	The headphones jack is a combo jack for the headphones and microphone.		MULTIMEDIA_DEVICES#DESIGN_FEATURES	neutral
+174	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:14	Not a big deal for me, but if you Skype a lot or are gaming a regular headphone set with a separate jack for the headphone sound and microphone input will not work on a Mac.		MULTIMEDIA_DEVICES#DESIGN_FEATURES	neutral
+175	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:14	Not a big deal for me, but if you Skype a lot or are gaming a regular headphone set with a separate jack for the headphone sound and microphone input will not work on a Mac.		LAPTOP#USABILITY	negative
+176	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:0	As a student majoring computer science, I really fell in love with this laptop.		LAPTOP#GENERAL	positive
+177	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:2	It's 15.6 inches, which for me is not too big nor too small.		LAPTOP#DESIGN_FEATURES	neutral
+178	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:3	It has the latest i7 CPU with a GTX 950M for GPU, which makes this laptop blazing fast (boots up in under 5 seconds, with the help of the SSD of course).		CPU#DESIGN_FEATURES	positive
+179	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:3	It has the latest i7 CPU with a GTX 950M for GPU, which makes this laptop blazing fast (boots up in under 5 seconds, with the help of the SSD of course).		GRAPHICS#DESIGN_FEATURES	positive
+180	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:3	It has the latest i7 CPU with a GTX 950M for GPU, which makes this laptop blazing fast (boots up in under 5 seconds, with the help of the SSD of course).		LAPTOP#OPERATION_PERFORMANCE	positive
+181	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:3	It has the latest i7 CPU with a GTX 950M for GPU, which makes this laptop blazing fast (boots up in under 5 seconds, with the help of the SSD of course).		HARD_DISC#DESIGN_FEATURES	positive
+182	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:4	- It has 256GB SSD which is just enough for my OS, games, documents, and anything in between.		HARD_DISC#DESIGN_FEATURES	positive
+183	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:5	It also has an extra bay for an extra HDD if you wish to add one.		LAPTOP#DESIGN_FEATURES	positive
+184	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:6	- It's not touchscreen!		DISPLAY#DESIGN_FEATURES	positive
+185	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:9	- Its keyboard is nicely arranged, silent, and back-lit which is nice, but what I don't like about it is the material attracts oil from your fingers.		KEYBOARD#DESIGN_FEATURES	positive
+186	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:9	- Its keyboard is nicely arranged, silent, and back-lit which is nice, but what I don't like about it is the material attracts oil from your fingers.		KEYBOARD#QUALITY	positive
+187	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:9	- Its keyboard is nicely arranged, silent, and back-lit which is nice, but what I don't like about it is the material attracts oil from your fingers.		KEYBOARD#QUALITY	negative
+188	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:10	I have to clean it regularly for it to stay looking good.		KEYBOARD#QUALITY	negative
+189	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:11	- This laptop is so silent, its fans only kick in when the laptop is under heavy load, thanks to the 5th generation Intel core which draws less power,  thus less heat.		LAPTOP#QUALITY	positive
+190	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:11	- This laptop is so silent, its fans only kick in when the laptop is under heavy load, thanks to the 5th generation Intel core which draws less power,  thus less heat.		FANS_COOLING#OPERATION_PERFORMANCE	positive
+191	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:11	- This laptop is so silent, its fans only kick in when the laptop is under heavy load, thanks to the 5th generation Intel core which draws less power,  thus less heat.		CPU#OPERATION_PERFORMANCE	positive
+192	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:13	- It can run games really well.		LAPTOP#MISCELLANEOUS	positive
+193	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:14	Well, not really well.		LAPTOP#MISCELLANEOUS	neutral
+194	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:15	MOBAs like Dota 2 and SMITE can be run on max quality settings with 60 fps or more.		DISPLAY#OPERATION_PERFORMANCE	neutral
+195	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:16	Medium settings on titles like Tomb Raider for it to be acceptable (60 fps is the minimum acceptable fps #pcmasterrace).		DISPLAY#OPERATION_PERFORMANCE	neutral
+196	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:17	- It's lightweight and easy to carry around.		LAPTOP#DESIGN_FEATURES	positive
+197	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:17	- It's lightweight and easy to carry around.		LAPTOP#PORTABILITY	positive
+198	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:18	- The screen is a matte 1080p display, which is nice, but with poor viewing angle.		DISPLAY#QUALITY	positive
+199	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:18	- The screen is a matte 1080p display, which is nice, but with poor viewing angle.		DISPLAY#DESIGN_FEATURES	negative
+200	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:19	I find myself adjusting it regularly.		DISPLAY#USABILITY	negative
+201	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:20	- It looks sleek and gorgeous.		LAPTOP#DESIGN_FEATURES	positive
+202	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:21	Blends in with any accessory you use with it.		LAPTOP#USABILITY	positive
+203	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:22	All in all I am very happy with this purchase.		LAPTOP#GENERAL	positive
+204	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:23	And with this price, I don't think you can buy anything better.		LAPTOP#PRICE	positive
+205	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:23	And with this price, I don't think you can buy anything better.		LAPTOP#GENERAL	positive
+206	B0074703CM_182_ANONYMOUS	B0074703CM_182_ANONYMOUS:1	All I can say is I am impressed.		LAPTOP#GENERAL	positive
+207	B0074703CM_182_ANONYMOUS	B0074703CM_182_ANONYMOUS:2	Very quick to get it up and running with a minimum setup time right after you open the box.		LAPTOP#OPERATION_PERFORMANCE	positive
+208	B0074703CM_182_ANONYMOUS	B0074703CM_182_ANONYMOUS:2	Very quick to get it up and running with a minimum setup time right after you open the box.		LAPTOP#USABILITY	positive
+209	B0074703CM_182_ANONYMOUS	B0074703CM_182_ANONYMOUS:4	It's worth it.		LAPTOP#GENERAL	positive
+210	B0074703CM_182_ANONYMOUS	B0074703CM_182_ANONYMOUS:5	Pay me now, Pay me later.........I am happy with my choice going with this laptop.		LAPTOP#GENERAL	positive
+211	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:0	I was disappointed.		LAPTOP#GENERAL	negative
+212	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:1	It seemed like a great computer and a great deal.		LAPTOP#GENERAL	negative
+213	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:1	It seemed like a great computer and a great deal.		LAPTOP#PRICE	negative
+214	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:2	The first one arrived and it did not work.		LAPTOP#OPERATION_PERFORMANCE	negative
+215	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:2	The first one arrived and it did not work.		LAPTOP#QUALITY	negative
+216	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:4	The space bar sticks.		KEYBOARD#OPERATION_PERFORMANCE	negative
+217	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:5	I find it hard to navigate from screen to screen.		LAPTOP#USABILITY	negative
+218	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:6	For a non-computer savvy person, it was very disappointing.		LAPTOP#GENERAL	negative
+219	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:0	I like the 13 inch macbooks.		LAPTOP#GENERAL	positive
+220	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:1	Its size is ideal and the weight is acceptable.		LAPTOP#DESIGN_FEATURES	positive
+221	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:2	The new Mac OS Mountain Lion has some nice features as wel as the trackpad.		OS#DESIGN_FEATURES	positive
+222	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:2	The new Mac OS Mountain Lion has some nice features as wel as the trackpad.		MOUSE#DESIGN_FEATURES	positive
+223	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:3	I didn't think i would need an optical drive but since i have had it I used it several times.		OPTICAL_DRIVES#GENERAL	neutral
+224	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:3	I didn't think i would need an optical drive but since i have had it I used it several times.		LAPTOP#DESIGN_FEATURES	neutral
+225	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:5	The magnetic lid and charger is cool and battery indicator on the side is cool.		LAPTOP#DESIGN_FEATURES	positive
+226	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:5	The magnetic lid and charger is cool and battery indicator on the side is cool.		POWER_SUPPLY#DESIGN_FEATURES	positive
+227	B0074703CM_88_ANONYMOUS	B0074703CM_88_ANONYMOUS:5	The mac is light and so compact I thought I would regret not buying a retina display, not in the least The mac pro works just fine.		LAPTOP#DESIGN_FEATURES	positive
+228	B0074703CM_88_ANONYMOUS	B0074703CM_88_ANONYMOUS:5	The mac is light and so compact I thought I would regret not buying a retina display, not in the least The mac pro works just fine.		DISPLAY#QUALITY	positive
+229	B0074703CM_88_ANONYMOUS	B0074703CM_88_ANONYMOUS:5	The mac is light and so compact I thought I would regret not buying a retina display, not in the least The mac pro works just fine.		LAPTOP#OPERATION_PERFORMANCE	positive
+230	B0074703CM_88_ANONYMOUS	B0074703CM_88_ANONYMOUS:9	The OS is easy, and offers all kinds of surprises.		OS#USABILITY	positive
+231	B0074703CM_88_ANONYMOUS	B0074703CM_88_ANONYMOUS:9	The OS is easy, and offers all kinds of surprises.		OS#MISCELLANEOUS	positive
+232	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:0	I've been using Apple's since 1992 and this is the fastest and best one I've  had.		LAPTOP#OPERATION_PERFORMANCE	positive
+233	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:0	I've been using Apple's since 1992 and this is the fastest and best one I've  had.		LAPTOP#GENERAL	positive
+234	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:4	This Mac allows all of that.		LAPTOP#USABILITY	positive
+235	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:6	This is very fast, high performance computer.		LAPTOP#OPERATION_PERFORMANCE	positive
+236	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:7	This should be more than  enough computer for almost everyone.		LAPTOP#GENERAL	positive
+237	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:8	I would not hesitate recommending  this to anyone.		LAPTOP#GENERAL	positive
+238	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:9	It fast and easy to set up.		LAPTOP#OPERATION_PERFORMANCE	positive
+239	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:9	It fast and easy to set up.		LAPTOP#USABILITY	positive
+240	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:10	I had cloned my data from my old computer using  Carbon Copy Cloner (CCC) and simply moved everything to the new computer  and was off and running at speeds I had only dreamed up before.		LAPTOP#USABILITY	positive
+241	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:10	I had cloned my data from my old computer using  Carbon Copy Cloner (CCC) and simply moved everything to the new computer  and was off and running at speeds I had only dreamed up before.		LAPTOP#OPERATION_PERFORMANCE	positive
+242	B0074703CM_106_ANONYMOUS	B0074703CM_106_ANONYMOUS:0	The Mac book pro is a computer for the disorganized, lazy, and eye candy person in all of us.		LAPTOP#MISCELLANEOUS	positive
+243	B0074703CM_106_ANONYMOUS	B0074703CM_106_ANONYMOUS:2	The MacBook pro already understands how to jump through hoops and acts more like a friendly guide.		LAPTOP#USABILITY	positive
+244	B0074703CM_106_ANONYMOUS	B0074703CM_106_ANONYMOUS:3	If you want to use the Internet, then you can make your icons jump out from the bottom of the screen, like a magnifying glass is projecting onto the selected icon.		SOFTWARE#USABILITY	positive
+245	B0074703CM_106_ANONYMOUS	B0074703CM_106_ANONYMOUS:4	This computer is amazing for the individual who does not want to do any extra work via their understanding of their laptop.		LAPTOP#USABILITY	positive
+246	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:0	I would've given 5 stars, had it not been for the hours of updates I've had to do to this upon arrival.		LAPTOP#GENERAL	positive
+247	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:0	I would've given 5 stars, had it not been for the hours of updates I've had to do to this upon arrival.		LAPTOP#MISCELLANEOUS	negative
+248	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:1	Other than that, I love it.		LAPTOP#GENERAL	positive
+249	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:2	It's portable, reliable, and great for what I use it for.		LAPTOP#PORTABILITY	positive
+250	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:2	It's portable, reliable, and great for what I use it for.		LAPTOP#QUALITY	positive
+251	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:2	It's portable, reliable, and great for what I use it for.		LAPTOP#GENERAL	positive
+252	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:3	Positives:  - No matter what position, this laptop will stay in it.		LAPTOP#USABILITY	positive
+253	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:4	It's very sturdy.		LAPTOP#QUALITY	positive
+254	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:5	- Quick boot-up, and runs efficiently.		LAPTOP#OPERATION_PERFORMANCE	positive
+255	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:6	- Touchscreen is great.		DISPLAY#GENERAL	positive
+256	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:7	Negatives:  - As aforementioned, my only con was the updates.		LAPTOP#MISCELLANEOUS	negative
+257	B0074703CM_31_ANONYMOUS	B0074703CM_31_ANONYMOUS:0	Everything you'd expect from a Mac.		LAPTOP#GENERAL	positive
+258	B0074703CM_31_ANONYMOUS	B0074703CM_31_ANONYMOUS:1	It looks and feels solid, with a flawless finish.		LAPTOP#QUALITY	positive
+259	B0074703CM_31_ANONYMOUS	B0074703CM_31_ANONYMOUS:1	It looks and feels solid, with a flawless finish.		LAPTOP#DESIGN_FEATURES	positive
+260	B0074703CM_31_ANONYMOUS	B0074703CM_31_ANONYMOUS:2	The screen definition is superb and it fires up super quick and same to close down.		DISPLAY#QUALITY	positive
+261	B0074703CM_31_ANONYMOUS	B0074703CM_31_ANONYMOUS:2	The screen definition is superb and it fires up super quick and same to close down.		LAPTOP#OPERATION_PERFORMANCE	positive
+262	B0074703CM_31_ANONYMOUS	B0074703CM_31_ANONYMOUS:3	Only had it a few weeks but doesn't leave my side.		LAPTOP#GENERAL	positive
+263	B0074703CM_97_ANONYMOUS	B0074703CM_97_ANONYMOUS:3	This machine is flawless, fast, and classy.		LAPTOP#GENERAL	positive
+264	B0074703CM_97_ANONYMOUS	B0074703CM_97_ANONYMOUS:3	This machine is flawless, fast, and classy.		LAPTOP#OPERATION_PERFORMANCE	positive
+265	B0074703CM_97_ANONYMOUS	B0074703CM_97_ANONYMOUS:3	This machine is flawless, fast, and classy.		LAPTOP#DESIGN_FEATURES	positive
+266	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:0	Out of all the laptops I have owned, this is by far the best!		LAPTOP#GENERAL	positive
+267	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:2	I'm not sure if it was covered in the description, but it does have a backlit keyboard and I'm getting about an 8 hour battery life on one charge (Except I don't use this for games or videos, which obviously would drain the battery faster).		KEYBOARD#DESIGN_FEATURES	positive
+268	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:2	I'm not sure if it was covered in the description, but it does have a backlit keyboard and I'm getting about an 8 hour battery life on one charge (Except I don't use this for games or videos, which obviously would drain the battery faster).		BATTERY#OPERATION_PERFORMANCE	positive
+269	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:3	It wakes in less than a second when I open the lid.		LAPTOP#OPERATION_PERFORMANCE	positive
+270	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:4	The screen has an extremely high resolution that I'm very pleased with.		DISPLAY#QUALITY	positive
+271	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:5	Even though MacBooks are expensive, you will see that they are well worth the money.		LAPTOP#PRICE	negative
+272	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:5	Even though MacBooks are expensive, you will see that they are well worth the money.		LAPTOP#GENERAL	positive
+273	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:7	You will not regret buying this computer!		LAPTOP#GENERAL	positive
+274	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:0	My daughter's MacBook Air battery bulged deforming the keyboard several days ago.		BATTERY#QUALITY	negative
+275	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:1	It took 3 days to make an appointment at the local Apple store.		SUPPORT#QUALITY	negative
+276	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:2	I'm not sure what happened next but she came back home crying with a piece of paper in her hand $129 for a new battery, $39 to replace it and $139 for a new keyboard.		SUPPORT#QUALITY	negative
+277	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:2	I'm not sure what happened next but she came back home crying with a piece of paper in her hand $129 for a new battery, $39 to replace it and $139 for a new keyboard.		SUPPORT#PRICE	negative
+278	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:3	I could not believe they did not consider the battery as defective so I went to the Apple store myself and asked for a manager.		SUPPORT#QUALITY	negative
+279	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:4	He explained to me the battery expansion is 'normal'.		SUPPORT#QUALITY	negative
+280	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:5	Apple doesn't cover battery expansion under any circumstances not even under their Apple Care.		SUPPORT#QUALITY	negative
+281	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:6	The battery is simply considered 'consumable' and NOT covered.		SUPPORT#QUALITY	negative
+282	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:7	I asked the manager if he feels comfortable with me posting the picture of the MacBook Air on the internet with the description that Apple doesn't consider the product defective.		SUPPORT#QUALITY	negative
+283	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:8	His reply astonished me, looking down at me behind his thick glasses he said: 'Make sure you have your facts straight before you smear!		SUPPORT#QUALITY	negative
+284	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:10	He didn't specify who are 'they' but from the tone of his voice and his 6'5' posture it indicated something between the SWAT team and a bunch of LAWYERS.		SUPPORT#QUALITY	negative
+285	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:11	Here is my take on all of this, the business model Apple pushes right now is to get some cheap junk from China, hire a bunch of cheerleaders straight out of high school, call them geniuses, and bully everybody who complains about their product.		COMPANY#GENERAL	negative
+286	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:12	Steve Jobs is dead, so is Apple.		COMPANY#GENERAL	negative
+287	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:13	No more Apple devices in my household.		COMPANY#GENERAL	negative
+288	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:14	Please Google 'MacBook battery bulge explode' before you buy your next Apple toy.		BATTERY#QUALITY	negative
+289	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:14	Please Google 'MacBook battery bulge explode' before you buy your next Apple toy.		COMPANY#GENERAL	negative
+290	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:0	I've been spoiled by the build quality and stability of Macintosh and even this used computer is a gem.		LAPTOP#QUALITY	positive
+291	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:0	I've been spoiled by the build quality and stability of Macintosh and even this used computer is a gem.		LAPTOP#GENERAL	positive
+292	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:1	I can bat around all the things that everyone else says, but it's been what we've been using for decades and I have nothing bad to say.		LAPTOP#GENERAL	positive
+293	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:2	It churns out HD content, runs without many flaws and I've yet to get a virus on a Mac since I started using the platform in the early 1990's.		DISPLAY#QUALITY	positive
+294	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:2	It churns out HD content, runs without many flaws and I've yet to get a virus on a Mac since I started using the platform in the early 1990's.		LAPTOP#OPERATION_PERFORMANCE	positive
+295	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:2	It churns out HD content, runs without many flaws and I've yet to get a virus on a Mac since I started using the platform in the early 1990's.		LAPTOP#QUALITY	positive
+296	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:3	My 15&amp;#34; MacBook's motherboard fried but I think that was a sugar spill that I never bothered cleaning up.		MOTHERBOARD#QUALITY	neutral
+297	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:5	That's the only issue I've ever had since working on Macs in 1995.		COMPANY#GENERAL	positive
+298	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:5	That's the only issue I've ever had since working on Macs in 1995.		LAPTOP#GENERAL	positive
+299	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:6	That's a pretty impressive track record don't you think?		COMPANY#GENERAL	positive
+300	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:2	However, the HP Envy has definitely met all of my expectations and more.		LAPTOP#GENERAL	positive
+301	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:3	I have been thoroughly impressed with my purchase thus far and do not regret purchasing it at all.		LAPTOP#GENERAL	positive
+302	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:4	While the price may seem high, it is worth every penny with its many perks.		LAPTOP#PRICE	negative
+303	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:4	While the price may seem high, it is worth every penny with its many perks.		LAPTOP#GENERAL	positive
+304	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:5	The Pros:  A Ton of Storage Space- This laptop comes with 8GB of memory and a 1 TB (1000GB) hard drive.		MEMORY#DESIGN_FEATURES	positive
+305	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:5	The Pros:  A Ton of Storage Space- This laptop comes with 8GB of memory and a 1 TB (1000GB) hard drive.		HARD_DISC#DESIGN_FEATURES	positive
+306	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:6	That is plenty of space for your laptop, which really comes in handy for college students and computer gamers.		HARD_DISC#DESIGN_FEATURES	positive
+307	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:8	2-in-1 Capability- The ease of switching this laptop into a tablet is a huge plus.		LAPTOP#DESIGN_FEATURES	positive
+308	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:8	2-in-1 Capability- The ease of switching this laptop into a tablet is a huge plus.		LAPTOP#USABILITY	positive
+309	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:9	If you are looking to get a 2-in-1 laptop, this is the laptop you should consider.		LAPTOP#MISCELLANEOUS	positive
+310	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:10	I love the flexibility of being able to fold it over like a tent and watch movies, without having the keyboard in the way of things.		LAPTOP#USABILITY	positive
+311	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:12	I find it much easier to type on and much more durable.		KEYBOARD#USABILITY	positive
+312	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:12	I find it much easier to type on and much more durable.		KEYBOARD#QUALITY	positive
+313	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:13	Battery Life- My battery life is really good with this laptop and I have had no problems with it thus far.		BATTERY#OPERATION_PERFORMANCE	positive
+314	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:14	I can usually go about 10 hours before I get down to 10% battery life.		BATTERY#OPERATION_PERFORMANCE	positive
+315	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:16	The Cons:  No Disc Drive- Call me old fashioned, but I still enjoy listening to physical CDs and uploading them to iTunes.		LAPTOP#DESIGN_FEATURES	negative
+316	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:17	However, I can no longer do this because this laptop does not contain a disc drive.		LAPTOP#DESIGN_FEATURES	negative
+317	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:20	Overall, I definitely would recommend this product to any college student that is in the market for a new laptop.		LAPTOP#GENERAL	positive
+318	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:21	The touchscreen and 2-in-1 capability is a huge bonus and it is really easy to carry around to your classes.		DISPLAY#DESIGN_FEATURES	positive
+319	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:21	The touchscreen and 2-in-1 capability is a huge bonus and it is really easy to carry around to your classes.		LAPTOP#DESIGN_FEATURES	positive
+320	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:21	The touchscreen and 2-in-1 capability is a huge bonus and it is really easy to carry around to your classes.		LAPTOP#PORTABILITY	positive
+321	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:22	It also is nice to be able to play Candy Crush or Angry Birds when in between classes straight from your laptop.		LAPTOP#MISCELLANEOUS	positive
+322	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:23	It makes it much more exciting to play!		LAPTOP#MISCELLANEOUS	positive
+323	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:0	I'm actually writing this review on my new MacBook and I love it!		LAPTOP#GENERAL	positive
+324	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:2	The computer it self is amazing.		LAPTOP#GENERAL	positive
+325	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:3	It is an older model, so know that upfront, but it is everything I was looking for.		LAPTOP#MISCELLANEOUS	neutral
+326	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:3	It is an older model, so know that upfront, but it is everything I was looking for.		LAPTOP#GENERAL	positive
+327	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:6	From the moment I received this MacBook it was like a dream come true.		LAPTOP#GENERAL	positive
+328	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:8	I know once I upgrade the ram to 8GB it will pick up a lot.		MEMORY#DESIGN_FEATURES	neutral
+329	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:11	Also, if after reading some reviews and doing some research I found out that this laptop is easily upgradable and easy to work on which is another big plus.		LAPTOP#USABILITY	positive
+330	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:12	So long story short, if you want an oldie but a goodie this is your laptop.		LAPTOP#GENERAL	positive
+331	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:13	I know people were complaining that it isn't the newest model, but it all depends on what you are looking for.		LAPTOP#MISCELLANEOUS	neutral
+332	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:15	I highly recommend!!		LAPTOP#GENERAL	positive
+333	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:0	This computer is a fantastic tool for word processing, searching the internet, and keeping track of everyday life.		LAPTOP#MISCELLANEOUS	positive
+334	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:1	It's also incredibly light, has a battery that can last for days, and looks like a piece of art.		LAPTOP#DESIGN_FEATURES	positive
+335	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:1	It's also incredibly light, has a battery that can last for days, and looks like a piece of art.		BATTERY#OPERATION_PERFORMANCE	positive
+336	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:2	Though, that's pretty much what your paying for -- a well designed device.		LAPTOP#PRICE	neutral
+337	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:2	Though, that's pretty much what your paying for -- a well designed device.		LAPTOP#DESIGN_FEATURES	positive
+338	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:3	When you look at the internal specs, the computer is only worth about $500.		LAPTOP#DESIGN_FEATURES	negative
+339	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:4	It has a 128 GB storage capacity (but with the option of a 256 GB hard drive) and a 1.6GHz dual-core Intel Core i5, so don't expect to be gaming on this computer and make sure you pick up an external hard drive too.		HARD_DISC#DESIGN_FEATURES	negative
+340	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:4	It has a 128 GB storage capacity (but with the option of a 256 GB hard drive) and a 1.6GHz dual-core Intel Core i5, so don't expect to be gaming on this computer and make sure you pick up an external hard drive too.		CPU#DESIGN_FEATURES	negative
+341	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:4	It has a 128 GB storage capacity (but with the option of a 256 GB hard drive) and a 1.6GHz dual-core Intel Core i5, so don't expect to be gaming on this computer and make sure you pick up an external hard drive too.		LAPTOP#MISCELLANEOUS	negative
+342	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:5	If your looking to be a trendy hipster who can't live without a Mac, it's a great buy.		LAPTOP#GENERAL	negative
+343	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:1	It mixes a great balance between the spec that are needed and what you don't need.		LAPTOP#DESIGN_FEATURES	positive
+344	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:3	Pros :  1. Nice Looks.		LAPTOP#DESIGN_FEATURES	positive
+345	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:5	2. Keyboard is great		KEYBOARD#GENERAL	positive
+346	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:7	I wanted a simple Full HD display and this one does its job		DISPLAY#DESIGN_FEATURES	positive
+347	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:8	4. Sound is great		MULTIMEDIA_DEVICES#QUALITY	positive
+348	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:9	5. And this has a extra slot for HDD		LAPTOP#DESIGN_FEATURES	positive
+349	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:10	6. No CD drive.		LAPTOP#DESIGN_FEATURES	positive
+350	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:12	Cons:  1. Web cam.		MULTIMEDIA_DEVICES#DESIGN_FEATURES	negative
+351	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:13	VGA really ASUS??		MULTIMEDIA_DEVICES#DESIGN_FEATURES	negative
+352	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:14	You don't want to show this to anyone :).		MULTIMEDIA_DEVICES#DESIGN_FEATURES	negative
+353	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:15	Anyway I don't use webcam much so , I don't care		MULTIMEDIA_DEVICES#DESIGN_FEATURES	neutral
+354	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:16	2. Viewing angles are not great.		DISPLAY#DESIGN_FEATURES	negative
+355	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:17	3. Remember its a dual core.		CPU#DESIGN_FEATURES	negative
+356	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:18	4. The fan kicks in even its not too hot.		FANS_COOLING#OPERATION_PERFORMANCE	negative
+357	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:19	5. I found the track pad not great.		MOUSE#GENERAL	negative
+358	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:20	I use my mouse so not a problem for me.		MOUSE#GENERAL	neutral
+359	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:21	Over all very good system and worth it.		LAPTOP#GENERAL	positive
+360	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:0	This was the ONLY tablet-style computer so far which met my requirements.		LAPTOP#GENERAL	positive
+361	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:2	I was seduced by this computer, so I took it home.		LAPTOP#GENERAL	positive
+362	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:3	The wireless keyboard (not bluetooth, but RF) did not pair up with the device.		KEYBOARD#OPERATION_PERFORMANCE	negative
+363	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:3	The wireless keyboard (not bluetooth, but RF) did not pair up with the device.		LAPTOP#CONNECTIVITY	negative
+364	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:5	It still did not pair.		KEYBOARD#OPERATION_PERFORMANCE	negative
+365	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:5	It still did not pair.		LAPTOP#CONNECTIVITY	negative
+366	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:7	I even ran it as Administrator -- still no effect.		KEYBOARD#OPERATION_PERFORMANCE	negative
+367	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:7	I even ran it as Administrator -- still no effect.		LAPTOP#CONNECTIVITY	negative
+368	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:8	I used the Ctrl-Esc keys while turning on, and still nothing.		KEYBOARD#OPERATION_PERFORMANCE	negative
+369	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:8	I used the Ctrl-Esc keys while turning on, and still nothing.		LAPTOP#CONNECTIVITY	negative
+370	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:10	It flickers briefly to green before the light goes out.		KEYBOARD#OPERATION_PERFORMANCE	negative
+371	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:12	I still can't pair it.		KEYBOARD#OPERATION_PERFORMANCE	negative
+372	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:12	I still can't pair it.		LAPTOP#CONNECTIVITY	negative
+373	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:13	I don't want to carry around a bluetooth keyboard for a computer whose keyboard is nonfunctional.		KEYBOARD#OPERATION_PERFORMANCE	negative
+374	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:17	Sony can eat the cost from the seller on this one while I get my money back for a DEFECTIVE product.		LAPTOP#QUALITY	negative
+375	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:19	But Sony doesn't seem to have addressed it.		COMPANY#GENERAL	negative
+376	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:0	My first Mac computer and as many before me I just fall in love with it.		LAPTOP#GENERAL	positive
+377	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:1	Changed the memory from 4 GB to 8 GB Corsair Vengeance and 500 GB HDD (5400 rpm) with Seagate hybride 750 GB HDD+SSD.		HARD_DISC#DESIGN_FEATURES	neutral
+378	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:1	Changed the memory from 4 GB to 8 GB Corsair Vengeance and 500 GB HDD (5400 rpm) with Seagate hybride 750 GB HDD+SSD.		MEMORY#DESIGN_FEATURES	neutral
+379	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:2	Machine is flying and with parallels desktop 8 I have my old PC notebook completely functional on my MBP.		LAPTOP#OPERATION_PERFORMANCE	positive
+380	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:2	Machine is flying and with parallels desktop 8 I have my old PC notebook completely functional on my MBP.		SOFTWARE#GENERAL	positive
+381	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:2	Machine is flying and with parallels desktop 8 I have my old PC notebook completely functional on my MBP.		LAPTOP#USABILITY	positive
+382	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:3	Way to go and enjoy both worlds.		LAPTOP#USABILITY	positive
+383	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:4	This ASUS you're looking at right here, and that I'm typing on right now, has one.		LAPTOP#DESIGN_FEATURES	positive
+384	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:5	-  With that being said, for the price ($800!), you get a nice fast laptop, but if you ask me, it's missing some things that I feel should be automatically included:		LAPTOP#PRICE	positive
+385	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:5	-  With that being said, for the price ($800!), you get a nice fast laptop, but if you ask me, it's missing some things that I feel should be automatically included:		LAPTOP#GENERAL	positive
+386	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:5	-  With that being said, for the price ($800!), you get a nice fast laptop, but if you ask me, it's missing some things that I feel should be automatically included:		LAPTOP#OPERATION_PERFORMANCE	positive
+387	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:5	-  With that being said, for the price ($800!), you get a nice fast laptop, but if you ask me, it's missing some things that I feel should be automatically included:		LAPTOP#DESIGN_FEATURES	negative
+388	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:6	This laptop has no:  - Touchscreen  - Optical Drives (OK, a bit of a stretch, because that would eat up precious space in this monster)  - Swivel or detachable screen		DISPLAY#DESIGN_FEATURES	negative
+389	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:6	This laptop has no:  - Touchscreen  - Optical Drives (OK, a bit of a stretch, because that would eat up precious space in this monster)  - Swivel or detachable screen		LAPTOP#DESIGN_FEATURES	negative
+390	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:7	What this laptop does have is:  - Windows 8, which is confusing as all get-out  - Tons of &amp;#34;bloatware&amp;#34;.		LAPTOP#DESIGN_FEATURES	negative
+391	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:7	What this laptop does have is:  - Windows 8, which is confusing as all get-out  - Tons of &amp;#34;bloatware&amp;#34;.		OS#USABILITY	negative
+392	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:7	What this laptop does have is:  - Windows 8, which is confusing as all get-out  - Tons of &amp;#34;bloatware&amp;#34;.		SOFTWARE#GENERAL	negative
+393	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:0	This is really nice, but I HATE the awkward right mouse clicking.. sometimes it works, sometimes it doesn't.. may be the laptop, may be the laptop in conjunction with Windows 8? 		LAPTOP#GENERAL	positive
+394	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:0	This is really nice, but I HATE the awkward right mouse clicking.. sometimes it works, sometimes it doesn't.. may be the laptop, may be the laptop in conjunction with Windows 8? 		MOUSE#USABILITY	negative
+395	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:0	This is really nice, but I HATE the awkward right mouse clicking.. sometimes it works, sometimes it doesn't.. may be the laptop, may be the laptop in conjunction with Windows 8? 		MOUSE#OPERATION_PERFORMANCE	negative
+396	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:1	Either way, highly annoying.		MOUSE#USABILITY	negative
+397	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:2	I hooked up a USB mouse and all is well.		LAPTOP#CONNECTIVITY	positive
+398	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:3	All works beautifully but Windows 8 is taking a bit of getting used to.		LAPTOP#OPERATION_PERFORMANCE	positive
+399	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:3	All works beautifully but Windows 8 is taking a bit of getting used to.		OS#USABILITY	neutral
+400	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:5	Love the 360 degree rotation and the touch screen works great, but a little bit of a learning curve there too, as sometimes I have to tap a few times to get the exact location I need...		LAPTOP#DESIGN_FEATURES	positive
+401	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:5	Love the 360 degree rotation and the touch screen works great, but a little bit of a learning curve there too, as sometimes I have to tap a few times to get the exact location I need...		DISPLAY#OPERATION_PERFORMANCE	positive
+402	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:5	Love the 360 degree rotation and the touch screen works great, but a little bit of a learning curve there too, as sometimes I have to tap a few times to get the exact location I need...		DISPLAY#USABILITY	neutral
+403	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:6	overall it is just my learning a few things than any downfall with the laptop (the mouse was the only negative I could really see)...		LAPTOP#GENERAL	positive
+404	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:6	overall it is just my learning a few things than any downfall with the laptop (the mouse was the only negative I could really see)...		MOUSE#GENERAL	negative
+405	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:0	This is a fantastic transformer!		LAPTOP#GENERAL	positive
+406	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:1	I loved playing with it and the touchscreen was great for the windows 8 platform.		LAPTOP#GENERAL	positive
+407	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:1	I loved playing with it and the touchscreen was great for the windows 8 platform.		DISPLAY#GENERAL	positive
+408	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:3	The only reason I returned it was because I bought it to use the touchscreen with photoshop and because of the program, it could not utilize the touchscreen within the work space except to zoom and rotate.		SOFTWARE#USABILITY	negative
+409	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:3	The only reason I returned it was because I bought it to use the touchscreen with photoshop and because of the program, it could not utilize the touchscreen within the work space except to zoom and rotate.		DISPLAY#USABILITY	negative
+410	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:4	I would have kept it but that was the sole reason for my purchase.		LAPTOP#GENERAL	positive
+411	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:4	I would have kept it but that was the sole reason for my purchase.		LAPTOP#MISCELLANEOUS	negative
+412	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:5	It's a great product and would recommend to anyone looking for a transformer or large touchscreen.		LAPTOP#GENERAL	positive
+413	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:5	It's a great product and would recommend to anyone looking for a transformer or large touchscreen.		DISPLAY#DESIGN_FEATURES	positive
+414	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:6	I'm looking forward to needing a laptop update so I can purchase this computer again.		LAPTOP#GENERAL	positive
+415	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:0	I've only had this for a week Overall I like the computer, it's thin &amp; light and The wireless keyboard works great.		LAPTOP#GENERAL	positive
+416	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:0	I've only had this for a week Overall I like the computer, it's thin &amp; light and The wireless keyboard works great.		LAPTOP#DESIGN_FEATURES	positive
+417	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:0	I've only had this for a week Overall I like the computer, it's thin &amp; light and The wireless keyboard works great.		KEYBOARD#OPERATION_PERFORMANCE	positive
+418	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:1	I was impressed; Sony puts in small touches like a USB charging port on the charger.		LAPTOP#DESIGN_FEATURES	positive
+419	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:2	One thing I did't like is the stylus holder, it's cheap plastic and doesn't seem to be well thought out because it gets installed on the cover for the USB port.		HARDWARE#QUALITY	negative
+420	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:2	One thing I did't like is the stylus holder, it's cheap plastic and doesn't seem to be well thought out because it gets installed on the cover for the USB port.		LAPTOP#DESIGN_FEATURES	negative
+421	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:3	I do't use it, I think I would accidently break it and loose my stylus.		HARDWARE#QUALITY	negative
+422	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:4	The other Issue I had was the amount of time it takes to update the operating system and all the software when you get it.		LAPTOP#MISCELLANEOUS	negative
+423	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:0	Awesome laptop for college!!!		LAPTOP#MISCELLANEOUS	positive
+424	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:1	Can be used for gaming as well.		LAPTOP#MISCELLANEOUS	positive
+425	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:2	It's light, fast and has great battery!!		LAPTOP#DESIGN_FEATURES	positive
+426	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:2	It's light, fast and has great battery!!		LAPTOP#OPERATION_PERFORMANCE	positive
+427	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:2	It's light, fast and has great battery!!		BATTERY#OPERATION_PERFORMANCE	positive
+428	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:3	It's a steal when considering the specs and performance as well.		LAPTOP#PRICE	positive
+429	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:3	It's a steal when considering the specs and performance as well.		LAPTOP#DESIGN_FEATURES	positive
+430	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:3	It's a steal when considering the specs and performance as well.		LAPTOP#OPERATION_PERFORMANCE	positive
+431	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:4	The processor and GPU are fantastic at running games and multiple apps.		CPU#MISCELLANEOUS	positive
+432	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:4	The processor and GPU are fantastic at running games and multiple apps.		GRAPHICS#MISCELLANEOUS	positive
+433	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:5	I can run most games to a good quality without seeing any lack of speed.		LAPTOP#MISCELLANEOUS	positive
+434	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:5	I can run most games to a good quality without seeing any lack of speed.		LAPTOP#OPERATION_PERFORMANCE	positive
+435	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:6	The backlit keyboard is a nice touch especially.		KEYBOARD#DESIGN_FEATURES	positive
+436	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:7	Make sure to only handle this computer with clean hands because the front cover can get oily pretty fast.		LAPTOP#QUALITY	negative
+437	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:8	I'm overall very pleased with my new laptop!!!		LAPTOP#GENERAL	positive
+438	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:9	The only downside are the speakers.		MULTIMEDIA_DEVICES#QUALITY	negative
+439	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:10	They don't go very loud at all.		MULTIMEDIA_DEVICES#QUALITY	negative
+440	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:11	The quality of the sound is nice but the lack of volume really kills it for me.		MULTIMEDIA_DEVICES#QUALITY	positive
+441	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:11	The quality of the sound is nice but the lack of volume really kills it for me.		MULTIMEDIA_DEVICES#QUALITY	negative
+442	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:12	This is mostly not an issue since I mainly use earbuds anyways however it could be annoying at times.		MULTIMEDIA_DEVICES#USABILITY	negative
+443	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:13	The screen looked fine to me and wasn't an issue like others have been saying.		DISPLAY#GENERAL	positive
+444	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:14	Overall great for me!!!		LAPTOP#GENERAL	positive
+445	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:1	This laptop has delivered.		LAPTOP#GENERAL	positive
+446	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:3	I immediately did the Windows 10 upgrade and haven't had any issues.		LAPTOP#USABILITY	positive
+447	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:4	The wireless adapter is strong and the SSD is fast.		LAPTOP#CONNECTIVITY	positive
+448	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:4	The wireless adapter is strong and the SSD is fast.		HARD_DISC#OPERATION_PERFORMANCE	positive
+449	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:5	This thing boots in just a few seconds which is nice.		LAPTOP#OPERATION_PERFORMANCE	positive
+450	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:6	Others have mentioned issues with viewing angle on the screen, but I never use the laptop where I'm not looking straight at it so it doesn't bother me.		DISPLAY#DESIGN_FEATURES	neutral
+451	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:7	I'm very pleased with the purchase.		LAPTOP#GENERAL	positive
+452	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:1	Boot time is super fast, around anywhere from 35 seconds to 1 minute.		LAPTOP#OPERATION_PERFORMANCE	positive
+453	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:2	Apps launch super fast, and the 500GB HDD is more than sufficient.		SOFTWARE#OPERATION_PERFORMANCE	positive
+454	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:2	Apps launch super fast, and the 500GB HDD is more than sufficient.		HARD_DISC#DESIGN_FEATURES	positive
+455	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:3	I usually use my Mac for school work and internet browsing, so the entry-level 13' MacBook Pro is already more than what I expected from a computer I would typically use it for.		LAPTOP#MISCELLANEOUS	positive
+456	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:3	I usually use my Mac for school work and internet browsing, so the entry-level 13' MacBook Pro is already more than what I expected from a computer I would typically use it for.		LAPTOP#GENERAL	positive
+457	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:4	Macs hardly ever get viruses, and they are completely incompatible with existing Microsoft Windows Viruses.		LAPTOP#QUALITY	positive
+458	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:5	Furthermore, Mac OS X Mountain Lion's Gate keeper prevents the user from downloading malware and trojans, which keep your data safe and your computer running at optimum speed.		OS#QUALITY	positive
+459	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:5	Furthermore, Mac OS X Mountain Lion's Gate keeper prevents the user from downloading malware and trojans, which keep your data safe and your computer running at optimum speed.		LAPTOP#OPERATION_PERFORMANCE	positive
+460	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:6	The keys on the keyboard are evenly spaced and are back-lit, which make it easy to use at night and for speed writing (Typing?).		KEYBOARD#DESIGN_FEATURES	positive
+461	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:6	The keys on the keyboard are evenly spaced and are back-lit, which make it easy to use at night and for speed writing (Typing?).		KEYBOARD#USABILITY	positive
+462	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:7	Overall, the screen resolution, though non-retina, is sufficient for normal web browsing and work.		DISPLAY#QUALITY	positive
+463	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:9	The thunderbolt port is awesome!		PORTS#OPERATION_PERFORMANCE	positive
+464	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:11	US 3.0 comes with the MBP and has transfer rates of up to 5gbps.		LAPTOP#DESIGN_FEATURES	neutral
+465	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:11	US 3.0 comes with the MBP and has transfer rates of up to 5gbps.		PORTS#OPERATION_PERFORMANCE	positive
+466	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:12	Other ports include FireWire 800, Gigabit Ethernet, MagSafe port, Microphone jack.		LAPTOP#DESIGN_FEATURES	neutral
+467	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:13	SDHC card reader and an optical drive for burning and reading discs.		LAPTOP#DESIGN_FEATURES	neutral
+468	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:14	The glass track pad is large enough for Apple's highly acclaimed multi-touch gestures for scrolling through web pages with two fingers, zooming in on certain parts of certain apps by double tapping with two fingers, accessing launchpad by pinching with five fingers and using mission control by swiping up with four fingers.		MOUSE#DESIGN_FEATURES	positive
+469	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:14	The glass track pad is large enough for Apple's highly acclaimed multi-touch gestures for scrolling through web pages with two fingers, zooming in on certain parts of certain apps by double tapping with two fingers, accessing launchpad by pinching with five fingers and using mission control by swiping up with four fingers.		MOUSE#USABILITY	positive
+470	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:16	For Windows users switching to a Mac, you can also enable right clicking (known to apple as secondary click) in the system preferences&gt; Mouse and enabling right clicking.		MOUSE#DESIGN_FEATURES	positive
+471	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:17	The unique to apple aluminium uni-body is a real beauty.		LAPTOP#DESIGN_FEATURES	positive
+472	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:18	It makes the MBP very durable and protects it from scratches, though you shouldn't go launching it against a wall for the sake of trying it.		LAPTOP#QUALITY	positive
+473	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:28	The Mac app store and iTunes store are phenomenal.		SOFTWARE#GENERAL	positive
+474	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:29	The Mac app store is your one-stop shop for Mac software, though you can also download software online at your own risk.		SOFTWARE#GENERAL	positive
+475	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:30	There are currently around 10,000 apps on the App store (and counting...), and billions of songs available for download fro the iTunes store.		SOFTWARE#DESIGN_FEATURES	positive
+476	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:32	iTunes is one of the better media players available on the market with it's simple to use User Interface.		SOFTWARE#GENERAL	positive
+477	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:32	iTunes is one of the better media players available on the market with it's simple to use User Interface.		SOFTWARE#USABILITY	positive
+478	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:36	I'm sure you won't regret making this purchase.		LAPTOP#GENERAL	positive
+479	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:0	One of the worst pieces of electronics I have ever bought.		LAPTOP#GENERAL	negative
+480	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:1	Very pour performance.		LAPTOP#OPERATION_PERFORMANCE	negative
+481	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:2	It takes for ever to wake it up.		LAPTOP#OPERATION_PERFORMANCE	negative
+482	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:3	Sometimes It stops receiving wifi signal, so I have to restart it.		LAPTOP#CONNECTIVITY	negative
+483	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:3	Sometimes It stops receiving wifi signal, so I have to restart it.		LAPTOP#OPERATION_PERFORMANCE	negative
+484	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:4	It is very slow and not responsive.		LAPTOP#OPERATION_PERFORMANCE	negative
+485	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:5	Would not recommend.		LAPTOP#GENERAL	negative
+486	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:6	Glare is also pretty frustrating.		DISPLAY#QUALITY	negative
+487	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:7	There is definitely more to say...		LAPTOP#GENERAL	negative
+488	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:1	I tested it, it worked great.		LAPTOP#OPERATION_PERFORMANCE	positive
+489	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:2	He received it, and one day later it DIES.		LAPTOP#QUALITY	negative
+490	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:2	He received it, and one day later it DIES.		LAPTOP#OPERATION_PERFORMANCE	negative
+491	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:3	The laptop refuses to start, we have troubleshooted all areas, still fails to start.		LAPTOP#OPERATION_PERFORMANCE	negative
+492	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:4	Cannot even get to bios.		LAPTOP#OPERATION_PERFORMANCE	negative
+493	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:5	Just a click and a BLACK SCREEN.		LAPTOP#OPERATION_PERFORMANCE	negative
+494	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:6	Of course, it DIES 3 days past the return window.		LAPTOP#QUALITY	negative
+495	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:8	We got two days of operation from this laptop.		LAPTOP#OPERATION_PERFORMANCE	negative
+496	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:8	We got two days of operation from this laptop.		LAPTOP#QUALITY	negative
+497	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:5	When the MacBook Pro arrived, I helped her transfer all of her schoolwork from the PC to the Mac... an easy drag-and-drop process utilizing a flash drive.		LAPTOP#USABILITY	positive
+498	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:6	It was delivered with 4GB of RAM -- 2GB on each of two sticks -- which was probably adequate.		MEMORY#DESIGN_FEATURES	positive
+499	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:9	So I simply pulled one 2GB stick from the machine and installed the 8GB stick in its place.		LAPTOP#USABILITY	positive
+500	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:10	The machine now has 10 gigs of RAM and it works just fine.		LAPTOP#OPERATION_PERFORMANCE	positive
+501	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:10	The machine now has 10 gigs of RAM and it works just fine.		MEMORY#DESIGN_FEATURES	neutral
+502	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:11	But, hey, it's an Apple.		COMPANY#GENERAL	positive
+503	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:11	But, hey, it's an Apple.		LAPTOP#GENERAL	positive
+504	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:12	I wouldn't expect anything less!		COMPANY#GENERAL	positive
+505	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:12	I wouldn't expect anything less!		LAPTOP#GENERAL	positive
+506	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:0	If it was possible to give them 0 start, I would have done it.		LAPTOP#GENERAL	negative
+507	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:0	If it was possible to give them 0 start, I would have done it.		COMPANY#GENERAL	negative
+508	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:1	My Laptop's one of the Key from keyboard came out and it was mechanical failure.		KEYBOARD#QUALITY	negative
+509	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:2	My laptop was under coverage but when I gave it to them for repairs, they quoted me $755 for it.		SUPPORT#QUALITY	negative
+510	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:2	My laptop was under coverage but when I gave it to them for repairs, they quoted me $755 for it.		SUPPORT#PRICE	negative
+511	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:3	this company just wants customers' money in their pocket.		COMPANY#GENERAL	negative
+512	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:4	they dont care how you feel when they charge you hundreds of hard earned dollars.		COMPANY#GENERAL	negative
+513	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:5	I wish this company to go bust.		COMPANY#GENERAL	negative
+514	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:6	I will never ever buy any apple product in my life.		COMPANY#GENERAL	negative
+515	B00O0W450A_1_ANONYMOUS	B00O0W450A_1_ANONYMOUS:0	Overall I love it.		LAPTOP#GENERAL	positive
+516	B00O0W450A_1_ANONYMOUS	B00O0W450A_1_ANONYMOUS:2	First, when I move the screen to put it in tablet position, the hinge doesn't seem totally solid.		LAPTOP#QUALITY	negative
+517	B00O0W450A_1_ANONYMOUS	B00O0W450A_1_ANONYMOUS:3	I feel like I need to be really gentle with it, but maybe that's just me.		LAPTOP#QUALITY	neutral
+518	B00O0W450A_1_ANONYMOUS	B00O0W450A_1_ANONYMOUS:4	Also, and this maybe is another personal quirk, but the keyboard sits a little far back for my taste so my watch scrapes against the edge of the laptop.		KEYBOARD#DESIGN_FEATURES	negative
+519	B00O0W450A_1_ANONYMOUS	B00O0W450A_1_ANONYMOUS:4	Also, and this maybe is another personal quirk, but the keyboard sits a little far back for my taste so my watch scrapes against the edge of the laptop.		KEYBOARD#USABILITY	negative
+520	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:0	First off, AMAZING LAPTOP!		LAPTOP#GENERAL	positive
+521	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:2	Three years ago I had purchased this bad boy and it still runs great!		LAPTOP#OPERATION_PERFORMANCE	positive
+522	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:2	Three years ago I had purchased this bad boy and it still runs great!		LAPTOP#QUALITY	positive
+523	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:3	If I were to have any technical difficulties, the local apple and contact line were able to help me asap, it was quite impressive.		SUPPORT#QUALITY	positive
+524	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:4	I myself had purchased the 750 gig drive laptop and as a DJ with thousands of songs, pictures, and other things...and after 3 years I have managed to fill around 9% of my gigs.		HARD_DISC#DESIGN_FEATURES	positive
+525	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:5	There is SO MUCH ROOM!		HARD_DISC#DESIGN_FEATURES	positive
+526	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:6	Pros  1. Amazing storage (both 500gig and 750gig)		HARD_DISC#DESIGN_FEATURES	positive
+527	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:7	2. 8 gig ram needed if you are as productive as I am (DJ, photography, movie making, etc) its quick!		MEMORY#DESIGN_FEATURES	positive
+528	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:7	2. 8 gig ram needed if you are as productive as I am (DJ, photography, movie making, etc) its quick!		LAPTOP#OPERATION_PERFORMANCE	positive
+529	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:8	3. No anti spyware needed, never had a virus and I never will		LAPTOP#QUALITY	positive
+530	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:9	4. build solid and durable		LAPTOP#QUALITY	positive
+531	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:10	5. bought the 3 year warranty and boy it was needed (because of my doings)		WARRANTY#GENERAL	positive
+532	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:11	Cons.  1. If you fall behind in updates, your laptop will become progressively slower, just update it...then its back to normal		LAPTOP#OPERATION_PERFORMANCE	neutral
+533	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:12	2. Sometimes when I stared mine up it would take a few extra minutes to boot on, other times it is a few seconds		LAPTOP#OPERATION_PERFORMANCE	negative
+534	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:13	3. Cannot manually take battery out, unless you work for apple or have the tools		LAPTOP#USABILITY	negative
+535	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:13	3. Cannot manually take battery out, unless you work for apple or have the tools		BATTERY#DESIGN_FEATURES	negative
+536	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:14	Overall, it is a fantastic laptop.		LAPTOP#GENERAL	positive
+537	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:15	Mine has been though hundreds of parties, weddings, quinces, anything involving performances, it can take it!		LAPTOP#OPERATION_PERFORMANCE	positive
+538	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:16	This laptop was made for art, music, beat-making, pictures, movies, graphic design.		LAPTOP#MISCELLANEOUS	positive
+539	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:17	By the way, it comes with apps and hardware that can already support what I had just listed.		LAPTOP#DESIGN_FEATURES	positive
+540	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:18	This laptop will last you a half decade if not a full decade.		LAPTOP#QUALITY	positive
+541	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:19	Soon I will be hitting the 5 year mark and I think this thing can make it another 5 in my opinion.		LAPTOP#QUALITY	positive
+542	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:20	Get this now!!!		LAPTOP#GENERAL	positive
+543	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:21	By the way...I paid for this particular laptop roughly 2 grand...LOOK AT THE PRICE NOW!		LAPTOP#PRICE	positive
+544	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:0	This is a great laptop.		LAPTOP#GENERAL	positive
+545	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:1	I bought it for college and couldn't be happier.		LAPTOP#GENERAL	positive
+546	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:2	The SSD and I7 complement each other really well.		CPU#GENERAL	positive
+547	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:2	The SSD and I7 complement each other really well.		HARD_DISC#GENERAL	positive
+548	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:5	I was pretty skeptical about upgrading to windows 10, but it is pretty awesome.		OS#GENERAL	positive
+549	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:6	If you are looking for a light, durable, and extremely effecient laptop, buy this one!		LAPTOP#DESIGN_FEATURES	positive
+550	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:6	If you are looking for a light, durable, and extremely effecient laptop, buy this one!		LAPTOP#QUALITY	positive
+551	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:6	If you are looking for a light, durable, and extremely effecient laptop, buy this one!		LAPTOP#OPERATION_PERFORMANCE	positive
+552	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:6	If you are looking for a light, durable, and extremely effecient laptop, buy this one!		LAPTOP#GENERAL	positive
+553	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:2	They really know what they are doing.		COMPANY#GENERAL	positive
+554	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:2	They really know what they are doing.		LAPTOP#GENERAL	positive
+555	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:3	The laptop is so easy to work with.		LAPTOP#USABILITY	positive
+556	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:4	Like it was designed for what people would want to the system to do, very user-friendly.		LAPTOP#DESIGN_FEATURES	positive
+557	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:4	Like it was designed for what people would want to the system to do, very user-friendly.		LAPTOP#USABILITY	positive
+558	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:5	Its simplicity is one of the things that makes it so great, aside from its quality design and sexy looks.		LAPTOP#USABILITY	positive
+559	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:5	Its simplicity is one of the things that makes it so great, aside from its quality design and sexy looks.		LAPTOP#DESIGN_FEATURES	positive
+560	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:5	Its simplicity is one of the things that makes it so great, aside from its quality design and sexy looks.		LAPTOP#QUALITY	positive
+561	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:6	If you dont like windows I would suggest trying a Mac.		LAPTOP#GENERAL	positive
+562	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:6	If you dont like windows I would suggest trying a Mac.		COMPANY#GENERAL	positive
+563	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:7	The investment is worth it.		LAPTOP#GENERAL	positive
+564	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:7	The investment is worth it.		COMPANY#GENERAL	positive
+565	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:0	Have bought several laptops in last several years and hands down this has been the best ever.		LAPTOP#GENERAL	positive
+566	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:2	Mac User interface is just the best.		OS#USABILITY	positive
+567	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:4	Also, the laptop is quite, no more burnt laps, best screen display, and small additions like backlit keyboard wins your heart over.		LAPTOP#QUALITY	positive
+568	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:4	Also, the laptop is quite, no more burnt laps, best screen display, and small additions like backlit keyboard wins your heart over.		DISPLAY#QUALITY	positive
+569	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:4	Also, the laptop is quite, no more burnt laps, best screen display, and small additions like backlit keyboard wins your heart over.		KEYBOARD#DESIGN_FEATURES	positive
+570	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:4	Also, the laptop is quite, no more burnt laps, best screen display, and small additions like backlit keyboard wins your heart over.		LAPTOP#DESIGN_FEATURES	positive
+571	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:8	Only thing I dislike is that everything for Mac is expensive but I guess you pay for quality!		LAPTOP#QUALITY	positive
+572	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:8	Only thing I dislike is that everything for Mac is expensive but I guess you pay for quality!		LAPTOP#PRICE	negative
+573	B0074703CM_84_ANONYMOUS	B0074703CM_84_ANONYMOUS:0	Not impressed with Macintosh products.		COMPANY#GENERAL	negative
+574	B0074703CM_84_ANONYMOUS	B0074703CM_84_ANONYMOUS:1	In fact I am completely frustrated.		COMPANY#GENERAL	negative
+575	B0074703CM_84_ANONYMOUS	B0074703CM_84_ANONYMOUS:3	Also, many software programs are not compatible with the IOS platform.		OS#USABILITY	negative
+576	B0074703CM_84_ANONYMOUS	B0074703CM_84_ANONYMOUS:6	Be sure the programs you need will work on a MAC before you buy one!		LAPTOP#USABILITY	negative
+577	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:1	I had heard people speak highly of the MacBook Pro for college students, and have not been disappointed through two and a half years of extensive use.		LAPTOP#GENERAL	positive
+578	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:2	The MacBook Pro is useful for college students for many reasons:		LAPTOP#MISCELLANEOUS	positive
+579	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:3	It is the cheapest product in the line of MacBook's		LAPTOP#PRICE	positive
+580	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:4	The new operating system called Snow Leopard is installed and ready for use		LAPTOP#DESIGN_FEATURES	positive
+581	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:4	The new operating system called Snow Leopard is installed and ready for use		OS#USABILITY	positive
+582	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:5	The battery life has increased from the last version from 4 hours to 7 hours, making it easy for college students to study for extended periods of time without needing a charger.		BATTERY#OPERATION_PERFORMANCE	positive
+583	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:7	Reliability: Throughout the past few years, I have had no problems with the MacBook Pro regarding the processing system or any design flaws.		LAPTOP#DESIGN_FEATURES	positive
+584	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:7	Reliability: Throughout the past few years, I have had no problems with the MacBook Pro regarding the processing system or any design flaws.		OS#QUALITY	positive
+585	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:8	Durability: My computer has fallen from small heights and has had a few spills on it, but has had no lasting damage to the console with only a light plastic case on it.		LAPTOP#QUALITY	positive
+586	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:11	Usability: The MacBook Pro is very easy to use and can be used by someone who doesn't necessarily have extensive knowledge on computers.		LAPTOP#USABILITY	positive
+587	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:12	The processing system is already downloaded and the applications are very user friendly.		LAPTOP#DESIGN_FEATURES	positive
+588	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:12	The processing system is already downloaded and the applications are very user friendly.		SOFTWARE#USABILITY	positive
+589	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:13	The MacBook Pro has a significant amount of positive attributes that greatly outweigh the negative attributes:		LAPTOP#GENERAL	positive
+590	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:14	Pros:  o It usually runs very smoothly, but Apple has an excellent support team that is always willing to help customers.		LAPTOP#OPERATION_PERFORMANCE	positive
+591	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:14	Pros:  o It usually runs very smoothly, but Apple has an excellent support team that is always willing to help customers.		SUPPORT#QUALITY	positive
+592	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:16	o It has an extended battery life.		BATTERY#OPERATION_PERFORMANCE	positive
+593	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:17	o It is extremely user friendly.		LAPTOP#USABILITY	positive
+594	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:18	Cons:  o Some people don't enjoy the way the processing system runs, but don't have any issues with getting it to function.		OS#OPERATION_PERFORMANCE	positive
+595	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:19	o Others have problems with the applications depending what they need to use the device for, for example engineering majors need extra applications &amp; systems to do some work, but they are easily downloadable.		LAPTOP#USABILITY	positive
+596	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:0	My first laptop ever and it is a flips into a tablet mode also, brilliant.		LAPTOP#DESIGN_FEATURES	positive
+597	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:1	So far so good.		LAPTOP#GENERAL	positive
+598	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:2	Battery doesn't hold up to what it said in the description but I got it refurb'd and I imagine they swapped out the battery to help cover the costs on the reduced price (Just a guess).		BATTERY#OPERATION_PERFORMANCE	negative
+599	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:2	Battery doesn't hold up to what it said in the description but I got it refurb'd and I imagine they swapped out the battery to help cover the costs on the reduced price (Just a guess).		LAPTOP#PRICE	positive
+600	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:3	Still getting used to typing on it, my palms keep hitting the mousepad and causing the cursor to jump and moving me off of where I was typing.		KEYBOARD#USABILITY	neutral
+601	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:3	Still getting used to typing on it, my palms keep hitting the mousepad and causing the cursor to jump and moving me off of where I was typing.		MOUSE#USABILITY	negative
+602	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:5	Plenty of ports and since this is my first laptop, I really don't have anything to compare it to.		LAPTOP#DESIGN_FEATURES	positive
+603	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:0	Note: no DVD drive, no Ethernet port		LAPTOP#DESIGN_FEATURES	negative
+604	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:1	Screen is too small to read and almost impossible to touch  with a normal adult finger.		DISPLAY#DESIGN_FEATURES	negative
+605	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:1	Screen is too small to read and almost impossible to touch  with a normal adult finger.		DISPLAY#USABILITY	negative
+606	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:2	The brightest screen setting appeared dim in normal room light.		DISPLAY#QUALITY	negative
+607	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:3	Keyboard is flimsy and mediocre at best.		KEYBOARD#QUALITY	negative
+608	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:4	The touch pad feel is a 4 on scale  1 - 10.		MOUSE#QUALITY	negative
+609	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:5	Computer seemed sluggish for an Intel Core i5 device.		LAPTOP#OPERATION_PERFORMANCE	negative
+610	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:6	Power on - good luck finding it.		LAPTOP#DESIGN_FEATURES	negative
+611	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:6	Power on - good luck finding it.		LAPTOP#USABILITY	negative
+612	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:7	I would run back to computer store and return this expensive toy.		LAPTOP#GENERAL	negative
+613	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:7	I would run back to computer store and return this expensive toy.		LAPTOP#PRICE	negative
+614	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:8	signed: not impressed		LAPTOP#GENERAL	negative
+615	B00O0W450A_18_ANONYMOUS	B00O0W450A_18_ANONYMOUS:0	I bought this a few months ago and it's holding up fairly well.		LAPTOP#GENERAL	positive
+616	B00O0W450A_18_ANONYMOUS	B00O0W450A_18_ANONYMOUS:1	Runs fast, the touch screen hasn't lost any sensitivity, I'm overall very happy with it.		LAPTOP#OPERATION_PERFORMANCE	positive
+617	B00O0W450A_18_ANONYMOUS	B00O0W450A_18_ANONYMOUS:1	Runs fast, the touch screen hasn't lost any sensitivity, I'm overall very happy with it.		DISPLAY#OPERATION_PERFORMANCE	positive
+618	B00O0W450A_18_ANONYMOUS	B00O0W450A_18_ANONYMOUS:1	Runs fast, the touch screen hasn't lost any sensitivity, I'm overall very happy with it.		LAPTOP#GENERAL	positive
+619	B00O0W450A_18_ANONYMOUS	B00O0W450A_18_ANONYMOUS:3	This one doesn't do that.		MOUSE#USABILITY	negative
+620	B00O0W450A_18_ANONYMOUS	B00O0W450A_18_ANONYMOUS:4	The trackpad is pretty crappy - but aren't they all?		MOUSE#QUALITY	negative
+621	B0074703CM_166_ANONYMOUS	B0074703CM_166_ANONYMOUS:0	This is my first Apple computer and I couldn't be more pleased.		LAPTOP#GENERAL	positive
+622	B0074703CM_166_ANONYMOUS	B0074703CM_166_ANONYMOUS:1	IOS does everything its billed to do and much, much more.		OS#GENERAL	positive
+623	B0074703CM_166_ANONYMOUS	B0074703CM_166_ANONYMOUS:2	Literally every detail has been thought out and designed with the user in mind.		OS#DESIGN_FEATURES	positive
+624	B0074703CM_166_ANONYMOUS	B0074703CM_166_ANONYMOUS:3	I can't believe how much time it saves me through automatic processes.		OS#USABILITY	positive
+625	B0074703CM_166_ANONYMOUS	B0074703CM_166_ANONYMOUS:4	The computer of the people!		LAPTOP#GENERAL	positive
+626	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:0	I love this laptop.		LAPTOP#GENERAL	positive
+627	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:2	The batter lasts as long as claimed.		BATTERY#OPERATION_PERFORMANCE	positive
+628	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:3	I get about 5 or so hours playing the sims.		BATTERY#OPERATION_PERFORMANCE	positive
+629	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:4	I haven't really officially tested it yet, but it's a long time.		BATTERY#OPERATION_PERFORMANCE	positive
+630	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:5	I hate plugging my laptop in because I don't want to leave it on too long and hurt the battery, but with this laptop I rarely have to charge it.		BATTERY#OPERATION_PERFORMANCE	positive
+631	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:6	The touchscreen is responsive and even works with my crappy dollar stylus.		DISPLAY#OPERATION_PERFORMANCE	positive
+632	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:6	The touchscreen is responsive and even works with my crappy dollar stylus.		DISPLAY#USABILITY	positive
+633	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:7	The only problem I have is with windows 8.		OS#GENERAL	negative
+634	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:8	I hate windows 8.		OS#GENERAL	negative
+635	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:9	It made me sign up with Microsoft and sometimes won't let me download things that are harmful to my computer, but that's what anti virus software is for lol.		OS#USABILITY	negative
+636	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:10	The wifi rumor hasn't happened to me.		LAPTOP#CONNECTIVITY	positive
+637	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:11	The wifi works great.		LAPTOP#CONNECTIVITY	positive
+638	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:13	It feels very well built.		LAPTOP#QUALITY	positive
+639	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:14	The metal is very expensive feeling.		LAPTOP#QUALITY	positive
+640	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:15	The laptop is a little more than an inch thick when closed.		LAPTOP#DESIGN_FEATURES	neutral
+641	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:16	I'm a very weak girl and I could lift this laptop with one hand, however I'd get tired soon lol.		LAPTOP#PORTABILITY	negative
+642	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:17	The 15.6&amp;#34; screen is not good for carrying around in your bare hands.		LAPTOP#PORTABILITY	negative
+643	B0074703CM_225_ANONYMOUS	B0074703CM_225_ANONYMOUS:0	I bought my first MacBook exactly 5 months ago and was really happy with my new toy, but what was not my surprise when I turned it on 2 days ago and the screen was completely black.		LAPTOP#GENERAL	negative
+644	B0074703CM_225_ANONYMOUS	B0074703CM_225_ANONYMOUS:0	I bought my first MacBook exactly 5 months ago and was really happy with my new toy, but what was not my surprise when I turned it on 2 days ago and the screen was completely black.		DISPLAY#OPERATION_PERFORMANCE	negative
+645	B0074703CM_225_ANONYMOUS	B0074703CM_225_ANONYMOUS:0	I bought my first MacBook exactly 5 months ago and was really happy with my new toy, but what was not my surprise when I turned it on 2 days ago and the screen was completely black.		DISPLAY#QUALITY	negative
+646	B0074703CM_225_ANONYMOUS	B0074703CM_225_ANONYMOUS:1	I can hear the noise of the computer turning on and the lights also turn on but the screen in completely dead.		DISPLAY#OPERATION_PERFORMANCE	negative
+647	B0074703CM_225_ANONYMOUS	B0074703CM_225_ANONYMOUS:1	I can hear the noise of the computer turning on and the lights also turn on but the screen in completely dead.		DISPLAY#QUALITY	negative
+648	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:0	The best computer I've ever bought.		LAPTOP#GENERAL	positive
+649	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:1	The simple look of icons and format makes it easy to navigate through programs and download files.		OS#DESIGN_FEATURES	positive
+650	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:1	The simple look of icons and format makes it easy to navigate through programs and download files.		LAPTOP#USABILITY	positive
+651	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:2	The only issue I had was with the harddrive.		HARD_DISC#OPERATION_PERFORMANCE	negative
+652	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:3	The harddrive crashed and I thought I had lost the whole computer.		HARD_DISC#OPERATION_PERFORMANCE	negative
+653	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:5	Replacing the harddrive in this laptop is extremely easy, a couple screws on the back to remove the backplate and the harddrive is pretty much plug and play.		LAPTOP#USABILITY	positive
+654	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:7	And apple was happy to install the latest osx for free!		SUPPORT#QUALITY	positive
+655	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:8	You wont be disappointed with this computer!		LAPTOP#GENERAL	positive
+656	B0074703CM_85_ANONYMOUS	B0074703CM_85_ANONYMOUS:3	It's just a matter of getting used to the touch-pad commands.		MOUSE#USABILITY	neutral
+657	B0074703CM_85_ANONYMOUS	B0074703CM_85_ANONYMOUS:4	Thankfully I have earphones and an external amplifier for audio; the onboard speakers are just terrible.		MULTIMEDIA_DEVICES#GENERAL	negative
+658	B0074703CM_85_ANONYMOUS	B0074703CM_85_ANONYMOUS:5	But what should I expect from a unit that is this thin and this light?		LAPTOP#DESIGN_FEATURES	neutral
+659	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:0	The most disappointing purchase of my life!		LAPTOP#GENERAL	negative
+660	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:2	I received a dud and have had nothing but problems since right after I purchased this horrible machine.		LAPTOP#QUALITY	negative
+661	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:2	I received a dud and have had nothing but problems since right after I purchased this horrible machine.		LAPTOP#GENERAL	negative
+662	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:3	Within the first few months that I bought it, there was clearly a problem with the hard drive.		HARD_DISC#QUALITY	negative
+663	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:6	The online customer service was awful.		SUPPORT#QUALITY	negative
+664	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:7	Gave me the runaround for an entire day and treated me like an imbecile.		SUPPORT#QUALITY	negative
+665	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:8	No one would ever answer my question as to why I couldn't get another new Macbook since this was clearly a factory error and my Macbook was still under warranty.		SUPPORT#QUALITY	negative
+666	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:9	As a matter of fact, no matter how many times I asked that question, the employees I spoke purposely ignored it.		SUPPORT#QUALITY	negative
+667	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:10	They didn't say yes and they didn't say no, they just pretended that I never asked it, which was incredibly frustrating.		SUPPORT#QUALITY	negative
+668	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:11	I've been to the &amp;#34;genius&amp;#34; bar several times (they have been very nice).		SUPPORT#QUALITY	positive
+669	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:12	They have now basically replaced everything inside my machine, told me there was a problem with the hardware, so I now have a &amp;#34;refurbished&amp;#34; machine.		LAPTOP#QUALITY	negative
+670	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:12	They have now basically replaced everything inside my machine, told me there was a problem with the hardware, so I now have a &amp;#34;refurbished&amp;#34; machine.		HARDWARE#QUALITY	negative
+671	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:13	Maybe I'm not being reasonable, but I don't feel that's the same as a new computer because I didn't pay for a refurbished computer.		LAPTOP#MISCELLANEOUS	negative
+672	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:14	I still have weird freezing problems with it and it's pretty slow, but it's not pinpointed enough yet for me to take it in.		LAPTOP#OPERATION_PERFORMANCE	negative
+673	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:15	I had delusions of grandeur regarding Apple's &amp;#34;great customer service&amp;#34; and the &amp;#34;reliability of their machines&amp;#34; etc.. etc...blah...blah...		SUPPORT#QUALITY	negative
+674	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:15	I had delusions of grandeur regarding Apple's &amp;#34;great customer service&amp;#34; and the &amp;#34;reliability of their machines&amp;#34; etc.. etc...blah...blah...		LAPTOP#QUALITY	negative
+675	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:15	I had delusions of grandeur regarding Apple's &amp;#34;great customer service&amp;#34; and the &amp;#34;reliability of their machines&amp;#34; etc.. etc...blah...blah...		COMPANY#GENERAL	negative
+676	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:17	I'm sure most people's Macbooks work just fine, but FYI, if you get the factory dud, you're stuck with it and no one at Apple cares or will give a hoot about the money you threw away.		SUPPORT#QUALITY	negative
+677	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:17	I'm sure most people's Macbooks work just fine, but FYI, if you get the factory dud, you're stuck with it and no one at Apple cares or will give a hoot about the money you threw away.		COMPANY#GENERAL	negative
+678	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:10	One OS for this platform, no OEM OS paraphernalia and automatic updates.		LAPTOP#DESIGN_FEATURES	positive
+679	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:10	One OS for this platform, no OEM OS paraphernalia and automatic updates.		OS#DESIGN_FEATURES	positive
+680	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:11	I am happy with the feel the speed and the seamless transition to the MAC!		LAPTOP#QUALITY	positive
+681	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:11	I am happy with the feel the speed and the seamless transition to the MAC!		LAPTOP#OPERATION_PERFORMANCE	positive
+682	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:11	I am happy with the feel the speed and the seamless transition to the MAC!		LAPTOP#USABILITY	positive
+683	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:15	Well she was right, Whatever in the world took me so long to get a computer that just works.		LAPTOP#OPERATION_PERFORMANCE	positive
+684	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:16	I'm no power user, but I have had no learning curve with the MAC and I don't do anything geeky enough forcing me to learn the OS.		LAPTOP#USABILITY	positive
+685	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:16	I'm no power user, but I have had no learning curve with the MAC and I don't do anything geeky enough forcing me to learn the OS.		OS#USABILITY	positive
+686	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:17	I did buy Office 2008 for the MAC at a very low price to migrate most of my work files for $64 and that was  a steal in my opinion.		SOFTWARE#PRICE	positive
+687	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:18	Otherwise I am happily a  Mac user.		LAPTOP#GENERAL	positive
+688	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:18	Otherwise I am happily a  Mac user.		COMPANY#GENERAL	positive
+689	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:0	For a premium laptop sold in 2013, the Apple MacBook Pro (13 inch, base model) is about as basic as it gets: no SSD, no discrete graphics, no 1080p display, and no touch screen.		LAPTOP#GENERAL	neutral
+690	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:0	For a premium laptop sold in 2013, the Apple MacBook Pro (13 inch, base model) is about as basic as it gets: no SSD, no discrete graphics, no 1080p display, and no touch screen.		GRAPHICS#DESIGN_FEATURES	neutral
+691	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:0	For a premium laptop sold in 2013, the Apple MacBook Pro (13 inch, base model) is about as basic as it gets: no SSD, no discrete graphics, no 1080p display, and no touch screen.		LAPTOP#DESIGN_FEATURES	neutral
+692	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:0	For a premium laptop sold in 2013, the Apple MacBook Pro (13 inch, base model) is about as basic as it gets: no SSD, no discrete graphics, no 1080p display, and no touch screen.		DISPLAY#DESIGN_FEATURES	neutral
+693	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:1	But Apple does not pretend it has any of these.		COMPANY#GENERAL	positive
+694	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	What it does have is great reliability on the software side and hardware side, Apple's OSX Mountain Lion, the sleek looks Apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		SOFTWARE#QUALITY	positive
+695	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	What it does have is great reliability on the software side and hardware side, Apple's OSX Mountain Lion, the sleek looks Apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		HARDWARE#QUALITY	positive
+696	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	What it does have is great reliability on the software side and hardware side, Apple's OSX Mountain Lion, the sleek looks Apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		OS#GENERAL	positive
+697	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	What it does have is great reliability on the software side and hardware side, Apple's OSX Mountain Lion, the sleek looks Apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		LAPTOP#DESIGN_FEATURES	positive
+698	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	What it does have is great reliability on the software side and hardware side, Apple's OSX Mountain Lion, the sleek looks Apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		BATTERY#OPERATION_PERFORMANCE	positive
+699	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	What it does have is great reliability on the software side and hardware side, Apple's OSX Mountain Lion, the sleek looks Apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		KEYBOARD#GENERAL	positive
+700	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	What it does have is great reliability on the software side and hardware side, Apple's OSX Mountain Lion, the sleek looks Apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		MOUSE#GENERAL	positive
+701	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:4	Those looking for a bargain laptop will shy away from the enormous price tag, and those who want to play the latest games do not ever use Macs.		LAPTOP#PRICE	negative
+702	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:4	Those looking for a bargain laptop will shy away from the enormous price tag, and those who want to play the latest games do not ever use Macs.		LAPTOP#MISCELLANEOUS	negative
+703	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:6	The MacBook Pro 13.3 inch laptop is for those who want to use a Mac, but value performance and upgradability over weight and screen resolution.		LAPTOP#OPERATION_PERFORMANCE	positive
+704	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:6	The MacBook Pro 13.3 inch laptop is for those who want to use a Mac, but value performance and upgradability over weight and screen resolution.		LAPTOP#USABILITY	positive
+705	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:6	The MacBook Pro 13.3 inch laptop is for those who want to use a Mac, but value performance and upgradability over weight and screen resolution.		LAPTOP#DESIGN_FEATURES	negative
+706	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:6	The MacBook Pro 13.3 inch laptop is for those who want to use a Mac, but value performance and upgradability over weight and screen resolution.		DISPLAY#QUALITY	negative
+707	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:7	This Mac will last longer than any other simply because it is the easiest to upgrade and repair.		LAPTOP#QUALITY	positive
+708	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:7	This Mac will last longer than any other simply because it is the easiest to upgrade and repair.		LAPTOP#USABILITY	positive
+709	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:8	Hard drives can be replaced, RAM can be added as needed, and the internal battery can be replaced after losing its ability to hold a charge.		LAPTOP#USABILITY	positive
+710	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:12	This, added with the fact that the speed of the hard drive is very slow for the money, detracts from the computer's value.		HARD_DISC#OPERATION_PERFORMANCE	negative
+711	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:12	This, added with the fact that the speed of the hard drive is very slow for the money, detracts from the computer's value.		LAPTOP#PRICE	negative
+712	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:12	This, added with the fact that the speed of the hard drive is very slow for the money, detracts from the computer's value.		LAPTOP#GENERAL	negative
+713	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:13	Lowering the price by one hundred dollars would justify the hard drive and screen and make the computer a five-star purchase, but for the price, this is a four star (good) computer.		LAPTOP#PRICE	negative
+714	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:13	Lowering the price by one hundred dollars would justify the hard drive and screen and make the computer a five-star purchase, but for the price, this is a four star (good) computer.		LAPTOP#GENERAL	positive
+715	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:16	TLDR version: good, reliable laptop with mediocre screen and slow hard drive.		HARD_DISC#OPERATION_PERFORMANCE	negative
+716	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:16	TLDR version: good, reliable laptop with mediocre screen and slow hard drive.		DISPLAY#QUALITY	neutral
+717	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:16	TLDR version: good, reliable laptop with mediocre screen and slow hard drive.		LAPTOP#QUALITY	positive
+718	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:16	TLDR version: good, reliable laptop with mediocre screen and slow hard drive.		LAPTOP#GENERAL	positive
+719	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:0	I am really sorry I bought this machine.		LAPTOP#GENERAL	negative
+720	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:2	I was shocked at how much worse this product has been since my first purchase.		LAPTOP#GENERAL	negative
+721	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:4	This machine has made me go there 5 times and has been nothing but a continuous problem.		LAPTOP#QUALITY	negative
+722	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:4	This machine has made me go there 5 times and has been nothing but a continuous problem.		LAPTOP#GENERAL	negative
+723	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:5	Finally, they are sending it in for a motherboard replacement.		MOTHERBOARD#QUALITY	neutral
+724	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:6	(It's a lemon).		LAPTOP#QUALITY	negative
+725	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:7	So, I'm cooled on Mac buys.		COMPANY#GENERAL	negative
+726	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:11	They did not replace the motherboard.		SUPPORT#QUALITY	negative
+727	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:12	Instead they 'tightened' a loose wire.		SUPPORT#QUALITY	negative
+728	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:13	It also has a big new scratch on the top cover.		SUPPORT#QUALITY	negative
+729	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:14	I started it up and it still has the same problem I went in to fix.		SUPPORT#QUALITY	negative
+730	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:15	So I'm going back to Genius Bar for visit #6.		SUPPORT#QUALITY	negative
+731	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:16	I think it may have to be 'Apple Don't Care' instead of Apple Care.		SUPPORT#QUALITY	negative
+732	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:16	I think it may have to be 'Apple Don't Care' instead of Apple Care.		COMPANY#GENERAL	negative
+733	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:1	You get what you pay for, right?		LAPTOP#PRICE	negative
+734	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:1	You get what you pay for, right?		LAPTOP#GENERAL	negative
+735	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:5	Mac is complicated and frustrating at moments.		OS#DESIGN_FEATURES	negative
+736	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:5	Mac is complicated and frustrating at moments.		OS#USABILITY	negative
+737	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:6	I watched tutorials and that helped somewhat but not enough.		OS#USABILITY	negative
+738	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:11	I should have known better.		LAPTOP#GENERAL	negative
+739	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:12	I hope you don't make the same mistake...		LAPTOP#GENERAL	negative
+740	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:0	When I first got the computer, I noticed the tracking pad was hard to click.		MOUSE#USABILITY	negative
+741	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:3	I took my Macbook to the Apple store and they had to replace the battery after 1 month of use since it was swelling.		BATTERY#QUALITY	negative
+742	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:4	They tried to tell me that the battery wasn't covered by the warranty and it costs about $150 to replace.		SUPPORT#QUALITY	negative
+743	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:5	They ended up not charging me.		SUPPORT#QUALITY	neutral
+744	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:6	Other than that battery issue and the battery life does not last too long, I'm pretty happy with the computer.		BATTERY#QUALITY	negative
+745	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:6	Other than that battery issue and the battery life does not last too long, I'm pretty happy with the computer.		BATTERY#OPERATION_PERFORMANCE	negative
+746	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:6	Other than that battery issue and the battery life does not last too long, I'm pretty happy with the computer.		LAPTOP#GENERAL	positive
+747	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:0	I'm a designer turned front-end developer and this computer is unusable for front-end development.		LAPTOP#MISCELLANEOUS	negative
+748	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:2	Opening photoshop takes FOooooooRRREVER, as do all programs that do not begin with an 'i'.		SOFTWARE#OPERATION_PERFORMANCE	negative
+749	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:2	Opening photoshop takes FOooooooRRREVER, as do all programs that do not begin with an 'i'.		LAPTOP#USABILITY	negative
+750	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:3	The free upgrade to Mountain Lion FAILED.		OS#MISCELLANEOUS	negative
+751	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:5	It tried to boot up and the screen just flashed over and over and over again.		DISPLAY#OPERATION_PERFORMANCE	negative
+752	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:6	Before and after I resolved that issue, I saw the damn 'beachball' all the time as the computer tries to figure out what the hell it's doing while I wait for it.		LAPTOP#OPERATION_PERFORMANCE	negative
+753	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:7	I spend so much time waiting for it.		LAPTOP#OPERATION_PERFORMANCE	negative
+754	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:10	I can't believe people like these computers.		LAPTOP#GENERAL	negative
+755	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:10	I can't believe people like these computers.		COMPANY#GENERAL	negative
+756	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:11	Now that they are not virus free ([...]l) I see absolutely no benefit to Apple products as they are slower, more expensive, and do not last as long.		LAPTOP#OPERATION_PERFORMANCE	negative
+757	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:11	Now that they are not virus free ([...]l) I see absolutely no benefit to Apple products as they are slower, more expensive, and do not last as long.		LAPTOP#PRICE	negative
+758	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:11	Now that they are not virus free ([...]l) I see absolutely no benefit to Apple products as they are slower, more expensive, and do not last as long.		LAPTOP#QUALITY	negative
+759	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:11	Now that they are not virus free ([...]l) I see absolutely no benefit to Apple products as they are slower, more expensive, and do not last as long.		COMPANY#GENERAL	negative
+760	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:0	Don't waste your money.		LAPTOP#GENERAL	negative
+761	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:1	My HP seemed great at first, then the problems started.....wireless adapter would just &quot;disappear&quot; and the system said it didn't have a network card.		LAPTOP#GENERAL	negative
+762	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:1	My HP seemed great at first, then the problems started.....wireless adapter would just &quot;disappear&quot; and the system said it didn't have a network card.		LAPTOP#CONNECTIVITY	negative
+763	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:2	Sometimes it comes back, sometimes not.		LAPTOP#CONNECTIVITY	negative
+764	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:3	HP was NO help.		SUPPORT#QUALITY	negative
+765	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:4	The lettering wore off the keys, so you better be able to type blind.		KEYBOARD#QUALITY	negative
+766	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:4	The lettering wore off the keys, so you better be able to type blind.		KEYBOARD#USABILITY	negative
+767	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:5	The battery lasted 12 months, then pffft.....gone.		BATTERY#QUALITY	negative
+768	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:8	When I had a boot up issue, the HP recovery didn't work.		LAPTOP#MISCELLANEOUS	negative
+769	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:9	The disks I made wouldn't work.....HP support stated &quot;we're a hardware company, not a software company.&quot;		LAPTOP#MISCELLANEOUS	negative
+770	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:9	The disks I made wouldn't work.....HP support stated &quot;we're a hardware company, not a software company.&quot;		SUPPORT#QUALITY	negative
+771	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:11	Then there was a power cord recall....HP never notified us.....and we did register......never again.		COMPANY#GENERAL	negative
+772	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:16	I don't have the inclination or time to devote to a companies tech support, search functions, or hold times.....dropped the HP and never looked back.		LAPTOP#GENERAL	negative
+773	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:16	I don't have the inclination or time to devote to a companies tech support, search functions, or hold times.....dropped the HP and never looked back.		COMPANY#GENERAL	negative
+774	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:0	I gave this product 5 stars because I have been looking for a MacBook Pro for a long time and I found it here for a wonderful price.		LAPTOP#PRICE	positive
+775	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:0	I gave this product 5 stars because I have been looking for a MacBook Pro for a long time and I found it here for a wonderful price.		LAPTOP#GENERAL	positive
+776	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:1	I have used this product for only 2 days, but I can't wait to use it more.		LAPTOP#GENERAL	positive
+777	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:2	I really like Mac/Apple products because of their operating system.		OS#GENERAL	positive
+778	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:2	I really like Mac/Apple products because of their operating system.		COMPANY#GENERAL	positive
+779	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:4	I can tweet and use Facebook from the sidebar which is really nice.		OS#USABILITY	positive
+780	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:5	I also like I have the option to push calendars, photos, and contacts to an iPad, iPod Touch, or iPhone (if I had any of those).		OS#USABILITY	positive
+781	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:6	The only thing I have had trouble with so far is transferring music to iTunes which I would have liked to do though &amp;#34;Home Sharing&amp;#34; (I used iTunes on a computer separate from my Linux computer) but I could not figure that out.		SOFTWARE#USABILITY	negative
+782	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:7	I just ended up using my iPod to transfer my iTunes music and I re-downloaded my Amazon music (losing my ratings).		SOFTWARE#USABILITY	negative
+783	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:9	I have not tried gaming on it but I have heard that Mac/Apple does not do games well.		LAPTOP#MISCELLANEOUS	negative
+784	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:10	I plan on using my MacBook Pro for a long time.		LAPTOP#GENERAL	positive
+785	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:0	When I decided to buy my first computer, I wish I had bought a Mac first.		LAPTOP#GENERAL	positive
+786	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:1	If the price doesn't deter you, you'll find it well worth it in terms of trouble-free operation.		LAPTOP#PRICE	negative
+787	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:1	If the price doesn't deter you, you'll find it well worth it in terms of trouble-free operation.		LAPTOP#OPERATION_PERFORMANCE	positive
+788	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:2	I've had it for more than a year, and I've found that no anti-virus software is needed, as long as you don't download anything without being 100% sure that it's from a legitimate source.		LAPTOP#QUALITY	positive
+789	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:4	From time to time I get the 'spinning beach ball' that holds up progress.		LAPTOP#OPERATION_PERFORMANCE	negative
+790	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:5	I can almost always fix that quickly by clicking on the 'Show all bookmarks' icon (the open book icon at the upper left).		LAPTOP#USABILITY	positive
+791	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:6	Once in a long while that doesn't work; in that case I turn the computer off, then on again, and sign in -- problem solved.		LAPTOP#USABILITY	neutral
+792	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:7	I'll leave the more technical aspects to those more knowledgeable than myself, and just conclude by saying that I'm delighted with my purchase.		LAPTOP#GENERAL	positive
+793	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:0	Received this item and everything is great except that my touchpad is reversed.		LAPTOP#GENERAL	positive
+794	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:0	Received this item and everything is great except that my touchpad is reversed.		MOUSE#OPERATION_PERFORMANCE	negative
+795	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:1	To go left I have to go right and vice versa and to go up I have to go down.		MOUSE#OPERATION_PERFORMANCE	negative
+796	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:1	To go left I have to go right and vice versa and to go up I have to go down.		MOUSE#USABILITY	negative
+797	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:2	When I attach a mouse it's fine but the touchpad is really annoying.		MOUSE#USABILITY	negative
+798	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:3	I went through the settings and there isn't a way to fix it.		MOUSE#USABILITY	negative
+799	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:6	It's a great laptop, but right now it's annoying to use the touchpad.		LAPTOP#GENERAL	positive
+800	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:6	It's a great laptop, but right now it's annoying to use the touchpad.		MOUSE#USABILITY	negative
