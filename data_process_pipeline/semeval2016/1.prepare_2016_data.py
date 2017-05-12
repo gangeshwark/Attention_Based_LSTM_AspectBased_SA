@@ -5,6 +5,7 @@ import lxml
 import xml.etree.ElementTree
 from pprint import pprint
 
+
 def get_data(path):
     print "Preparing data.."
     e = xml.etree.ElementTree.parse(path).getroot()
@@ -48,31 +49,31 @@ if __name__ == '__main__':
     load_base_path = '../../data/raw_data/SemEval_16/'
     store_base_path = '../../data/semeval16/'
     # get_laptop_data()
-    restaurants_train_data = get_data(load_base_path+'ABSA16_Restaurants_Train_SB1_v2.xml')
-    #print restaurants_train_data.groupby('polarity').count()
+    restaurants_train_data = get_data(load_base_path + 'ABSA16_Restaurants_Train_SB1_v2.xml')
+    # print restaurants_train_data.groupby('polarity').count()
     print restaurants_train_data.shape[0], " data points"
-    restaurants_train_data.to_csv(store_base_path+'restaurants_train_data.tsv', '\t', encoding='utf-8')
+    restaurants_train_data.to_csv(store_base_path + 'restaurants_train_data.tsv', '\t', encoding='utf-8')
 
-    restaurants_test_data = get_data(load_base_path+'EN_REST_SB1_TEST.xml.gold')
-    #print restaurants_train_data.groupby('polarity').count()
+    restaurants_test_data = get_data(load_base_path + 'EN_REST_SB1_TEST.xml.gold')
+    # print restaurants_train_data.groupby('polarity').count()
     print restaurants_test_data.shape[0], " data points"
-    restaurants_test_data.to_csv(store_base_path+'restaurants_test_data.tsv', '\t', encoding='utf-8')
+    restaurants_test_data.to_csv(store_base_path + 'restaurants_test_data.tsv', '\t', encoding='utf-8')
 
-    laptop_train_data = get_data(load_base_path+'ABSA16_Laptops_Train_SB1_v2.xml')
+    laptop_train_data = get_data(load_base_path + 'ABSA16_Laptops_Train_SB1_v2.xml')
     # print restaurants_train_data.groupby('polarity').count()
     print laptop_train_data.shape[0], " data points"
-    laptop_train_data.to_csv(store_base_path+'laptop_train_data.tsv', '\t', encoding='utf-8')
+    laptop_train_data.to_csv(store_base_path + 'laptop_train_data.tsv', '\t', encoding='utf-8')
 
-    laptop_test_data = get_data(load_base_path+'EN_LAPT_SB1_TEST_.xml.gold')
+    laptop_test_data = get_data(load_base_path + 'EN_LAPT_SB1_TEST_.xml.gold')
     # print restaurants_train_data.groupby('polarity').count()
     print laptop_test_data.shape[0], " data points"
-    laptop_test_data.to_csv(store_base_path+'laptop_test_data.tsv', '\t', encoding='utf-8')
+    laptop_test_data.to_csv(store_base_path + 'laptop_test_data.tsv', '\t', encoding='utf-8')
 
     train_data = restaurants_train_data.append(laptop_train_data, ignore_index=True)
-    train_data.to_csv(store_base_path+'train_data.tsv', '\t', encoding='utf-8')
+    train_data.to_csv(store_base_path + 'train_data.tsv', '\t', encoding='utf-8')
 
     test_data = restaurants_test_data.append(laptop_test_data, ignore_index=True)
-    test_data.to_csv(store_base_path+'test_data.tsv', '\t', encoding='utf-8')
+    test_data.to_csv(store_base_path + 'test_data.tsv', '\t', encoding='utf-8')
     data = train_data.append(test_data, ignore_index=True)
 
     print train_data.groupby('category').count().shape[0], " categories in train"
@@ -86,8 +87,3 @@ if __name__ == '__main__':
     print train_data.groupby('attribute').count().shape[0], " attribute in train"
     print test_data.groupby('attribute').count().shape[0], " attribute in test"
     print data.groupby('attribute').count().shape[0], " unique attributes"
-
-
-    # restaurants_test_data = get_restaurants_test_data()
-    # print restaurants_test_data
-    # restaurants_test_data.to_csv('data/restaurants_test_data.tsv', "\t")

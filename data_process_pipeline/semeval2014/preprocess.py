@@ -139,6 +139,7 @@ def clean(s):
     s = tokenizer.tokenize(s)
     return s
 
+
 print a['text'][10]
 a['text'] = a['text'].apply(clean).astype(str)
 b['text'] = b['text'].apply(clean).astype(str)
