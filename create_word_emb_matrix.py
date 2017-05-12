@@ -1,5 +1,6 @@
 import numpy as np
 import h5py
+
 def get_emb(word, h):
 
     if word in h:
