@@ -293,5 +293,5 @@ class AspectLevelModel():
     """
 
     def _init_optimizer(self):
-        self.loss = tf.nn.softmax_cross_entropy_with_logits(logits=self.logits_train, labels=self.train_targets)
-        self.train_op = tf.train.AdagradOptimizer(0.01).minimize(self.loss)
+        self.loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=self.logits_train, labels=self.train_targets))
+        self.train_op = tf.train.AdagradOptimizer(0.001).minimize(self.loss)

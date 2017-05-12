@@ -92,12 +92,13 @@ if __name__ == '__main__':
                 train_data = TrainData(batch_size=batch_size, input_len=input_len)
                 # test_data = TestData(batch_size=batch_size, input_len=input_len)
                 test_data = EvalData(batch_size=batch_size, input_len=input_len)
-                for batch in tqdm(xrange(140)):
+                tq = tqdm(xrange(140))
+                for batch in tq:
 
                     x, x_len, a, y = next(train_data)
 
                     if x.shape[0] < batch_size:
-                        print "Training complete!"
+                        # print "Training complete!"
                         break
 
                     # print type(x[0][0]), type(a[0]), type(y[0]), type(x_len[0])
@@ -114,7 +115,7 @@ if __name__ == '__main__':
                     if batch % 10 == 0:
                         minibatch_loss = session.run([model.loss], fd)
 
-                        print "Minibatch loss: ", sum(minibatch_loss[0]) / len(minibatch_loss[0])
+
                         x, x_len, a, y = next(test_data)
                         if x.shape[0] < batch_size:
                             print "No more data to test with"
@@ -128,28 +129,28 @@ if __name__ == '__main__':
                             #print "Diff: ", diff
                             return (sum(diff) / len(diff))
 
-
                         fd = {
                             model.inputs: np.asarray(x),
                             model.inputs_length: np.asarray(x_len),
                             model.input_aspect: np.asarray(a),
                         }
                         inference = session.run(model.logits_train, fd)
-                        print "Accuracy: ", accuracy(inference, y)
+                        tq.set_description("Minibatch loss: %s, Accuracy: %s" %(minibatch_loss[0],accuracy(inference, y)))
                         input = fd[model.inputs]
                         input_aspect = fd[model.input_aspect]
                         # print "Review: ", x[:2], input.shape
                         c, d = batch_size - 2, batch_size
-                        print "Len: ", x_len[c:d]
+                        #print "Len: ", x_len[c:d]
                         m = [' '.join(convert_ids_sent(x1, i2w)) for x1 in x[c:d]]
-                        print "Review: ", input.shape  # ,convert_ids_sent(input, i2w)
-                        for n in m:
-                            print "\n", n
-                        print "Aspect: ", [i2a[str(i)] for i in input_aspect[c:d]]
-                        print "Class", [a for a in inference[c:d]]
-            print time() - st, " seconds"
+                        #print "Review: ", input.shape  # ,convert_ids_sent(input, i2w)
+                        #for n in m:
+                            #print "\n", n
+                        #print "Aspect: ", [i2a[str(i)] for i in input_aspect[c:d]]
+                        #print "Class", [a for a in inference[c:d]]
+            print "Training complete!"
+            print "Training Time: ", time() - st, " seconds"
         except KeyboardInterrupt:
-            print time() - st, " seconds"
+            print "Training Time: ", time() - st, " seconds"
             print "Training Interrupted"
 
         import matplotlib.pyplot as plt
