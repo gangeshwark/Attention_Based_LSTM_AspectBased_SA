@@ -151,15 +151,15 @@ class AspectLevelModel():
             self.inputs_embedded = tf.nn.embedding_lookup(
                 self.embedding_matrix, self.inputs)  # -> [batch_size, N, dw]
 
-
             self.inputs_embedded_final = tf.concat([self.inputs_embedded, self.input_aspect_embedded_final],
                                                    2)  # -> [batch_size, N, dw+da]
 
-            #self.batch_size = int(self.inputs.get_shape()[0])
+            # self.batch_size = int(self.inputs.get_shape()[0])
             self.N = int(self.inputs.get_shape()[1])
 
             self.inputs_embedded_final = tf.reshape(self.inputs_embedded_final,
-                                                    [self.batch_size, self.N, self.embedding_size+self.aspect_embedding_size])
+                                                    [self.batch_size, self.N,
+                                                     self.embedding_size + self.aspect_embedding_size])
 
     def _init_simple(self):
         with tf.variable_scope("RNN") as scope:
@@ -293,5 +293,8 @@ class AspectLevelModel():
     """
 
     def _init_optimizer(self):
-        self.loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=self.logits_train, labels=self.train_targets))
+        reg_lambda = 0.001
+        self.loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=self.logits_train,
+                                                                           labels=self.train_targets)) + tf.reduce_sum(
+            [reg_lambda * tf.nn.l2_loss(x) for x in tf.trainable_variables()])
         self.train_op = tf.train.AdagradOptimizer(0.001).minimize(self.loss)

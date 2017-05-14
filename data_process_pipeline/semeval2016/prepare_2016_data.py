@@ -54,7 +54,7 @@ if __name__ == '__main__':
     print restaurants_train_data.shape[0], " data points"
     restaurants_train_data.to_csv(store_base_path + 'restaurants_train_data.tsv', '\t', encoding='utf-8')
 
-    restaurants_test_data = get_data(load_base_path + 'EN_REST_SB1_TEST.xml.gold')
+    restaurants_test_data = get_data(load_base_path + 'EN_REST_SB1_TEST.gold.xml')
     # print restaurants_train_data.groupby('polarity').count()
     print restaurants_test_data.shape[0], " data points"
     restaurants_test_data.to_csv(store_base_path + 'restaurants_test_data.tsv', '\t', encoding='utf-8')
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     print laptop_train_data.shape[0], " data points"
     laptop_train_data.to_csv(store_base_path + 'laptop_train_data.tsv', '\t', encoding='utf-8')
 
-    laptop_test_data = get_data(load_base_path + 'EN_LAPT_SB1_TEST_.xml.gold')
+    laptop_test_data = get_data(load_base_path + 'EN_LAPT_SB1_TEST_.gold.xml')
     # print restaurants_train_data.groupby('polarity').count()
     print laptop_test_data.shape[0], " data points"
     laptop_test_data.to_csv(store_base_path + 'laptop_test_data.tsv', '\t', encoding='utf-8')
