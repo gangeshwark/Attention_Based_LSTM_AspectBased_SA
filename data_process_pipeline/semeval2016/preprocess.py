@@ -5,8 +5,7 @@ import string
 from nltk import tokenize
 import ast
 
-a = pd.read_csv('data/restaurants_train_data.tsv', delimiter='\t')
-b = pd.read_csv('data/restaurants_test_data.tsv', delimiter='\t')
+
 
 contractions = {
     "ain't": "am not",
@@ -140,17 +139,20 @@ def clean(s):
     return s
 
 
-print a['text'][10]
-a['text'] = a['text'].apply(clean).astype(str)
-b['text'] = b['text'].apply(clean).astype(str)
+def preprocess_day(a, b):
+    a = pd.read_csv('data/restaurants_train_data.tsv', delimiter='\t')
+    b = pd.read_csv('data/restaurants_test_data.tsv', delimiter='\t')
+    print a['text'][10]
+    a['text'] = a['text'].apply(clean).astype(str)
+    b['text'] = b['text'].apply(clean).astype(str)
 
-# save pre-processed data as pickle file
-a.to_hdf('data/restaurants_train_data_processed.h5', 'table')
-b.to_hdf('data/restaurants_test_data_processed.h5', 'table')
-# load pre-processed pickle data
-a = pd.read_hdf('data/restaurants_train_data_processed.h5', 'table')
-a['text'] = a['text'].apply(ast.literal_eval)
-b = pd.read_hdf('data/restaurants_test_data_processed.h5', 'table')
-b['text'] = b['text'].apply(ast.literal_eval)
+    # save pre-processed data as pickle file
+    a.to_hdf('data/restaurants_train_data_processed.h5', 'table')
+    b.to_hdf('data/restaurants_test_data_processed.h5', 'table')
+    # load pre-processed pickle data
+    a = pd.read_hdf('data/restaurants_train_data_processed.h5', 'table')
+    a['text'] = a['text'].apply(ast.literal_eval)
+    b = pd.read_hdf('data/restaurants_test_data_processed.h5', 'table')
+    b['text'] = b['text'].apply(ast.literal_eval)
 
-print a['text'][10]
+    print a['text'][10]
