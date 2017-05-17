@@ -1,43 +1,46 @@
-import tensorflow as tf
-import numpy as np
-import h5py
+import pickle
 from time import time
+
+import numpy as np
+import tensorflow as tf
 from tqdm import tqdm
 
-from baseline.data_loader import TrainData, EvalData
-from baseline.model import AspectLevelModel
-from baseline.prepare_data import get_w2i, get_a2i
+from data_loader import TrainData, EvalData
+from model import AspectLevelModel
+from prepare_data import get_w2i, get_a2i
 
 
 def get_emb(word, h):
     if word in h:
-        return h[word][:]
+        return h[word]
     else:
-        return h['__UNK__'][:]
+        return h['__UNK__']
 
 
 def load_emb():
     emb = []
     a_emb = []
     with open('../data/semeval14/text_vocab.vocab', 'r') as f:
-        h = h5py.File('../data/semeval14/text_vector.hdf5')
-        lines = f.readlines()
+        with open('../data/semeval14/text_vector.pkl', 'rb') as pkl_file:
+            h = pickle.load(pkl_file)
+            lines = f.readlines()
 
-        for line in lines:
-            i, word = line.strip().split('\t')
-            emb.append(get_emb(word, h))
-        emb = np.asarray(emb)
+            for line in lines:
+                i, word = line.strip().split('\t')
+                emb.append(get_emb(word, h))
+            emb = np.asarray(emb)
 
     with open('../data/semeval14/aspect_vocab.vocab', 'r') as f:
-        h = h5py.File('../data/semeval14/aspect_vector.hdf5')
-        lines = f.readlines()
+        with open('../data/semeval14/aspect_vector.pkl', 'rb') as pkl_file:
+            h = pickle.load(pkl_file)
+            lines = f.readlines()
 
-        for line in lines:
-            i, word = line.strip().split('\t')
-            a_emb.append(get_emb(word, h))
-        # print len(a_emb), len(a_emb[0])
-        a_emb = np.asarray(a_emb)
-        # print a_emb.shape
+            for line in lines:
+                i, word = line.strip().split('\t')
+                a_emb.append(get_emb(word, h))
+            # print len(a_emb), len(a_emb[0])
+            a_emb = np.asarray(a_emb)
+            # print a_emb.shape
     return emb, a_emb, emb.shape[0], a_emb.shape[0]
 
 
@@ -108,6 +111,7 @@ if __name__ == '__main__':
                         model.inputs_length: x_len,
                         model.input_aspect: a,
                         model.targets: y,
+                        model.keep_prob1: 0.5
                     }
                     _, l = session.run([model.train_op, model.loss], feed_dict=fd)
                     loss.append(l)
@@ -133,10 +137,11 @@ if __name__ == '__main__':
                             model.inputs: np.asarray(x),
                             model.inputs_length: np.asarray(x_len),
                             model.input_aspect: np.asarray(a),
+                            model.keep_prob1: 1.0
                         }
                         inference = session.run(model.logits_train, fd)
                         tq.set_description("Epoch:%d,  Minibatch loss: %s, Accuracy: %s" % (
-                            epoch+1, minibatch_loss[0], accuracy(inference, y)))
+                            epoch + 1, minibatch_loss[0], accuracy(inference, y)))
                         input = fd[model.inputs]
                         input_aspect = fd[model.input_aspect]
                         # print "Review: ", x[:2], input.shape

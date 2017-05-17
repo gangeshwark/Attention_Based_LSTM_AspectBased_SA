@@ -5,9 +5,9 @@ import pickle
 def get_emb(word, h):
 
     if word in h:
-        return h[word][:]
+        return h[word]
     else:
-        return h['__UNK__'][:]
+        return h['__UNK__']
 
 path = 'data/semeval16/laptop/text_vocab.vocab'
 

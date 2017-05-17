@@ -27,6 +27,8 @@ class AspectLevelModel():
         self.N = input_length
         self.batch_size = batch_size
 
+        self.l2_reg = 0.01
+
         self.class_size = 3
         if cell == 'lstm':
             self.cell = tf.contrib.rnn.BasicLSTMCell(hidden_size)
@@ -71,12 +73,15 @@ class AspectLevelModel():
         self.targets = tf.constant(y, dtype=tf.int32, name='targets')
 
     def _init_placeholders(self):
+        self.keep_prob1 = tf.placeholder(tf.float32)
+        #self.keep_prob2 = tf.placeholder(tf.float32)
         # input
         self.inputs = tf.placeholder(
             shape=(None, self.N),
             dtype=tf.int32,
             name='inputs',
         )
+        #self.inputs = tf.nn.dropout(self.inputs, keep_prob=self.keep_prob1)
         self.input_aspect = tf.placeholder(
             shape=(None,),
             dtype=tf.int32,
@@ -164,15 +169,21 @@ class AspectLevelModel():
             da = self.aspect_embedding_size
             d = self.hidden_size
 
-            """Not yet implemented - Does not work"""
             Wh = tf.Variable(
                 tf.random_normal(shape=[self.hidden_size, self.hidden_size], stddev=1.0 / tf.sqrt(600.0)),
                 dtype=tf.float32)  # -> [d, d]
             Wv = tf.Variable(tf.random_normal(shape=[self.aspect_embedding_size, self.aspect_embedding_size],
                                               stddev=1.0 / tf.sqrt(600.0)), dtype=tf.float32)  # -> [da, da]
 
-            w = tf.Variable(tf.random_normal(shape=[self.hidden_size + self.aspect_embedding_size, 1],
-                                             stddev=1.0 / tf.sqrt(600.0)), dtype=tf.float32)  # -> [d+da, 1]
+            w = tf.get_variable(
+                name='w',
+                shape=[self.hidden_size + self.aspect_embedding_size, 1],
+                initializer=tf.random_uniform_initializer(-0.003, 0.003),
+                regularizer=tf.contrib.layers.l2_regularizer(self.l2_reg)
+            )
+
+            #w = tf.Variable(tf.random_normal(shape=[self.hidden_size + self.aspect_embedding_size, 1],
+            #                                 stddev=1.0 / tf.sqrt(600.0)), dtype=tf.float32)  # -> [d+da, 1]
 
             H = tf.reshape(self.outputs, [-1, self.hidden_size])  # -> [batch_size x N, d]
             print("H: ", H.get_shape())
