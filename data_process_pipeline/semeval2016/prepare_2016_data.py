@@ -1,9 +1,7 @@
-import numpy as np
+import xml.etree.ElementTree
+
 import pandas as pd
 from tqdm import tqdm
-import lxml
-import xml.etree.ElementTree
-from pprint import pprint
 
 
 def get_data(path):
@@ -30,15 +28,34 @@ def get_data(path):
             Opinions = sentence.findall('Opinions')
             if len(Opinions) == 0:
                 t, cat, ent, attr, p = None, None, None, None, None
-                restaurants_df.loc[i] = [r_id, id, text, t, cat, ent, attr, p]
+                restaurants_df.loc[i] = [r_id, id, text.lower(), t, cat, ent, attr, p]
                 i += 1
             else:
                 for Opinion in Opinions[0].findall('Opinion'):
                     t = Opinion.get('target')
+
                     cat = Opinion.get('category')
                     ent, attr = cat.split('#')
+                    # converting multi-word vocab to single word
+                    if ent == 'multimedia_devices'.upper():
+                        ent = 'multimedia'
+                    if ent == 'optical_drives'.upper():
+                        ent = 'optical'
+                    if ent == 'fans_cooling'.upper():
+                        ent = 'fans'
+                    if ent == 'hard_disc'.upper():
+                        ent = 'disc'
+                    if ent == 'power_supply'.upper():
+                        ent = 'power'
+
+                    if attr == 'design_features'.upper():
+                        attr = 'design'
+                    if attr == 'operation_performance'.upper():
+                        attr = 'performance'
+
                     p = Opinion.get('polarity')
-                    restaurants_df.loc[i] = [r_id, id, text, t, cat, ent, attr, p]
+                    restaurants_df.loc[i] = [r_id, id, text.lower(), t, cat.lower(), ent.lower(), attr.lower(),
+                                             p]
                     i += 1
 
     # pprint(restaurants_df)

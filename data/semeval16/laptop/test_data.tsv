@@ -1,0 +1,802 @@
+	review_id	sentence_id	text	target	category	entity	attribute	polarity
+0	B0074703CM_108_ANONYMOUS	B0074703CM_108_ANONYMOUS:0	well, my first apple computer and i am impressed.		laptop#general	laptop	general	positive
+1	B0074703CM_108_ANONYMOUS	B0074703CM_108_ANONYMOUS:1	works well, fast and no reboots.		laptop#operation_performance	laptop	performance	positive
+2	B0074703CM_108_ANONYMOUS	B0074703CM_108_ANONYMOUS:4	glad i did so far.		company#general	company	general	positive
+3	B0074703CM_108_ANONYMOUS	B0074703CM_108_ANONYMOUS:4	glad i did so far.		laptop#general	laptop	general	positive
+4	B00GJUQ4Z0_10_ANONYMOUS	B00GJUQ4Z0_10_ANONYMOUS:0	s.... l .... o..... w....  rea......llllyy  slow.		laptop#operation_performance	laptop	performance	negative
+5	B00GJUQ4Z0_10_ANONYMOUS	B00GJUQ4Z0_10_ANONYMOUS:1	like seriously  - really slow.		laptop#operation_performance	laptop	performance	negative
+6	B00GJUQ4Z0_10_ANONYMOUS	B00GJUQ4Z0_10_ANONYMOUS:2	impossible to use.		laptop#usability	laptop	usability	negative
+7	B00GJUQ4Z0_10_ANONYMOUS	B00GJUQ4Z0_10_ANONYMOUS:3	cant even read properly.		laptop#usability	laptop	usability	negative
+8	B00GJUQ4Z0_10_ANONYMOUS	B00GJUQ4Z0_10_ANONYMOUS:4	plus - no russian input ??  wtf		laptop#miscellaneous	laptop	miscellaneous	negative
+9	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:0	what a great laptop, i can run my games and work really fast.		laptop#general	laptop	general	positive
+10	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:0	what a great laptop, i can run my games and work really fast.		laptop#miscellaneous	laptop	miscellaneous	positive
+11	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:0	what a great laptop, i can run my games and work really fast.		laptop#operation_performance	laptop	performance	positive
+12	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:1	really light you can carry with you everywhere.		laptop#design_features	laptop	design	positive
+13	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:1	really light you can carry with you everywhere.		laptop#portability	laptop	portability	positive
+14	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:2	great battery life.		battery#operation_performance	battery	performance	positive
+15	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:3	everything at a very great price.		laptop#price	laptop	price	positive
+16	B0146DD02G_18_ANONYMOUS	B0146DD02G_18_ANONYMOUS:4	i completely recommend it.		laptop#general	laptop	general	positive
+17	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:0	excellent value and a must buy for someone looking for a macbook.		laptop#price	laptop	price	positive
+18	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:0	excellent value and a must buy for someone looking for a macbook.		laptop#general	laptop	general	positive
+19	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:1	you can't get any better than this price and it come with an internal disk drive.		laptop#price	laptop	price	positive
+20	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:1	you can't get any better than this price and it come with an internal disk drive.		laptop#design_features	laptop	design	positive
+21	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:3	plus you get 500gb which is also a great feature.		hard_disc#design_features	disc	design	positive
+22	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:4	also, the resale value on this will keep.		laptop#miscellaneous	laptop	miscellaneous	positive
+23	B0074703CM_268_ANONYMOUS	B0074703CM_268_ANONYMOUS:5	i highly recommend you get one before they are gone.		laptop#general	laptop	general	positive
+24	B0074703CM_240_ANONYMOUS	B0074703CM_240_ANONYMOUS:2	got this on black friday with a very good discount and couldn't be happier.		laptop#price	laptop	price	positive
+25	B0074703CM_240_ANONYMOUS	B0074703CM_240_ANONYMOUS:2	got this on black friday with a very good discount and couldn't be happier.		laptop#general	laptop	general	positive
+26	B0074703CM_240_ANONYMOUS	B0074703CM_240_ANONYMOUS:3	the screen is great, i don't see the need for a retina display.		display#quality	display	quality	positive
+27	B0074703CM_240_ANONYMOUS	B0074703CM_240_ANONYMOUS:4	i also really like the addition of the sd card slot.		laptop#design_features	laptop	design	positive
+28	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:0	this macbook pro is amazing!		laptop#general	laptop	general	positive
+29	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:1	if you are afraid of it not having a disc player please don't be.		laptop#design_features	laptop	design	positive
+30	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:4	i love the new high retina display, and because this computer lacks a disc player it makes it significantly lighter.		display#quality	display	quality	positive
+31	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:4	i love the new high retina display, and because this computer lacks a disc player it makes it significantly lighter.		laptop#design_features	laptop	design	positive
+32	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:5	overall, this is a fast, light, practical computer and i highly recommend it.		laptop#operation_performance	laptop	performance	positive
+33	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:5	overall, this is a fast, light, practical computer and i highly recommend it.		laptop#design_features	laptop	design	positive
+34	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:5	overall, this is a fast, light, practical computer and i highly recommend it.		laptop#usability	laptop	usability	positive
+35	B0074703CM_286_ANONYMOUS	B0074703CM_286_ANONYMOUS:5	overall, this is a fast, light, practical computer and i highly recommend it.		laptop#general	laptop	general	positive
+36	B0074703CM_210_ANONYMOUS	B0074703CM_210_ANONYMOUS:0	i bought my macbook pro in october of 2012 and 2 years later it still works as flawless as ever!		laptop#quality	laptop	quality	positive
+37	B0074703CM_210_ANONYMOUS	B0074703CM_210_ANONYMOUS:0	i bought my macbook pro in october of 2012 and 2 years later it still works as flawless as ever!		laptop#operation_performance	laptop	performance	positive
+38	B0074703CM_210_ANONYMOUS	B0074703CM_210_ANONYMOUS:1	i've never had any problems with the computer itself (the macbook charger chords are another story, though).		laptop#general	laptop	general	positive
+39	B0074703CM_210_ANONYMOUS	B0074703CM_210_ANONYMOUS:1	i've never had any problems with the computer itself (the macbook charger chords are another story, though).		power_supply#general	power	general	negative
+40	B0074703CM_210_ANONYMOUS	B0074703CM_210_ANONYMOUS:2	i tried not to jump on the apple bandwagon, but... you're just living in denial if you don't.		company#general	company	general	positive
+41	B0074703CM_210_ANONYMOUS	B0074703CM_210_ANONYMOUS:4	happy buying!		company#general	company	general	positive
+42	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:0	bought this laptop from best buy in january 2015.. still loving it.		laptop#general	laptop	general	positive
+43	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:1	i can use it as a tablet,as a laptop, as whatever i want to!		laptop#usability	laptop	usability	positive
+44	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:2	i play sims 4 and 3 on it all the time, with very little issues.		laptop#miscellaneous	laptop	miscellaneous	positive
+45	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:3	the thing wakes up super fast and is always ready to go.		laptop#operation_performance	laptop	performance	positive
+46	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:4	music/videos sound great and look great.		multimedia_devices#quality	multimedia	quality	positive
+47	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:4	music/videos sound great and look great.		display#quality	display	quality	positive
+48	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:5	i use it everyday.		laptop#general	laptop	general	positive
+49	B00M166GWM_2_ANONYMOUS	B00M166GWM_2_ANONYMOUS:6	my favorite computer i've ever had!		laptop#general	laptop	general	positive
+50	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:0	this computer overall is great!		laptop#general	laptop	general	positive
+51	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:1	it runs fast!		laptop#operation_performance	laptop	performance	positive
+52	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:2	ships fast!		shipping#quality	shipping	quality	positive
+53	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:3	etc. but the company and seller lied to you and try to make an extra buck!		company#general	company	general	negative
+54	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:4	i bought this pc to play games and stream movies! it could handle all of that but my friend wanted me to put some music on a cd!		laptop#miscellaneous	laptop	miscellaneous	positive
+55	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:5	i could see the disk drive on the side but it didn't seem to have a button on it?		optical_drives#design_features	optical	design	negative
+56	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:9	a disk drive with buttons on it!!!!!!		optical_drives#design_features	optical	design	negative
+57	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:12	and he said&quot; this computer does not have a disk drive and i was furious!		laptop#design_features	laptop	design	negative
+58	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:13	so beware buyer, this computer has a useless piece of plastic on it.		laptop#design_features	laptop	design	negative
+59	B00L49X8E6_27_A2RNZC4CJ3046C	B00L49X8E6_27_A2RNZC4CJ3046C:14	thank you asus.(they don't deserve to be capitalized)		company#general	company	general	negative
+60	B0074703CM_21_ANONYMOUS	B0074703CM_21_ANONYMOUS:0	great computer.		laptop#general	laptop	general	positive
+61	B0074703CM_21_ANONYMOUS	B0074703CM_21_ANONYMOUS:1	very great apple product as expected.		laptop#general	laptop	general	positive
+62	B0074703CM_21_ANONYMOUS	B0074703CM_21_ANONYMOUS:1	very great apple product as expected.		company#general	company	general	positive
+63	B0074703CM_21_ANONYMOUS	B0074703CM_21_ANONYMOUS:2	good battery life.		battery#operation_performance	battery	performance	positive
+64	B0074703CM_21_ANONYMOUS	B0074703CM_21_ANONYMOUS:3	great color on screen.		display#quality	display	quality	positive
+65	B0074703CM_21_ANONYMOUS	B0074703CM_21_ANONYMOUS:4	good speakers from laptop computer.		multimedia_devices#general	multimedia	general	positive
+66	B0074703CM_145_ANONYMOUS	B0074703CM_145_ANONYMOUS:0	my new laptop is great.		laptop#general	laptop	general	positive
+67	B0074703CM_145_ANONYMOUS	B0074703CM_145_ANONYMOUS:1	it has so much more speed and the screen is very sharp.		laptop#operation_performance	laptop	performance	positive
+68	B0074703CM_145_ANONYMOUS	B0074703CM_145_ANONYMOUS:1	it has so much more speed and the screen is very sharp.		display#quality	display	quality	positive
+69	B0074703CM_145_ANONYMOUS	B0074703CM_145_ANONYMOUS:3	i have to admit that the operating system is different and does take time to learn but i like it.		os#usability	os	usability	neutral
+70	B0074703CM_145_ANONYMOUS	B0074703CM_145_ANONYMOUS:3	i have to admit that the operating system is different and does take time to learn but i like it.		os#general	os	general	positive
+71	B0074703CM_145_ANONYMOUS	B0074703CM_145_ANONYMOUS:4	i would recommend it to anyone.		laptop#general	laptop	general	positive
+72	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:1	this laptop is fine for those applications and basic websurfing.		laptop#miscellaneous	laptop	miscellaneous	positive
+73	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:2	the speakers are fairly basic, so this is probably not the computer to buy if your main aim is streaming music or watching movies.		multimedia_devices#general	multimedia	general	neutral
+74	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:2	the speakers are fairly basic, so this is probably not the computer to buy if your main aim is streaming music or watching movies.		laptop#miscellaneous	laptop	miscellaneous	negative
+75	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:3	the touchpad is a little &quot;clunky&quot; for my taste; i use a small external mouse with laptops  in any event.		mouse#design_features	mouse	design	negative
+76	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:4	i appreciate the relatively large keyboard (with number pad) and screen size.		keyboard#design_features	keyboard	design	positive
+77	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:4	i appreciate the relatively large keyboard (with number pad) and screen size.		display#design_features	display	design	positive
+78	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:5	i also found the track pad irritating until i disabled &quot;pinch zoom.&quot;		mouse#usability	mouse	usability	negative
+79	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:6	this is larger laptop, but is not too heavy.		laptop#design_features	laptop	design	positive
+80	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:7	battery life is great - though it is new.		battery#operation_performance	battery	performance	positive
+81	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:9	overall, a solid laptop for its price.		laptop#quality	laptop	quality	positive
+82	B00L49X8E6_16_A3LBA8TGYC1CK3	B00L49X8E6_16_A3LBA8TGYC1CK3:9	overall, a solid laptop for its price.		laptop#price	laptop	price	neutral
+83	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:1	however, a few things are immediately occurring to me  i had read the other reviews here on amazon, but decided the specs and appearance looked good enough to go ahead.		laptop#design_features	laptop	design	positive
+84	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:2	well, my first impressions are that its ok, it certainly boots up quickly (thanks ssd!), and from the limited use so far (no games) its fast enough in normal usage.		laptop#general	laptop	general	neutral
+85	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:2	well, my first impressions are that its ok, it certainly boots up quickly (thanks ssd!), and from the limited use so far (no games) its fast enough in normal usage.		laptop#operation_performance	laptop	performance	positive
+86	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:2	well, my first impressions are that its ok, it certainly boots up quickly (thanks ssd!), and from the limited use so far (no games) its fast enough in normal usage.		hard_disc#general	disc	general	positive
+87	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:3	it certainly looks nice, but that nice dark blue top is a fingerprint magnet as others have pointed out.		laptop#design_features	laptop	design	positive
+88	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:3	it certainly looks nice, but that nice dark blue top is a fingerprint magnet as others have pointed out.		laptop#quality	laptop	quality	negative
+89	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:4	also i have found the touch pad to be awkward to use (could be i am pressing too hard perhaps), and the screen is    well   underwhelming.		mouse#usability	mouse	usability	negative
+90	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:4	also i have found the touch pad to be awkward to use (could be i am pressing too hard perhaps), and the screen is    well   underwhelming.		display#general	display	general	negative
+91	B0146DD02G_26_ANONYMOUS	B0146DD02G_26_ANONYMOUS:5	to be honest i am a little disappointed and considering returning it.		laptop#general	laptop	general	negative
+92	B00L49X8E6_126_A24EWKFHT3EC4F	B00L49X8E6_126_A24EWKFHT3EC4F:0	this is a horrible laptop.		laptop#general	laptop	general	negative
+93	B00L49X8E6_126_A24EWKFHT3EC4F	B00L49X8E6_126_A24EWKFHT3EC4F:1	within a day of usage, it already slowed down significantly, virus entered the system right away.		laptop#operation_performance	laptop	performance	negative
+94	B00L49X8E6_126_A24EWKFHT3EC4F	B00L49X8E6_126_A24EWKFHT3EC4F:1	within a day of usage, it already slowed down significantly, virus entered the system right away.		laptop#quality	laptop	quality	negative
+95	B00L49X8E6_126_A24EWKFHT3EC4F	B00L49X8E6_126_A24EWKFHT3EC4F:3	it's heavy.		laptop#design_features	laptop	design	negative
+96	B00L49X8E6_126_A24EWKFHT3EC4F	B00L49X8E6_126_A24EWKFHT3EC4F:4	i regretted immediately.		laptop#general	laptop	general	negative
+97	B00L49X8E6_126_A24EWKFHT3EC4F	B00L49X8E6_126_A24EWKFHT3EC4F:5	nothing like the description says.		laptop#general	laptop	general	negative
+98	B0074703CM_53_ANONYMOUS	B0074703CM_53_ANONYMOUS:0	my apple mac book pro has crashed three times, since i purchased it.		laptop#operation_performance	laptop	performance	negative
+99	B0074703CM_53_ANONYMOUS	B0074703CM_53_ANONYMOUS:0	my apple mac book pro has crashed three times, since i purchased it.		laptop#quality	laptop	quality	negative
+100	B0074703CM_53_ANONYMOUS	B0074703CM_53_ANONYMOUS:2	each time, apple can only uninstall to original factory settings for me to start over.		support#quality	support	quality	negative
+101	B0074703CM_53_ANONYMOUS	B0074703CM_53_ANONYMOUS:3	i believe this macbook pro was a lemon right out the gate.		laptop#quality	laptop	quality	negative
+102	B0074703CM_53_ANONYMOUS	B0074703CM_53_ANONYMOUS:5	:(		laptop#general	laptop	general	negative
+103	B0074703CM_33_ANONYMOUS	B0074703CM_33_ANONYMOUS:0	this computer is like...  i'm lost for words.		laptop#general	laptop	general	positive
+104	B0074703CM_33_ANONYMOUS	B0074703CM_33_ANONYMOUS:1	this is the best switch i have ever done.		laptop#general	laptop	general	positive
+105	B0074703CM_33_ANONYMOUS	B0074703CM_33_ANONYMOUS:3	this has much more memory and ram memory.		memory#design_features	memory	design	positive
+106	B0074703CM_33_ANONYMOUS	B0074703CM_33_ANONYMOUS:3	this has much more memory and ram memory.		hard_disc#design_features	disc	design	positive
+107	B0074703CM_33_ANONYMOUS	B0074703CM_33_ANONYMOUS:4	even the battery life is like wow!		battery#operation_performance	battery	performance	positive
+108	B0074703CM_33_ANONYMOUS	B0074703CM_33_ANONYMOUS:5	i love, love, loooove!		laptop#general	laptop	general	positive
+109	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:1	i can say that i am fully satisfied with the performance that the computer has supplied.		laptop#operation_performance	laptop	performance	positive
+110	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:2	it contains a long battery life, incredible specs, and an overall enjoyable performance.		battery#operation_performance	battery	performance	positive
+111	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:2	it contains a long battery life, incredible specs, and an overall enjoyable performance.		laptop#design_features	laptop	design	positive
+112	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:2	it contains a long battery life, incredible specs, and an overall enjoyable performance.		laptop#operation_performance	laptop	performance	positive
+113	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:3	upgrading from a toshiba laptop, i am fully impressed with all of the benefits that the mac operating system provides.		os#general	os	general	positive
+114	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:4	the snappy processor allows for me to quickly upload photos and videos, as well as create movies for me and my colleagues to enjoy.		cpu#operation_performance	cpu	performance	positive
+115	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:4	the snappy processor allows for me to quickly upload photos and videos, as well as create movies for me and my colleagues to enjoy.		laptop#usability	laptop	usability	positive
+116	B0074703CM_156_ANONYMOUS	B0074703CM_156_ANONYMOUS:5	in upgrading to this computer i can say i have found little to any flaws in the product, hence the 5 star review.		laptop#general	laptop	general	positive
+117	B0146DD02G_19_ANONYMOUS	B0146DD02G_19_ANONYMOUS:0	love this computer.		laptop#general	laptop	general	positive
+118	B0146DD02G_19_ANONYMOUS	B0146DD02G_19_ANONYMOUS:1	it has done everything and more that i expected.		laptop#general	laptop	general	positive
+119	B0146DD02G_19_ANONYMOUS	B0146DD02G_19_ANONYMOUS:2	i am sure it will be able to do all i need it to do in the future as well.		laptop#general	laptop	general	positive
+120	B0146DD02G_19_ANONYMOUS	B0146DD02G_19_ANONYMOUS:3	the screen looks great in my opinion the sound is nice.		display#quality	display	quality	positive
+121	B0146DD02G_19_ANONYMOUS	B0146DD02G_19_ANONYMOUS:3	the screen looks great in my opinion the sound is nice.		multimedia_devices#quality	multimedia	quality	positive
+122	B0146DD02G_19_ANONYMOUS	B0146DD02G_19_ANONYMOUS:4	so far i have no complaints and dont expect many complaints in the future.		laptop#general	laptop	general	positive
+123	B0074703CM_20_ANONYMOUS	B0074703CM_20_ANONYMOUS:2	this did give some set trouble and i had to call tech support.		laptop#general	laptop	general	negative
+124	B0074703CM_20_ANONYMOUS	B0074703CM_20_ANONYMOUS:3	they were great.		support#quality	support	quality	positive
+125	B0074703CM_20_ANONYMOUS	B0074703CM_20_ANONYMOUS:4	its been easy breezy since then.		laptop#general	laptop	general	positive
+126	B0074703CM_20_ANONYMOUS	B0074703CM_20_ANONYMOUS:5	how could you not love a mac		laptop#general	laptop	general	positive
+127	B0074703CM_20_ANONYMOUS	B0074703CM_20_ANONYMOUS:5	how could you not love a mac		company#general	company	general	positive
+128	B00O0W450A_16_ANONYMOUS	B00O0W450A_16_ANONYMOUS:0	so far so good, i have not encountered any issues with this computer.		laptop#general	laptop	general	positive
+129	B00O0W450A_16_ANONYMOUS	B00O0W450A_16_ANONYMOUS:1	love the flip feature and the touch screen feature.		laptop#design_features	laptop	design	positive
+130	B00O0W450A_16_ANONYMOUS	B00O0W450A_16_ANONYMOUS:1	love the flip feature and the touch screen feature.		display#design_features	display	design	positive
+131	B00O0W450A_16_ANONYMOUS	B00O0W450A_16_ANONYMOUS:2	for the price that i paid i feel that i got good value.		laptop#price	laptop	price	neutral
+132	B00O0W450A_16_ANONYMOUS	B00O0W450A_16_ANONYMOUS:2	for the price that i paid i feel that i got good value.		laptop#general	laptop	general	positive
+133	B00O0W450A_16_ANONYMOUS	B00O0W450A_16_ANONYMOUS:3	this lap top is not the lightest you can purchase, so if that is important to you maybe you should shop some more.		laptop#design_features	laptop	design	negative
+134	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:0	to a prospective buyer,  08/10/2012  once you go mac, you'll never go back.		company#general	company	general	positive
+135	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:0	to a prospective buyer,  08/10/2012  once you go mac, you'll never go back.		laptop#general	laptop	general	positive
+136	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:2	was the best decision we ever made.		laptop#general	laptop	general	positive
+137	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:3	it runs just as fast as the day we got it with no problems!		laptop#quality	laptop	quality	positive
+138	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:3	it runs just as fast as the day we got it with no problems!		laptop#operation_performance	laptop	performance	positive
+139	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:4	we don't have to de-frag, deliete cookies, run security programs, or any of the common pc problems that have to be delt with in order to keep you running and up to speed.		laptop#operation_performance	laptop	performance	positive
+140	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:4	we don't have to de-frag, deliete cookies, run security programs, or any of the common pc problems that have to be delt with in order to keep you running and up to speed.		laptop#quality	laptop	quality	positive
+141	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:5	you can't get a virus on mac, so in the long run the cost of the mac is saved by not buying security, and not having to replace your computer every year or two.		laptop#quality	laptop	quality	positive
+142	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:8	never had any issues, no frustrations just great easy wireless, all in one fun!		laptop#general	laptop	general	positive
+143	B0074703CM_284_ANONYMOUS	B0074703CM_284_ANONYMOUS:8	never had any issues, no frustrations just great easy wireless, all in one fun!		laptop#connectivity	laptop	connectivity	positive
+144	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:0	it's great.		laptop#general	laptop	general	positive
+145	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:1	because it is a touch screen you don't even need a mouse.		display#design_features	display	design	positive
+146	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:1	because it is a touch screen you don't even need a mouse.		laptop#usability	laptop	usability	positive
+147	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:2	you will probably never use it in tablet mode but it's nice to know you have that option.		laptop#design_features	laptop	design	positive
+148	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:3	if you draw on the other hand i'm sure you will love using this in tablet mode.		laptop#miscellaneous	laptop	miscellaneous	positive
+149	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:4	lastly, because it can flip 360 you can comfortably lay down in bed and have the keyboard facing down as you watch a show closer without having to adjust your sitting position for the keyboard.		laptop#design_features	laptop	design	positive
+150	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:4	lastly, because it can flip 360 you can comfortably lay down in bed and have the keyboard facing down as you watch a show closer without having to adjust your sitting position for the keyboard.		laptop#usability	laptop	usability	positive
+151	B00O0W450A_12_ANONYMOUS	B00O0W450A_12_ANONYMOUS:4	lastly, because it can flip 360 you can comfortably lay down in bed and have the keyboard facing down as you watch a show closer without having to adjust your sitting position for the keyboard.		keyboard#usability	keyboard	usability	positive
+152	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:3	this computer is great.		laptop#general	laptop	general	positive
+153	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:4	i have a 250 gb ssd and 10 gb of ram in it, which i installed myself.		hard_disc#design_features	disc	design	neutral
+154	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:4	i have a 250 gb ssd and 10 gb of ram in it, which i installed myself.		memory#design_features	memory	design	neutral
+155	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:5	it runs faster than it did when i got it.		laptop#operation_performance	laptop	performance	positive
+156	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:6	i enjoy the simplicity and user-friendly interface of yosemite.		os#usability	os	usability	positive
+157	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:7	i'm excited for el capitan.		os#general	os	general	positive
+158	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:8	the apps are very easy to use.		software#usability	software	usability	positive
+159	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:9	the resolution is excellent.		display#quality	display	quality	positive
+160	B0074703CM_193_ANONYMOUS	B0074703CM_193_ANONYMOUS:11	i am very satisfied with everything about this machine.		laptop#general	laptop	general	positive
+161	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:1	like so many others who do this there is a learning curve and i'm excited to do it.		laptop#general	laptop	general	positive
+162	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:1	like so many others who do this there is a learning curve and i'm excited to do it.		laptop#usability	laptop	usability	neutral
+163	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:2	this mbp is clean, neat, and simple.		laptop#design_features	laptop	design	positive
+164	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:2	this mbp is clean, neat, and simple.		laptop#usability	laptop	usability	positive
+165	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:3	i like that.		laptop#general	laptop	general	positive
+166	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:4	it takes less time to power up, and if you just close the case it go into sleep mode.		laptop#operation_performance	laptop	performance	positive
+167	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:5	when you open it wakes up almost immediately.		laptop#operation_performance	laptop	performance	positive
+168	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:6	very nice.		laptop#general	laptop	general	positive
+169	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:7	i am pleased with my decision, however i have only had this for a few weeks.		laptop#general	laptop	general	positive
+170	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:8	there are a few things i am dissappointed with though.		laptop#general	laptop	general	negative
+171	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:9	only 2 usb ports.		laptop#design_features	laptop	design	negative
+172	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:11	no hdmi port.		laptop#design_features	laptop	design	negative
+173	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:13	the headphones jack is a combo jack for the headphones and microphone.		multimedia_devices#design_features	multimedia	design	neutral
+174	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:14	not a big deal for me, but if you skype a lot or are gaming a regular headphone set with a separate jack for the headphone sound and microphone input will not work on a mac.		multimedia_devices#design_features	multimedia	design	neutral
+175	B0074703CM_102_ANONYMOUS	B0074703CM_102_ANONYMOUS:14	not a big deal for me, but if you skype a lot or are gaming a regular headphone set with a separate jack for the headphone sound and microphone input will not work on a mac.		laptop#usability	laptop	usability	negative
+176	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:0	as a student majoring computer science, i really fell in love with this laptop.		laptop#general	laptop	general	positive
+177	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:2	it's 15.6 inches, which for me is not too big nor too small.		laptop#design_features	laptop	design	neutral
+178	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:3	it has the latest i7 cpu with a gtx 950m for gpu, which makes this laptop blazing fast (boots up in under 5 seconds, with the help of the ssd of course).		cpu#design_features	cpu	design	positive
+179	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:3	it has the latest i7 cpu with a gtx 950m for gpu, which makes this laptop blazing fast (boots up in under 5 seconds, with the help of the ssd of course).		graphics#design_features	graphics	design	positive
+180	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:3	it has the latest i7 cpu with a gtx 950m for gpu, which makes this laptop blazing fast (boots up in under 5 seconds, with the help of the ssd of course).		laptop#operation_performance	laptop	performance	positive
+181	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:3	it has the latest i7 cpu with a gtx 950m for gpu, which makes this laptop blazing fast (boots up in under 5 seconds, with the help of the ssd of course).		hard_disc#design_features	disc	design	positive
+182	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:4	- it has 256gb ssd which is just enough for my os, games, documents, and anything in between.		hard_disc#design_features	disc	design	positive
+183	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:5	it also has an extra bay for an extra hdd if you wish to add one.		laptop#design_features	laptop	design	positive
+184	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:6	- it's not touchscreen!		display#design_features	display	design	positive
+185	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:9	- its keyboard is nicely arranged, silent, and back-lit which is nice, but what i don't like about it is the material attracts oil from your fingers.		keyboard#design_features	keyboard	design	positive
+186	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:9	- its keyboard is nicely arranged, silent, and back-lit which is nice, but what i don't like about it is the material attracts oil from your fingers.		keyboard#quality	keyboard	quality	positive
+187	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:9	- its keyboard is nicely arranged, silent, and back-lit which is nice, but what i don't like about it is the material attracts oil from your fingers.		keyboard#quality	keyboard	quality	negative
+188	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:10	i have to clean it regularly for it to stay looking good.		keyboard#quality	keyboard	quality	negative
+189	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:11	- this laptop is so silent, its fans only kick in when the laptop is under heavy load, thanks to the 5th generation intel core which draws less power,  thus less heat.		laptop#quality	laptop	quality	positive
+190	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:11	- this laptop is so silent, its fans only kick in when the laptop is under heavy load, thanks to the 5th generation intel core which draws less power,  thus less heat.		fans_cooling#operation_performance	fans	performance	positive
+191	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:11	- this laptop is so silent, its fans only kick in when the laptop is under heavy load, thanks to the 5th generation intel core which draws less power,  thus less heat.		cpu#operation_performance	cpu	performance	positive
+192	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:13	- it can run games really well.		laptop#miscellaneous	laptop	miscellaneous	positive
+193	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:14	well, not really well.		laptop#miscellaneous	laptop	miscellaneous	neutral
+194	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:15	mobas like dota 2 and smite can be run on max quality settings with 60 fps or more.		display#operation_performance	display	performance	neutral
+195	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:16	medium settings on titles like tomb raider for it to be acceptable (60 fps is the minimum acceptable fps #pcmasterrace).		display#operation_performance	display	performance	neutral
+196	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:17	- it's lightweight and easy to carry around.		laptop#design_features	laptop	design	positive
+197	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:17	- it's lightweight and easy to carry around.		laptop#portability	laptop	portability	positive
+198	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:18	- the screen is a matte 1080p display, which is nice, but with poor viewing angle.		display#quality	display	quality	positive
+199	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:18	- the screen is a matte 1080p display, which is nice, but with poor viewing angle.		display#design_features	display	design	negative
+200	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:19	i find myself adjusting it regularly.		display#usability	display	usability	negative
+201	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:20	- it looks sleek and gorgeous.		laptop#design_features	laptop	design	positive
+202	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:21	blends in with any accessory you use with it.		laptop#usability	laptop	usability	positive
+203	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:22	all in all i am very happy with this purchase.		laptop#general	laptop	general	positive
+204	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:23	and with this price, i don't think you can buy anything better.		laptop#price	laptop	price	positive
+205	B0146DD02G_0_ANONYMOUS	B0146DD02G_0_ANONYMOUS:23	and with this price, i don't think you can buy anything better.		laptop#general	laptop	general	positive
+206	B0074703CM_182_ANONYMOUS	B0074703CM_182_ANONYMOUS:1	all i can say is i am impressed.		laptop#general	laptop	general	positive
+207	B0074703CM_182_ANONYMOUS	B0074703CM_182_ANONYMOUS:2	very quick to get it up and running with a minimum setup time right after you open the box.		laptop#operation_performance	laptop	performance	positive
+208	B0074703CM_182_ANONYMOUS	B0074703CM_182_ANONYMOUS:2	very quick to get it up and running with a minimum setup time right after you open the box.		laptop#usability	laptop	usability	positive
+209	B0074703CM_182_ANONYMOUS	B0074703CM_182_ANONYMOUS:4	it's worth it.		laptop#general	laptop	general	positive
+210	B0074703CM_182_ANONYMOUS	B0074703CM_182_ANONYMOUS:5	pay me now, pay me later.........i am happy with my choice going with this laptop.		laptop#general	laptop	general	positive
+211	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:0	i was disappointed.		laptop#general	laptop	general	negative
+212	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:1	it seemed like a great computer and a great deal.		laptop#general	laptop	general	negative
+213	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:1	it seemed like a great computer and a great deal.		laptop#price	laptop	price	negative
+214	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:2	the first one arrived and it did not work.		laptop#operation_performance	laptop	performance	negative
+215	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:2	the first one arrived and it did not work.		laptop#quality	laptop	quality	negative
+216	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:4	the space bar sticks.		keyboard#operation_performance	keyboard	performance	negative
+217	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:5	i find it hard to navigate from screen to screen.		laptop#usability	laptop	usability	negative
+218	B00L49X8E6_17_AX87PN2JFND46	B00L49X8E6_17_AX87PN2JFND46:6	for a non-computer savvy person, it was very disappointing.		laptop#general	laptop	general	negative
+219	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:0	i like the 13 inch macbooks.		laptop#general	laptop	general	positive
+220	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:1	its size is ideal and the weight is acceptable.		laptop#design_features	laptop	design	positive
+221	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:2	the new mac os mountain lion has some nice features as wel as the trackpad.		os#design_features	os	design	positive
+222	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:2	the new mac os mountain lion has some nice features as wel as the trackpad.		mouse#design_features	mouse	design	positive
+223	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:3	i didn't think i would need an optical drive but since i have had it i used it several times.		optical_drives#general	optical	general	neutral
+224	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:3	i didn't think i would need an optical drive but since i have had it i used it several times.		laptop#design_features	laptop	design	neutral
+225	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:5	the magnetic lid and charger is cool and battery indicator on the side is cool.		laptop#design_features	laptop	design	positive
+226	B0074703CM_3_ANONYMOUS	B0074703CM_3_ANONYMOUS:5	the magnetic lid and charger is cool and battery indicator on the side is cool.		power_supply#design_features	power	design	positive
+227	B0074703CM_88_ANONYMOUS	B0074703CM_88_ANONYMOUS:5	the mac is light and so compact i thought i would regret not buying a retina display, not in the least the mac pro works just fine.		laptop#design_features	laptop	design	positive
+228	B0074703CM_88_ANONYMOUS	B0074703CM_88_ANONYMOUS:5	the mac is light and so compact i thought i would regret not buying a retina display, not in the least the mac pro works just fine.		display#quality	display	quality	positive
+229	B0074703CM_88_ANONYMOUS	B0074703CM_88_ANONYMOUS:5	the mac is light and so compact i thought i would regret not buying a retina display, not in the least the mac pro works just fine.		laptop#operation_performance	laptop	performance	positive
+230	B0074703CM_88_ANONYMOUS	B0074703CM_88_ANONYMOUS:9	the os is easy, and offers all kinds of surprises.		os#usability	os	usability	positive
+231	B0074703CM_88_ANONYMOUS	B0074703CM_88_ANONYMOUS:9	the os is easy, and offers all kinds of surprises.		os#miscellaneous	os	miscellaneous	positive
+232	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:0	i've been using apple's since 1992 and this is the fastest and best one i've  had.		laptop#operation_performance	laptop	performance	positive
+233	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:0	i've been using apple's since 1992 and this is the fastest and best one i've  had.		laptop#general	laptop	general	positive
+234	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:4	this mac allows all of that.		laptop#usability	laptop	usability	positive
+235	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:6	this is very fast, high performance computer.		laptop#operation_performance	laptop	performance	positive
+236	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:7	this should be more than  enough computer for almost everyone.		laptop#general	laptop	general	positive
+237	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:8	i would not hesitate recommending  this to anyone.		laptop#general	laptop	general	positive
+238	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:9	it fast and easy to set up.		laptop#operation_performance	laptop	performance	positive
+239	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:9	it fast and easy to set up.		laptop#usability	laptop	usability	positive
+240	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:10	i had cloned my data from my old computer using  carbon copy cloner (ccc) and simply moved everything to the new computer  and was off and running at speeds i had only dreamed up before.		laptop#usability	laptop	usability	positive
+241	B0074703CM_227_ANONYMOUS	B0074703CM_227_ANONYMOUS:10	i had cloned my data from my old computer using  carbon copy cloner (ccc) and simply moved everything to the new computer  and was off and running at speeds i had only dreamed up before.		laptop#operation_performance	laptop	performance	positive
+242	B0074703CM_106_ANONYMOUS	B0074703CM_106_ANONYMOUS:0	the mac book pro is a computer for the disorganized, lazy, and eye candy person in all of us.		laptop#miscellaneous	laptop	miscellaneous	positive
+243	B0074703CM_106_ANONYMOUS	B0074703CM_106_ANONYMOUS:2	the macbook pro already understands how to jump through hoops and acts more like a friendly guide.		laptop#usability	laptop	usability	positive
+244	B0074703CM_106_ANONYMOUS	B0074703CM_106_ANONYMOUS:3	if you want to use the internet, then you can make your icons jump out from the bottom of the screen, like a magnifying glass is projecting onto the selected icon.		software#usability	software	usability	positive
+245	B0074703CM_106_ANONYMOUS	B0074703CM_106_ANONYMOUS:4	this computer is amazing for the individual who does not want to do any extra work via their understanding of their laptop.		laptop#usability	laptop	usability	positive
+246	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:0	i would've given 5 stars, had it not been for the hours of updates i've had to do to this upon arrival.		laptop#general	laptop	general	positive
+247	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:0	i would've given 5 stars, had it not been for the hours of updates i've had to do to this upon arrival.		laptop#miscellaneous	laptop	miscellaneous	negative
+248	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:1	other than that, i love it.		laptop#general	laptop	general	positive
+249	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:2	it's portable, reliable, and great for what i use it for.		laptop#portability	laptop	portability	positive
+250	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:2	it's portable, reliable, and great for what i use it for.		laptop#quality	laptop	quality	positive
+251	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:2	it's portable, reliable, and great for what i use it for.		laptop#general	laptop	general	positive
+252	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:3	positives:  - no matter what position, this laptop will stay in it.		laptop#usability	laptop	usability	positive
+253	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:4	it's very sturdy.		laptop#quality	laptop	quality	positive
+254	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:5	- quick boot-up, and runs efficiently.		laptop#operation_performance	laptop	performance	positive
+255	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:6	- touchscreen is great.		display#general	display	general	positive
+256	B00YGFLBP8_9_ANONYMOUS	B00YGFLBP8_9_ANONYMOUS:7	negatives:  - as aforementioned, my only con was the updates.		laptop#miscellaneous	laptop	miscellaneous	negative
+257	B0074703CM_31_ANONYMOUS	B0074703CM_31_ANONYMOUS:0	everything you'd expect from a mac.		laptop#general	laptop	general	positive
+258	B0074703CM_31_ANONYMOUS	B0074703CM_31_ANONYMOUS:1	it looks and feels solid, with a flawless finish.		laptop#quality	laptop	quality	positive
+259	B0074703CM_31_ANONYMOUS	B0074703CM_31_ANONYMOUS:1	it looks and feels solid, with a flawless finish.		laptop#design_features	laptop	design	positive
+260	B0074703CM_31_ANONYMOUS	B0074703CM_31_ANONYMOUS:2	the screen definition is superb and it fires up super quick and same to close down.		display#quality	display	quality	positive
+261	B0074703CM_31_ANONYMOUS	B0074703CM_31_ANONYMOUS:2	the screen definition is superb and it fires up super quick and same to close down.		laptop#operation_performance	laptop	performance	positive
+262	B0074703CM_31_ANONYMOUS	B0074703CM_31_ANONYMOUS:3	only had it a few weeks but doesn't leave my side.		laptop#general	laptop	general	positive
+263	B0074703CM_97_ANONYMOUS	B0074703CM_97_ANONYMOUS:3	this machine is flawless, fast, and classy.		laptop#general	laptop	general	positive
+264	B0074703CM_97_ANONYMOUS	B0074703CM_97_ANONYMOUS:3	this machine is flawless, fast, and classy.		laptop#operation_performance	laptop	performance	positive
+265	B0074703CM_97_ANONYMOUS	B0074703CM_97_ANONYMOUS:3	this machine is flawless, fast, and classy.		laptop#design_features	laptop	design	positive
+266	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:0	out of all the laptops i have owned, this is by far the best!		laptop#general	laptop	general	positive
+267	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:2	i'm not sure if it was covered in the description, but it does have a backlit keyboard and i'm getting about an 8 hour battery life on one charge (except i don't use this for games or videos, which obviously would drain the battery faster).		keyboard#design_features	keyboard	design	positive
+268	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:2	i'm not sure if it was covered in the description, but it does have a backlit keyboard and i'm getting about an 8 hour battery life on one charge (except i don't use this for games or videos, which obviously would drain the battery faster).		battery#operation_performance	battery	performance	positive
+269	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:3	it wakes in less than a second when i open the lid.		laptop#operation_performance	laptop	performance	positive
+270	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:4	the screen has an extremely high resolution that i'm very pleased with.		display#quality	display	quality	positive
+271	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:5	even though macbooks are expensive, you will see that they are well worth the money.		laptop#price	laptop	price	negative
+272	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:5	even though macbooks are expensive, you will see that they are well worth the money.		laptop#general	laptop	general	positive
+273	B0074703CM_288_ANONYMOUS	B0074703CM_288_ANONYMOUS:7	you will not regret buying this computer!		laptop#general	laptop	general	positive
+274	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:0	my daughter's macbook air battery bulged deforming the keyboard several days ago.		battery#quality	battery	quality	negative
+275	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:1	it took 3 days to make an appointment at the local apple store.		support#quality	support	quality	negative
+276	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:2	i'm not sure what happened next but she came back home crying with a piece of paper in her hand $129 for a new battery, $39 to replace it and $139 for a new keyboard.		support#quality	support	quality	negative
+277	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:2	i'm not sure what happened next but she came back home crying with a piece of paper in her hand $129 for a new battery, $39 to replace it and $139 for a new keyboard.		support#price	support	price	negative
+278	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:3	i could not believe they did not consider the battery as defective so i went to the apple store myself and asked for a manager.		support#quality	support	quality	negative
+279	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:4	he explained to me the battery expansion is 'normal'.		support#quality	support	quality	negative
+280	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:5	apple doesn't cover battery expansion under any circumstances not even under their apple care.		support#quality	support	quality	negative
+281	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:6	the battery is simply considered 'consumable' and not covered.		support#quality	support	quality	negative
+282	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:7	i asked the manager if he feels comfortable with me posting the picture of the macbook air on the internet with the description that apple doesn't consider the product defective.		support#quality	support	quality	negative
+283	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:8	his reply astonished me, looking down at me behind his thick glasses he said: 'make sure you have your facts straight before you smear!		support#quality	support	quality	negative
+284	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:10	he didn't specify who are 'they' but from the tone of his voice and his 6'5' posture it indicated something between the swat team and a bunch of lawyers.		support#quality	support	quality	negative
+285	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:11	here is my take on all of this, the business model apple pushes right now is to get some cheap junk from china, hire a bunch of cheerleaders straight out of high school, call them geniuses, and bully everybody who complains about their product.		company#general	company	general	negative
+286	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:12	steve jobs is dead, so is apple.		company#general	company	general	negative
+287	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:13	no more apple devices in my household.		company#general	company	general	negative
+288	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:14	please google 'macbook battery bulge explode' before you buy your next apple toy.		battery#quality	battery	quality	negative
+289	B0074703CM_184_ANONYMOUS	B0074703CM_184_ANONYMOUS:14	please google 'macbook battery bulge explode' before you buy your next apple toy.		company#general	company	general	negative
+290	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:0	i've been spoiled by the build quality and stability of macintosh and even this used computer is a gem.		laptop#quality	laptop	quality	positive
+291	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:0	i've been spoiled by the build quality and stability of macintosh and even this used computer is a gem.		laptop#general	laptop	general	positive
+292	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:1	i can bat around all the things that everyone else says, but it's been what we've been using for decades and i have nothing bad to say.		laptop#general	laptop	general	positive
+293	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:2	it churns out hd content, runs without many flaws and i've yet to get a virus on a mac since i started using the platform in the early 1990's.		display#quality	display	quality	positive
+294	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:2	it churns out hd content, runs without many flaws and i've yet to get a virus on a mac since i started using the platform in the early 1990's.		laptop#operation_performance	laptop	performance	positive
+295	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:2	it churns out hd content, runs without many flaws and i've yet to get a virus on a mac since i started using the platform in the early 1990's.		laptop#quality	laptop	quality	positive
+296	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:3	my 15&amp;#34; macbook's motherboard fried but i think that was a sugar spill that i never bothered cleaning up.		motherboard#quality	motherboard	quality	neutral
+297	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:5	that's the only issue i've ever had since working on macs in 1995.		company#general	company	general	positive
+298	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:5	that's the only issue i've ever had since working on macs in 1995.		laptop#general	laptop	general	positive
+299	B0074703CM_228_ANONYMOUS	B0074703CM_228_ANONYMOUS:6	that's a pretty impressive track record don't you think?		company#general	company	general	positive
+300	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:2	however, the hp envy has definitely met all of my expectations and more.		laptop#general	laptop	general	positive
+301	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:3	i have been thoroughly impressed with my purchase thus far and do not regret purchasing it at all.		laptop#general	laptop	general	positive
+302	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:4	while the price may seem high, it is worth every penny with its many perks.		laptop#price	laptop	price	negative
+303	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:4	while the price may seem high, it is worth every penny with its many perks.		laptop#general	laptop	general	positive
+304	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:5	the pros:  a ton of storage space- this laptop comes with 8gb of memory and a 1 tb (1000gb) hard drive.		memory#design_features	memory	design	positive
+305	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:5	the pros:  a ton of storage space- this laptop comes with 8gb of memory and a 1 tb (1000gb) hard drive.		hard_disc#design_features	disc	design	positive
+306	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:6	that is plenty of space for your laptop, which really comes in handy for college students and computer gamers.		hard_disc#design_features	disc	design	positive
+307	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:8	2-in-1 capability- the ease of switching this laptop into a tablet is a huge plus.		laptop#design_features	laptop	design	positive
+308	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:8	2-in-1 capability- the ease of switching this laptop into a tablet is a huge plus.		laptop#usability	laptop	usability	positive
+309	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:9	if you are looking to get a 2-in-1 laptop, this is the laptop you should consider.		laptop#miscellaneous	laptop	miscellaneous	positive
+310	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:10	i love the flexibility of being able to fold it over like a tent and watch movies, without having the keyboard in the way of things.		laptop#usability	laptop	usability	positive
+311	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:12	i find it much easier to type on and much more durable.		keyboard#usability	keyboard	usability	positive
+312	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:12	i find it much easier to type on and much more durable.		keyboard#quality	keyboard	quality	positive
+313	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:13	battery life- my battery life is really good with this laptop and i have had no problems with it thus far.		battery#operation_performance	battery	performance	positive
+314	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:14	i can usually go about 10 hours before i get down to 10% battery life.		battery#operation_performance	battery	performance	positive
+315	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:16	the cons:  no disc drive- call me old fashioned, but i still enjoy listening to physical cds and uploading them to itunes.		laptop#design_features	laptop	design	negative
+316	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:17	however, i can no longer do this because this laptop does not contain a disc drive.		laptop#design_features	laptop	design	negative
+317	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:20	overall, i definitely would recommend this product to any college student that is in the market for a new laptop.		laptop#general	laptop	general	positive
+318	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:21	the touchscreen and 2-in-1 capability is a huge bonus and it is really easy to carry around to your classes.		display#design_features	display	design	positive
+319	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:21	the touchscreen and 2-in-1 capability is a huge bonus and it is really easy to carry around to your classes.		laptop#design_features	laptop	design	positive
+320	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:21	the touchscreen and 2-in-1 capability is a huge bonus and it is really easy to carry around to your classes.		laptop#portability	laptop	portability	positive
+321	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:22	it also is nice to be able to play candy crush or angry birds when in between classes straight from your laptop.		laptop#miscellaneous	laptop	miscellaneous	positive
+322	B00M166GWM_0_ANONYMOUS	B00M166GWM_0_ANONYMOUS:23	it makes it much more exciting to play!		laptop#miscellaneous	laptop	miscellaneous	positive
+323	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:0	i'm actually writing this review on my new macbook and i love it!		laptop#general	laptop	general	positive
+324	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:2	the computer it self is amazing.		laptop#general	laptop	general	positive
+325	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:3	it is an older model, so know that upfront, but it is everything i was looking for.		laptop#miscellaneous	laptop	miscellaneous	neutral
+326	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:3	it is an older model, so know that upfront, but it is everything i was looking for.		laptop#general	laptop	general	positive
+327	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:6	from the moment i received this macbook it was like a dream come true.		laptop#general	laptop	general	positive
+328	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:8	i know once i upgrade the ram to 8gb it will pick up a lot.		memory#design_features	memory	design	neutral
+329	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:11	also, if after reading some reviews and doing some research i found out that this laptop is easily upgradable and easy to work on which is another big plus.		laptop#usability	laptop	usability	positive
+330	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:12	so long story short, if you want an oldie but a goodie this is your laptop.		laptop#general	laptop	general	positive
+331	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:13	i know people were complaining that it isn't the newest model, but it all depends on what you are looking for.		laptop#miscellaneous	laptop	miscellaneous	neutral
+332	B0074703CM_194_ANONYMOUS	B0074703CM_194_ANONYMOUS:15	i highly recommend!!		laptop#general	laptop	general	positive
+333	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:0	this computer is a fantastic tool for word processing, searching the internet, and keeping track of everyday life.		laptop#miscellaneous	laptop	miscellaneous	positive
+334	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:1	it's also incredibly light, has a battery that can last for days, and looks like a piece of art.		laptop#design_features	laptop	design	positive
+335	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:1	it's also incredibly light, has a battery that can last for days, and looks like a piece of art.		battery#operation_performance	battery	performance	positive
+336	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:2	though, that's pretty much what your paying for -- a well designed device.		laptop#price	laptop	price	neutral
+337	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:2	though, that's pretty much what your paying for -- a well designed device.		laptop#design_features	laptop	design	positive
+338	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:3	when you look at the internal specs, the computer is only worth about $500.		laptop#design_features	laptop	design	negative
+339	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:4	it has a 128 gb storage capacity (but with the option of a 256 gb hard drive) and a 1.6ghz dual-core intel core i5, so don't expect to be gaming on this computer and make sure you pick up an external hard drive too.		hard_disc#design_features	disc	design	negative
+340	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:4	it has a 128 gb storage capacity (but with the option of a 256 gb hard drive) and a 1.6ghz dual-core intel core i5, so don't expect to be gaming on this computer and make sure you pick up an external hard drive too.		cpu#design_features	cpu	design	negative
+341	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:4	it has a 128 gb storage capacity (but with the option of a 256 gb hard drive) and a 1.6ghz dual-core intel core i5, so don't expect to be gaming on this computer and make sure you pick up an external hard drive too.		laptop#miscellaneous	laptop	miscellaneous	negative
+342	B0074703CM_279_ANONYMOUS	B0074703CM_279_ANONYMOUS:5	if your looking to be a trendy hipster who can't live without a mac, it's a great buy.		laptop#general	laptop	general	negative
+343	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:1	it mixes a great balance between the spec that are needed and what you don't need.		laptop#design_features	laptop	design	positive
+344	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:3	pros :  1. nice looks.		laptop#design_features	laptop	design	positive
+345	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:5	2. keyboard is great		keyboard#general	keyboard	general	positive
+346	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:7	i wanted a simple full hd display and this one does its job		display#design_features	display	design	positive
+347	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:8	4. sound is great		multimedia_devices#quality	multimedia	quality	positive
+348	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:9	5. and this has a extra slot for hdd		laptop#design_features	laptop	design	positive
+349	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:10	6. no cd drive.		laptop#design_features	laptop	design	positive
+350	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:12	cons:  1. web cam.		multimedia_devices#design_features	multimedia	design	negative
+351	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:13	vga really asus??		multimedia_devices#design_features	multimedia	design	negative
+352	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:14	you don't want to show this to anyone :).		multimedia_devices#design_features	multimedia	design	negative
+353	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:15	anyway i don't use webcam much so , i don't care		multimedia_devices#design_features	multimedia	design	neutral
+354	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:16	2. viewing angles are not great.		display#design_features	display	design	negative
+355	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:17	3. remember its a dual core.		cpu#design_features	cpu	design	negative
+356	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:18	4. the fan kicks in even its not too hot.		fans_cooling#operation_performance	fans	performance	negative
+357	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:19	5. i found the track pad not great.		mouse#general	mouse	general	negative
+358	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:20	i use my mouse so not a problem for me.		mouse#general	mouse	general	neutral
+359	B0146DD02G_11_ANONYMOUS	B0146DD02G_11_ANONYMOUS:21	over all very good system and worth it.		laptop#general	laptop	general	positive
+360	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:0	this was the only tablet-style computer so far which met my requirements.		laptop#general	laptop	general	positive
+361	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:2	i was seduced by this computer, so i took it home.		laptop#general	laptop	general	positive
+362	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:3	the wireless keyboard (not bluetooth, but rf) did not pair up with the device.		keyboard#operation_performance	keyboard	performance	negative
+363	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:3	the wireless keyboard (not bluetooth, but rf) did not pair up with the device.		laptop#connectivity	laptop	connectivity	negative
+364	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:5	it still did not pair.		keyboard#operation_performance	keyboard	performance	negative
+365	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:5	it still did not pair.		laptop#connectivity	laptop	connectivity	negative
+366	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:7	i even ran it as administrator -- still no effect.		keyboard#operation_performance	keyboard	performance	negative
+367	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:7	i even ran it as administrator -- still no effect.		laptop#connectivity	laptop	connectivity	negative
+368	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:8	i used the ctrl-esc keys while turning on, and still nothing.		keyboard#operation_performance	keyboard	performance	negative
+369	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:8	i used the ctrl-esc keys while turning on, and still nothing.		laptop#connectivity	laptop	connectivity	negative
+370	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:10	it flickers briefly to green before the light goes out.		keyboard#operation_performance	keyboard	performance	negative
+371	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:12	i still can't pair it.		keyboard#operation_performance	keyboard	performance	negative
+372	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:12	i still can't pair it.		laptop#connectivity	laptop	connectivity	negative
+373	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:13	i don't want to carry around a bluetooth keyboard for a computer whose keyboard is nonfunctional.		keyboard#operation_performance	keyboard	performance	negative
+374	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:17	sony can eat the cost from the seller on this one while i get my money back for a defective product.		laptop#quality	laptop	quality	negative
+375	B00GJUQ4Z0_17_ANONYMOUS	B00GJUQ4Z0_17_ANONYMOUS:19	but sony doesn't seem to have addressed it.		company#general	company	general	negative
+376	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:0	my first mac computer and as many before me i just fall in love with it.		laptop#general	laptop	general	positive
+377	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:1	changed the memory from 4 gb to 8 gb corsair vengeance and 500 gb hdd (5400 rpm) with seagate hybride 750 gb hdd+ssd.		hard_disc#design_features	disc	design	neutral
+378	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:1	changed the memory from 4 gb to 8 gb corsair vengeance and 500 gb hdd (5400 rpm) with seagate hybride 750 gb hdd+ssd.		memory#design_features	memory	design	neutral
+379	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:2	machine is flying and with parallels desktop 8 i have my old pc notebook completely functional on my mbp.		laptop#operation_performance	laptop	performance	positive
+380	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:2	machine is flying and with parallels desktop 8 i have my old pc notebook completely functional on my mbp.		software#general	software	general	positive
+381	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:2	machine is flying and with parallels desktop 8 i have my old pc notebook completely functional on my mbp.		laptop#usability	laptop	usability	positive
+382	B0074703CM_159_ANONYMOUS	B0074703CM_159_ANONYMOUS:3	way to go and enjoy both worlds.		laptop#usability	laptop	usability	positive
+383	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:4	this asus you're looking at right here, and that i'm typing on right now, has one.		laptop#design_features	laptop	design	positive
+384	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:5	-  with that being said, for the price ($800!), you get a nice fast laptop, but if you ask me, it's missing some things that i feel should be automatically included:		laptop#price	laptop	price	positive
+385	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:5	-  with that being said, for the price ($800!), you get a nice fast laptop, but if you ask me, it's missing some things that i feel should be automatically included:		laptop#general	laptop	general	positive
+386	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:5	-  with that being said, for the price ($800!), you get a nice fast laptop, but if you ask me, it's missing some things that i feel should be automatically included:		laptop#operation_performance	laptop	performance	positive
+387	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:5	-  with that being said, for the price ($800!), you get a nice fast laptop, but if you ask me, it's missing some things that i feel should be automatically included:		laptop#design_features	laptop	design	negative
+388	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:6	this laptop has no:  - touchscreen  - optical drives (ok, a bit of a stretch, because that would eat up precious space in this monster)  - swivel or detachable screen		display#design_features	display	design	negative
+389	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:6	this laptop has no:  - touchscreen  - optical drives (ok, a bit of a stretch, because that would eat up precious space in this monster)  - swivel or detachable screen		laptop#design_features	laptop	design	negative
+390	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:7	what this laptop does have is:  - windows 8, which is confusing as all get-out  - tons of &amp;#34;bloatware&amp;#34;.		laptop#design_features	laptop	design	negative
+391	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:7	what this laptop does have is:  - windows 8, which is confusing as all get-out  - tons of &amp;#34;bloatware&amp;#34;.		os#usability	os	usability	negative
+392	B0146DD02G_29_ANONYMOUS	B0146DD02G_29_ANONYMOUS:7	what this laptop does have is:  - windows 8, which is confusing as all get-out  - tons of &amp;#34;bloatware&amp;#34;.		software#general	software	general	negative
+393	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:0	this is really nice, but i hate the awkward right mouse clicking.. sometimes it works, sometimes it doesn't.. may be the laptop, may be the laptop in conjunction with windows 8? 		laptop#general	laptop	general	positive
+394	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:0	this is really nice, but i hate the awkward right mouse clicking.. sometimes it works, sometimes it doesn't.. may be the laptop, may be the laptop in conjunction with windows 8? 		mouse#usability	mouse	usability	negative
+395	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:0	this is really nice, but i hate the awkward right mouse clicking.. sometimes it works, sometimes it doesn't.. may be the laptop, may be the laptop in conjunction with windows 8? 		mouse#operation_performance	mouse	performance	negative
+396	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:1	either way, highly annoying.		mouse#usability	mouse	usability	negative
+397	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:2	i hooked up a usb mouse and all is well.		laptop#connectivity	laptop	connectivity	positive
+398	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:3	all works beautifully but windows 8 is taking a bit of getting used to.		laptop#operation_performance	laptop	performance	positive
+399	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:3	all works beautifully but windows 8 is taking a bit of getting used to.		os#usability	os	usability	neutral
+400	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:5	love the 360 degree rotation and the touch screen works great, but a little bit of a learning curve there too, as sometimes i have to tap a few times to get the exact location i need...		laptop#design_features	laptop	design	positive
+401	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:5	love the 360 degree rotation and the touch screen works great, but a little bit of a learning curve there too, as sometimes i have to tap a few times to get the exact location i need...		display#operation_performance	display	performance	positive
+402	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:5	love the 360 degree rotation and the touch screen works great, but a little bit of a learning curve there too, as sometimes i have to tap a few times to get the exact location i need...		display#usability	display	usability	neutral
+403	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:6	overall it is just my learning a few things than any downfall with the laptop (the mouse was the only negative i could really see)...		laptop#general	laptop	general	positive
+404	B00M166GWM_6_ANONYMOUS	B00M166GWM_6_ANONYMOUS:6	overall it is just my learning a few things than any downfall with the laptop (the mouse was the only negative i could really see)...		mouse#general	mouse	general	negative
+405	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:0	this is a fantastic transformer!		laptop#general	laptop	general	positive
+406	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:1	i loved playing with it and the touchscreen was great for the windows 8 platform.		laptop#general	laptop	general	positive
+407	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:1	i loved playing with it and the touchscreen was great for the windows 8 platform.		display#general	display	general	positive
+408	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:3	the only reason i returned it was because i bought it to use the touchscreen with photoshop and because of the program, it could not utilize the touchscreen within the work space except to zoom and rotate.		software#usability	software	usability	negative
+409	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:3	the only reason i returned it was because i bought it to use the touchscreen with photoshop and because of the program, it could not utilize the touchscreen within the work space except to zoom and rotate.		display#usability	display	usability	negative
+410	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:4	i would have kept it but that was the sole reason for my purchase.		laptop#general	laptop	general	positive
+411	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:4	i would have kept it but that was the sole reason for my purchase.		laptop#miscellaneous	laptop	miscellaneous	negative
+412	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:5	it's a great product and would recommend to anyone looking for a transformer or large touchscreen.		laptop#general	laptop	general	positive
+413	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:5	it's a great product and would recommend to anyone looking for a transformer or large touchscreen.		display#design_features	display	design	positive
+414	B00O0W450A_3_ANONYMOUS	B00O0W450A_3_ANONYMOUS:6	i'm looking forward to needing a laptop update so i can purchase this computer again.		laptop#general	laptop	general	positive
+415	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:0	i've only had this for a week overall i like the computer, it's thin &amp; light and the wireless keyboard works great.		laptop#general	laptop	general	positive
+416	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:0	i've only had this for a week overall i like the computer, it's thin &amp; light and the wireless keyboard works great.		laptop#design_features	laptop	design	positive
+417	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:0	i've only had this for a week overall i like the computer, it's thin &amp; light and the wireless keyboard works great.		keyboard#operation_performance	keyboard	performance	positive
+418	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:1	i was impressed; sony puts in small touches like a usb charging port on the charger.		laptop#design_features	laptop	design	positive
+419	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:2	one thing i did't like is the stylus holder, it's cheap plastic and doesn't seem to be well thought out because it gets installed on the cover for the usb port.		hardware#quality	hardware	quality	negative
+420	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:2	one thing i did't like is the stylus holder, it's cheap plastic and doesn't seem to be well thought out because it gets installed on the cover for the usb port.		laptop#design_features	laptop	design	negative
+421	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:3	i do't use it, i think i would accidently break it and loose my stylus.		hardware#quality	hardware	quality	negative
+422	B00GJUQ4Z0_11_ANONYMOUS	B00GJUQ4Z0_11_ANONYMOUS:4	the other issue i had was the amount of time it takes to update the operating system and all the software when you get it.		laptop#miscellaneous	laptop	miscellaneous	negative
+423	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:0	awesome laptop for college!!!		laptop#miscellaneous	laptop	miscellaneous	positive
+424	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:1	can be used for gaming as well.		laptop#miscellaneous	laptop	miscellaneous	positive
+425	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:2	it's light, fast and has great battery!!		laptop#design_features	laptop	design	positive
+426	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:2	it's light, fast and has great battery!!		laptop#operation_performance	laptop	performance	positive
+427	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:2	it's light, fast and has great battery!!		battery#operation_performance	battery	performance	positive
+428	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:3	it's a steal when considering the specs and performance as well.		laptop#price	laptop	price	positive
+429	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:3	it's a steal when considering the specs and performance as well.		laptop#design_features	laptop	design	positive
+430	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:3	it's a steal when considering the specs and performance as well.		laptop#operation_performance	laptop	performance	positive
+431	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:4	the processor and gpu are fantastic at running games and multiple apps.		cpu#miscellaneous	cpu	miscellaneous	positive
+432	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:4	the processor and gpu are fantastic at running games and multiple apps.		graphics#miscellaneous	graphics	miscellaneous	positive
+433	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:5	i can run most games to a good quality without seeing any lack of speed.		laptop#miscellaneous	laptop	miscellaneous	positive
+434	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:5	i can run most games to a good quality without seeing any lack of speed.		laptop#operation_performance	laptop	performance	positive
+435	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:6	the backlit keyboard is a nice touch especially.		keyboard#design_features	keyboard	design	positive
+436	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:7	make sure to only handle this computer with clean hands because the front cover can get oily pretty fast.		laptop#quality	laptop	quality	negative
+437	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:8	i'm overall very pleased with my new laptop!!!		laptop#general	laptop	general	positive
+438	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:9	the only downside are the speakers.		multimedia_devices#quality	multimedia	quality	negative
+439	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:10	they don't go very loud at all.		multimedia_devices#quality	multimedia	quality	negative
+440	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:11	the quality of the sound is nice but the lack of volume really kills it for me.		multimedia_devices#quality	multimedia	quality	positive
+441	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:11	the quality of the sound is nice but the lack of volume really kills it for me.		multimedia_devices#quality	multimedia	quality	negative
+442	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:12	this is mostly not an issue since i mainly use earbuds anyways however it could be annoying at times.		multimedia_devices#usability	multimedia	usability	negative
+443	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:13	the screen looked fine to me and wasn't an issue like others have been saying.		display#general	display	general	positive
+444	B0146DD02G_21_ANONYMOUS	B0146DD02G_21_ANONYMOUS:14	overall great for me!!!		laptop#general	laptop	general	positive
+445	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:1	this laptop has delivered.		laptop#general	laptop	general	positive
+446	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:3	i immediately did the windows 10 upgrade and haven't had any issues.		laptop#usability	laptop	usability	positive
+447	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:4	the wireless adapter is strong and the ssd is fast.		laptop#connectivity	laptop	connectivity	positive
+448	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:4	the wireless adapter is strong and the ssd is fast.		hard_disc#operation_performance	disc	performance	positive
+449	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:5	this thing boots in just a few seconds which is nice.		laptop#operation_performance	laptop	performance	positive
+450	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:6	others have mentioned issues with viewing angle on the screen, but i never use the laptop where i'm not looking straight at it so it doesn't bother me.		display#design_features	display	design	neutral
+451	B0146DD02G_20_ANONYMOUS	B0146DD02G_20_ANONYMOUS:7	i'm very pleased with the purchase.		laptop#general	laptop	general	positive
+452	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:1	boot time is super fast, around anywhere from 35 seconds to 1 minute.		laptop#operation_performance	laptop	performance	positive
+453	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:2	apps launch super fast, and the 500gb hdd is more than sufficient.		software#operation_performance	software	performance	positive
+454	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:2	apps launch super fast, and the 500gb hdd is more than sufficient.		hard_disc#design_features	disc	design	positive
+455	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:3	i usually use my mac for school work and internet browsing, so the entry-level 13' macbook pro is already more than what i expected from a computer i would typically use it for.		laptop#miscellaneous	laptop	miscellaneous	positive
+456	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:3	i usually use my mac for school work and internet browsing, so the entry-level 13' macbook pro is already more than what i expected from a computer i would typically use it for.		laptop#general	laptop	general	positive
+457	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:4	macs hardly ever get viruses, and they are completely incompatible with existing microsoft windows viruses.		laptop#quality	laptop	quality	positive
+458	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:5	furthermore, mac os x mountain lion's gate keeper prevents the user from downloading malware and trojans, which keep your data safe and your computer running at optimum speed.		os#quality	os	quality	positive
+459	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:5	furthermore, mac os x mountain lion's gate keeper prevents the user from downloading malware and trojans, which keep your data safe and your computer running at optimum speed.		laptop#operation_performance	laptop	performance	positive
+460	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:6	the keys on the keyboard are evenly spaced and are back-lit, which make it easy to use at night and for speed writing (typing?).		keyboard#design_features	keyboard	design	positive
+461	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:6	the keys on the keyboard are evenly spaced and are back-lit, which make it easy to use at night and for speed writing (typing?).		keyboard#usability	keyboard	usability	positive
+462	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:7	overall, the screen resolution, though non-retina, is sufficient for normal web browsing and work.		display#quality	display	quality	positive
+463	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:9	the thunderbolt port is awesome!		ports#operation_performance	ports	performance	positive
+464	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:11	us 3.0 comes with the mbp and has transfer rates of up to 5gbps.		laptop#design_features	laptop	design	neutral
+465	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:11	us 3.0 comes with the mbp and has transfer rates of up to 5gbps.		ports#operation_performance	ports	performance	positive
+466	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:12	other ports include firewire 800, gigabit ethernet, magsafe port, microphone jack.		laptop#design_features	laptop	design	neutral
+467	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:13	sdhc card reader and an optical drive for burning and reading discs.		laptop#design_features	laptop	design	neutral
+468	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:14	the glass track pad is large enough for apple's highly acclaimed multi-touch gestures for scrolling through web pages with two fingers, zooming in on certain parts of certain apps by double tapping with two fingers, accessing launchpad by pinching with five fingers and using mission control by swiping up with four fingers.		mouse#design_features	mouse	design	positive
+469	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:14	the glass track pad is large enough for apple's highly acclaimed multi-touch gestures for scrolling through web pages with two fingers, zooming in on certain parts of certain apps by double tapping with two fingers, accessing launchpad by pinching with five fingers and using mission control by swiping up with four fingers.		mouse#usability	mouse	usability	positive
+470	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:16	for windows users switching to a mac, you can also enable right clicking (known to apple as secondary click) in the system preferences&gt; mouse and enabling right clicking.		mouse#design_features	mouse	design	positive
+471	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:17	the unique to apple aluminium uni-body is a real beauty.		laptop#design_features	laptop	design	positive
+472	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:18	it makes the mbp very durable and protects it from scratches, though you shouldn't go launching it against a wall for the sake of trying it.		laptop#quality	laptop	quality	positive
+473	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:28	the mac app store and itunes store are phenomenal.		software#general	software	general	positive
+474	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:29	the mac app store is your one-stop shop for mac software, though you can also download software online at your own risk.		software#general	software	general	positive
+475	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:30	there are currently around 10,000 apps on the app store (and counting...), and billions of songs available for download fro the itunes store.		software#design_features	software	design	positive
+476	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:32	itunes is one of the better media players available on the market with it's simple to use user interface.		software#general	software	general	positive
+477	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:32	itunes is one of the better media players available on the market with it's simple to use user interface.		software#usability	software	usability	positive
+478	B0074703CM_148_ANONYMOUS	B0074703CM_148_ANONYMOUS:36	i'm sure you won't regret making this purchase.		laptop#general	laptop	general	positive
+479	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:0	one of the worst pieces of electronics i have ever bought.		laptop#general	laptop	general	negative
+480	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:1	very pour performance.		laptop#operation_performance	laptop	performance	negative
+481	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:2	it takes for ever to wake it up.		laptop#operation_performance	laptop	performance	negative
+482	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:3	sometimes it stops receiving wifi signal, so i have to restart it.		laptop#connectivity	laptop	connectivity	negative
+483	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:3	sometimes it stops receiving wifi signal, so i have to restart it.		laptop#operation_performance	laptop	performance	negative
+484	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:4	it is very slow and not responsive.		laptop#operation_performance	laptop	performance	negative
+485	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:5	would not recommend.		laptop#general	laptop	general	negative
+486	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:6	glare is also pretty frustrating.		display#quality	display	quality	negative
+487	B00M166GWM_3_ANONYMOUS	B00M166GWM_3_ANONYMOUS:7	there is definitely more to say...		laptop#general	laptop	general	negative
+488	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:1	i tested it, it worked great.		laptop#operation_performance	laptop	performance	positive
+489	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:2	he received it, and one day later it dies.		laptop#quality	laptop	quality	negative
+490	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:2	he received it, and one day later it dies.		laptop#operation_performance	laptop	performance	negative
+491	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:3	the laptop refuses to start, we have troubleshooted all areas, still fails to start.		laptop#operation_performance	laptop	performance	negative
+492	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:4	cannot even get to bios.		laptop#operation_performance	laptop	performance	negative
+493	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:5	just a click and a black screen.		laptop#operation_performance	laptop	performance	negative
+494	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:6	of course, it dies 3 days past the return window.		laptop#quality	laptop	quality	negative
+495	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:8	we got two days of operation from this laptop.		laptop#operation_performance	laptop	performance	negative
+496	B00L49X8E6_72_AFJGZ7DKR9YLS	B00L49X8E6_72_AFJGZ7DKR9YLS:8	we got two days of operation from this laptop.		laptop#quality	laptop	quality	negative
+497	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:5	when the macbook pro arrived, i helped her transfer all of her schoolwork from the pc to the mac... an easy drag-and-drop process utilizing a flash drive.		laptop#usability	laptop	usability	positive
+498	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:6	it was delivered with 4gb of ram -- 2gb on each of two sticks -- which was probably adequate.		memory#design_features	memory	design	positive
+499	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:9	so i simply pulled one 2gb stick from the machine and installed the 8gb stick in its place.		laptop#usability	laptop	usability	positive
+500	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:10	the machine now has 10 gigs of ram and it works just fine.		laptop#operation_performance	laptop	performance	positive
+501	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:10	the machine now has 10 gigs of ram and it works just fine.		memory#design_features	memory	design	neutral
+502	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:11	but, hey, it's an apple.		company#general	company	general	positive
+503	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:11	but, hey, it's an apple.		laptop#general	laptop	general	positive
+504	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:12	i wouldn't expect anything less!		company#general	company	general	positive
+505	B0074703CM_251_ANONYMOUS	B0074703CM_251_ANONYMOUS:12	i wouldn't expect anything less!		laptop#general	laptop	general	positive
+506	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:0	if it was possible to give them 0 start, i would have done it.		laptop#general	laptop	general	negative
+507	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:0	if it was possible to give them 0 start, i would have done it.		company#general	company	general	negative
+508	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:1	my laptop's one of the key from keyboard came out and it was mechanical failure.		keyboard#quality	keyboard	quality	negative
+509	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:2	my laptop was under coverage but when i gave it to them for repairs, they quoted me $755 for it.		support#quality	support	quality	negative
+510	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:2	my laptop was under coverage but when i gave it to them for repairs, they quoted me $755 for it.		support#price	support	price	negative
+511	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:3	this company just wants customers' money in their pocket.		company#general	company	general	negative
+512	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:4	they dont care how you feel when they charge you hundreds of hard earned dollars.		company#general	company	general	negative
+513	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:5	i wish this company to go bust.		company#general	company	general	negative
+514	B0074703CM_80_ANONYMOUS	B0074703CM_80_ANONYMOUS:6	i will never ever buy any apple product in my life.		company#general	company	general	negative
+515	B00O0W450A_1_ANONYMOUS	B00O0W450A_1_ANONYMOUS:0	overall i love it.		laptop#general	laptop	general	positive
+516	B00O0W450A_1_ANONYMOUS	B00O0W450A_1_ANONYMOUS:2	first, when i move the screen to put it in tablet position, the hinge doesn't seem totally solid.		laptop#quality	laptop	quality	negative
+517	B00O0W450A_1_ANONYMOUS	B00O0W450A_1_ANONYMOUS:3	i feel like i need to be really gentle with it, but maybe that's just me.		laptop#quality	laptop	quality	neutral
+518	B00O0W450A_1_ANONYMOUS	B00O0W450A_1_ANONYMOUS:4	also, and this maybe is another personal quirk, but the keyboard sits a little far back for my taste so my watch scrapes against the edge of the laptop.		keyboard#design_features	keyboard	design	negative
+519	B00O0W450A_1_ANONYMOUS	B00O0W450A_1_ANONYMOUS:4	also, and this maybe is another personal quirk, but the keyboard sits a little far back for my taste so my watch scrapes against the edge of the laptop.		keyboard#usability	keyboard	usability	negative
+520	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:0	first off, amazing laptop!		laptop#general	laptop	general	positive
+521	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:2	three years ago i had purchased this bad boy and it still runs great!		laptop#operation_performance	laptop	performance	positive
+522	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:2	three years ago i had purchased this bad boy and it still runs great!		laptop#quality	laptop	quality	positive
+523	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:3	if i were to have any technical difficulties, the local apple and contact line were able to help me asap, it was quite impressive.		support#quality	support	quality	positive
+524	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:4	i myself had purchased the 750 gig drive laptop and as a dj with thousands of songs, pictures, and other things...and after 3 years i have managed to fill around 9% of my gigs.		hard_disc#design_features	disc	design	positive
+525	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:5	there is so much room!		hard_disc#design_features	disc	design	positive
+526	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:6	pros  1. amazing storage (both 500gig and 750gig)		hard_disc#design_features	disc	design	positive
+527	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:7	2. 8 gig ram needed if you are as productive as i am (dj, photography, movie making, etc) its quick!		memory#design_features	memory	design	positive
+528	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:7	2. 8 gig ram needed if you are as productive as i am (dj, photography, movie making, etc) its quick!		laptop#operation_performance	laptop	performance	positive
+529	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:8	3. no anti spyware needed, never had a virus and i never will		laptop#quality	laptop	quality	positive
+530	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:9	4. build solid and durable		laptop#quality	laptop	quality	positive
+531	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:10	5. bought the 3 year warranty and boy it was needed (because of my doings)		warranty#general	warranty	general	positive
+532	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:11	cons.  1. if you fall behind in updates, your laptop will become progressively slower, just update it...then its back to normal		laptop#operation_performance	laptop	performance	neutral
+533	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:12	2. sometimes when i stared mine up it would take a few extra minutes to boot on, other times it is a few seconds		laptop#operation_performance	laptop	performance	negative
+534	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:13	3. cannot manually take battery out, unless you work for apple or have the tools		laptop#usability	laptop	usability	negative
+535	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:13	3. cannot manually take battery out, unless you work for apple or have the tools		battery#design_features	battery	design	negative
+536	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:14	overall, it is a fantastic laptop.		laptop#general	laptop	general	positive
+537	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:15	mine has been though hundreds of parties, weddings, quinces, anything involving performances, it can take it!		laptop#operation_performance	laptop	performance	positive
+538	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:16	this laptop was made for art, music, beat-making, pictures, movies, graphic design.		laptop#miscellaneous	laptop	miscellaneous	positive
+539	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:17	by the way, it comes with apps and hardware that can already support what i had just listed.		laptop#design_features	laptop	design	positive
+540	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:18	this laptop will last you a half decade if not a full decade.		laptop#quality	laptop	quality	positive
+541	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:19	soon i will be hitting the 5 year mark and i think this thing can make it another 5 in my opinion.		laptop#quality	laptop	quality	positive
+542	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:20	get this now!!!		laptop#general	laptop	general	positive
+543	B0074703CM_73_ANONYMOUS	B0074703CM_73_ANONYMOUS:21	by the way...i paid for this particular laptop roughly 2 grand...look at the price now!		laptop#price	laptop	price	positive
+544	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:0	this is a great laptop.		laptop#general	laptop	general	positive
+545	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:1	i bought it for college and couldn't be happier.		laptop#general	laptop	general	positive
+546	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:2	the ssd and i7 complement each other really well.		cpu#general	cpu	general	positive
+547	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:2	the ssd and i7 complement each other really well.		hard_disc#general	disc	general	positive
+548	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:5	i was pretty skeptical about upgrading to windows 10, but it is pretty awesome.		os#general	os	general	positive
+549	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:6	if you are looking for a light, durable, and extremely effecient laptop, buy this one!		laptop#design_features	laptop	design	positive
+550	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:6	if you are looking for a light, durable, and extremely effecient laptop, buy this one!		laptop#quality	laptop	quality	positive
+551	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:6	if you are looking for a light, durable, and extremely effecient laptop, buy this one!		laptop#operation_performance	laptop	performance	positive
+552	B0146DD02G_24_ANONYMOUS	B0146DD02G_24_ANONYMOUS:6	if you are looking for a light, durable, and extremely effecient laptop, buy this one!		laptop#general	laptop	general	positive
+553	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:2	they really know what they are doing.		company#general	company	general	positive
+554	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:2	they really know what they are doing.		laptop#general	laptop	general	positive
+555	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:3	the laptop is so easy to work with.		laptop#usability	laptop	usability	positive
+556	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:4	like it was designed for what people would want to the system to do, very user-friendly.		laptop#design_features	laptop	design	positive
+557	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:4	like it was designed for what people would want to the system to do, very user-friendly.		laptop#usability	laptop	usability	positive
+558	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:5	its simplicity is one of the things that makes it so great, aside from its quality design and sexy looks.		laptop#usability	laptop	usability	positive
+559	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:5	its simplicity is one of the things that makes it so great, aside from its quality design and sexy looks.		laptop#design_features	laptop	design	positive
+560	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:5	its simplicity is one of the things that makes it so great, aside from its quality design and sexy looks.		laptop#quality	laptop	quality	positive
+561	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:6	if you dont like windows i would suggest trying a mac.		laptop#general	laptop	general	positive
+562	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:6	if you dont like windows i would suggest trying a mac.		company#general	company	general	positive
+563	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:7	the investment is worth it.		laptop#general	laptop	general	positive
+564	B0074703CM_24_ANONYMOUS	B0074703CM_24_ANONYMOUS:7	the investment is worth it.		company#general	company	general	positive
+565	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:0	have bought several laptops in last several years and hands down this has been the best ever.		laptop#general	laptop	general	positive
+566	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:2	mac user interface is just the best.		os#usability	os	usability	positive
+567	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:4	also, the laptop is quite, no more burnt laps, best screen display, and small additions like backlit keyboard wins your heart over.		laptop#quality	laptop	quality	positive
+568	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:4	also, the laptop is quite, no more burnt laps, best screen display, and small additions like backlit keyboard wins your heart over.		display#quality	display	quality	positive
+569	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:4	also, the laptop is quite, no more burnt laps, best screen display, and small additions like backlit keyboard wins your heart over.		keyboard#design_features	keyboard	design	positive
+570	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:4	also, the laptop is quite, no more burnt laps, best screen display, and small additions like backlit keyboard wins your heart over.		laptop#design_features	laptop	design	positive
+571	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:8	only thing i dislike is that everything for mac is expensive but i guess you pay for quality!		laptop#quality	laptop	quality	positive
+572	B0074703CM_234_ANONYMOUS	B0074703CM_234_ANONYMOUS:8	only thing i dislike is that everything for mac is expensive but i guess you pay for quality!		laptop#price	laptop	price	negative
+573	B0074703CM_84_ANONYMOUS	B0074703CM_84_ANONYMOUS:0	not impressed with macintosh products.		company#general	company	general	negative
+574	B0074703CM_84_ANONYMOUS	B0074703CM_84_ANONYMOUS:1	in fact i am completely frustrated.		company#general	company	general	negative
+575	B0074703CM_84_ANONYMOUS	B0074703CM_84_ANONYMOUS:3	also, many software programs are not compatible with the ios platform.		os#usability	os	usability	negative
+576	B0074703CM_84_ANONYMOUS	B0074703CM_84_ANONYMOUS:6	be sure the programs you need will work on a mac before you buy one!		laptop#usability	laptop	usability	negative
+577	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:1	i had heard people speak highly of the macbook pro for college students, and have not been disappointed through two and a half years of extensive use.		laptop#general	laptop	general	positive
+578	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:2	the macbook pro is useful for college students for many reasons:		laptop#miscellaneous	laptop	miscellaneous	positive
+579	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:3	it is the cheapest product in the line of macbook's		laptop#price	laptop	price	positive
+580	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:4	the new operating system called snow leopard is installed and ready for use		laptop#design_features	laptop	design	positive
+581	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:4	the new operating system called snow leopard is installed and ready for use		os#usability	os	usability	positive
+582	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:5	the battery life has increased from the last version from 4 hours to 7 hours, making it easy for college students to study for extended periods of time without needing a charger.		battery#operation_performance	battery	performance	positive
+583	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:7	reliability: throughout the past few years, i have had no problems with the macbook pro regarding the processing system or any design flaws.		laptop#design_features	laptop	design	positive
+584	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:7	reliability: throughout the past few years, i have had no problems with the macbook pro regarding the processing system or any design flaws.		os#quality	os	quality	positive
+585	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:8	durability: my computer has fallen from small heights and has had a few spills on it, but has had no lasting damage to the console with only a light plastic case on it.		laptop#quality	laptop	quality	positive
+586	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:11	usability: the macbook pro is very easy to use and can be used by someone who doesn't necessarily have extensive knowledge on computers.		laptop#usability	laptop	usability	positive
+587	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:12	the processing system is already downloaded and the applications are very user friendly.		laptop#design_features	laptop	design	positive
+588	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:12	the processing system is already downloaded and the applications are very user friendly.		software#usability	software	usability	positive
+589	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:13	the macbook pro has a significant amount of positive attributes that greatly outweigh the negative attributes:		laptop#general	laptop	general	positive
+590	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:14	pros:  o it usually runs very smoothly, but apple has an excellent support team that is always willing to help customers.		laptop#operation_performance	laptop	performance	positive
+591	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:14	pros:  o it usually runs very smoothly, but apple has an excellent support team that is always willing to help customers.		support#quality	support	quality	positive
+592	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:16	o it has an extended battery life.		battery#operation_performance	battery	performance	positive
+593	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:17	o it is extremely user friendly.		laptop#usability	laptop	usability	positive
+594	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:18	cons:  o some people don't enjoy the way the processing system runs, but don't have any issues with getting it to function.		os#operation_performance	os	performance	positive
+595	B0074703CM_192_ANONYMOUS	B0074703CM_192_ANONYMOUS:19	o others have problems with the applications depending what they need to use the device for, for example engineering majors need extra applications &amp; systems to do some work, but they are easily downloadable.		laptop#usability	laptop	usability	positive
+596	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:0	my first laptop ever and it is a flips into a tablet mode also, brilliant.		laptop#design_features	laptop	design	positive
+597	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:1	so far so good.		laptop#general	laptop	general	positive
+598	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:2	battery doesn't hold up to what it said in the description but i got it refurb'd and i imagine they swapped out the battery to help cover the costs on the reduced price (just a guess).		battery#operation_performance	battery	performance	negative
+599	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:2	battery doesn't hold up to what it said in the description but i got it refurb'd and i imagine they swapped out the battery to help cover the costs on the reduced price (just a guess).		laptop#price	laptop	price	positive
+600	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:3	still getting used to typing on it, my palms keep hitting the mousepad and causing the cursor to jump and moving me off of where i was typing.		keyboard#usability	keyboard	usability	neutral
+601	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:3	still getting used to typing on it, my palms keep hitting the mousepad and causing the cursor to jump and moving me off of where i was typing.		mouse#usability	mouse	usability	negative
+602	B00O0W450A_9_ANONYMOUS	B00O0W450A_9_ANONYMOUS:5	plenty of ports and since this is my first laptop, i really don't have anything to compare it to.		laptop#design_features	laptop	design	positive
+603	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:0	note: no dvd drive, no ethernet port		laptop#design_features	laptop	design	negative
+604	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:1	screen is too small to read and almost impossible to touch  with a normal adult finger.		display#design_features	display	design	negative
+605	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:1	screen is too small to read and almost impossible to touch  with a normal adult finger.		display#usability	display	usability	negative
+606	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:2	the brightest screen setting appeared dim in normal room light.		display#quality	display	quality	negative
+607	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:3	keyboard is flimsy and mediocre at best.		keyboard#quality	keyboard	quality	negative
+608	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:4	the touch pad feel is a 4 on scale  1 - 10.		mouse#quality	mouse	quality	negative
+609	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:5	computer seemed sluggish for an intel core i5 device.		laptop#operation_performance	laptop	performance	negative
+610	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:6	power on - good luck finding it.		laptop#design_features	laptop	design	negative
+611	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:6	power on - good luck finding it.		laptop#usability	laptop	usability	negative
+612	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:7	i would run back to computer store and return this expensive toy.		laptop#general	laptop	general	negative
+613	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:7	i would run back to computer store and return this expensive toy.		laptop#price	laptop	price	negative
+614	B00L156USY_11_ANONYMOUS	B00L156USY_11_ANONYMOUS:8	signed: not impressed		laptop#general	laptop	general	negative
+615	B00O0W450A_18_ANONYMOUS	B00O0W450A_18_ANONYMOUS:0	i bought this a few months ago and it's holding up fairly well.		laptop#general	laptop	general	positive
+616	B00O0W450A_18_ANONYMOUS	B00O0W450A_18_ANONYMOUS:1	runs fast, the touch screen hasn't lost any sensitivity, i'm overall very happy with it.		laptop#operation_performance	laptop	performance	positive
+617	B00O0W450A_18_ANONYMOUS	B00O0W450A_18_ANONYMOUS:1	runs fast, the touch screen hasn't lost any sensitivity, i'm overall very happy with it.		display#operation_performance	display	performance	positive
+618	B00O0W450A_18_ANONYMOUS	B00O0W450A_18_ANONYMOUS:1	runs fast, the touch screen hasn't lost any sensitivity, i'm overall very happy with it.		laptop#general	laptop	general	positive
+619	B00O0W450A_18_ANONYMOUS	B00O0W450A_18_ANONYMOUS:3	this one doesn't do that.		mouse#usability	mouse	usability	negative
+620	B00O0W450A_18_ANONYMOUS	B00O0W450A_18_ANONYMOUS:4	the trackpad is pretty crappy - but aren't they all?		mouse#quality	mouse	quality	negative
+621	B0074703CM_166_ANONYMOUS	B0074703CM_166_ANONYMOUS:0	this is my first apple computer and i couldn't be more pleased.		laptop#general	laptop	general	positive
+622	B0074703CM_166_ANONYMOUS	B0074703CM_166_ANONYMOUS:1	ios does everything its billed to do and much, much more.		os#general	os	general	positive
+623	B0074703CM_166_ANONYMOUS	B0074703CM_166_ANONYMOUS:2	literally every detail has been thought out and designed with the user in mind.		os#design_features	os	design	positive
+624	B0074703CM_166_ANONYMOUS	B0074703CM_166_ANONYMOUS:3	i can't believe how much time it saves me through automatic processes.		os#usability	os	usability	positive
+625	B0074703CM_166_ANONYMOUS	B0074703CM_166_ANONYMOUS:4	the computer of the people!		laptop#general	laptop	general	positive
+626	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:0	i love this laptop.		laptop#general	laptop	general	positive
+627	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:2	the batter lasts as long as claimed.		battery#operation_performance	battery	performance	positive
+628	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:3	i get about 5 or so hours playing the sims.		battery#operation_performance	battery	performance	positive
+629	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:4	i haven't really officially tested it yet, but it's a long time.		battery#operation_performance	battery	performance	positive
+630	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:5	i hate plugging my laptop in because i don't want to leave it on too long and hurt the battery, but with this laptop i rarely have to charge it.		battery#operation_performance	battery	performance	positive
+631	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:6	the touchscreen is responsive and even works with my crappy dollar stylus.		display#operation_performance	display	performance	positive
+632	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:6	the touchscreen is responsive and even works with my crappy dollar stylus.		display#usability	display	usability	positive
+633	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:7	the only problem i have is with windows 8.		os#general	os	general	negative
+634	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:8	i hate windows 8.		os#general	os	general	negative
+635	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:9	it made me sign up with microsoft and sometimes won't let me download things that are harmful to my computer, but that's what anti virus software is for lol.		os#usability	os	usability	negative
+636	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:10	the wifi rumor hasn't happened to me.		laptop#connectivity	laptop	connectivity	positive
+637	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:11	the wifi works great.		laptop#connectivity	laptop	connectivity	positive
+638	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:13	it feels very well built.		laptop#quality	laptop	quality	positive
+639	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:14	the metal is very expensive feeling.		laptop#quality	laptop	quality	positive
+640	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:15	the laptop is a little more than an inch thick when closed.		laptop#design_features	laptop	design	neutral
+641	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:16	i'm a very weak girl and i could lift this laptop with one hand, however i'd get tired soon lol.		laptop#portability	laptop	portability	negative
+642	B00O0W450A_10_ANONYMOUS	B00O0W450A_10_ANONYMOUS:17	the 15.6&amp;#34; screen is not good for carrying around in your bare hands.		laptop#portability	laptop	portability	negative
+643	B0074703CM_225_ANONYMOUS	B0074703CM_225_ANONYMOUS:0	i bought my first macbook exactly 5 months ago and was really happy with my new toy, but what was not my surprise when i turned it on 2 days ago and the screen was completely black.		laptop#general	laptop	general	negative
+644	B0074703CM_225_ANONYMOUS	B0074703CM_225_ANONYMOUS:0	i bought my first macbook exactly 5 months ago and was really happy with my new toy, but what was not my surprise when i turned it on 2 days ago and the screen was completely black.		display#operation_performance	display	performance	negative
+645	B0074703CM_225_ANONYMOUS	B0074703CM_225_ANONYMOUS:0	i bought my first macbook exactly 5 months ago and was really happy with my new toy, but what was not my surprise when i turned it on 2 days ago and the screen was completely black.		display#quality	display	quality	negative
+646	B0074703CM_225_ANONYMOUS	B0074703CM_225_ANONYMOUS:1	i can hear the noise of the computer turning on and the lights also turn on but the screen in completely dead.		display#operation_performance	display	performance	negative
+647	B0074703CM_225_ANONYMOUS	B0074703CM_225_ANONYMOUS:1	i can hear the noise of the computer turning on and the lights also turn on but the screen in completely dead.		display#quality	display	quality	negative
+648	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:0	the best computer i've ever bought.		laptop#general	laptop	general	positive
+649	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:1	the simple look of icons and format makes it easy to navigate through programs and download files.		os#design_features	os	design	positive
+650	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:1	the simple look of icons and format makes it easy to navigate through programs and download files.		laptop#usability	laptop	usability	positive
+651	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:2	the only issue i had was with the harddrive.		hard_disc#operation_performance	disc	performance	negative
+652	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:3	the harddrive crashed and i thought i had lost the whole computer.		hard_disc#operation_performance	disc	performance	negative
+653	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:5	replacing the harddrive in this laptop is extremely easy, a couple screws on the back to remove the backplate and the harddrive is pretty much plug and play.		laptop#usability	laptop	usability	positive
+654	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:7	and apple was happy to install the latest osx for free!		support#quality	support	quality	positive
+655	B0074703CM_63_ANONYMOUS	B0074703CM_63_ANONYMOUS:8	you wont be disappointed with this computer!		laptop#general	laptop	general	positive
+656	B0074703CM_85_ANONYMOUS	B0074703CM_85_ANONYMOUS:3	it's just a matter of getting used to the touch-pad commands.		mouse#usability	mouse	usability	neutral
+657	B0074703CM_85_ANONYMOUS	B0074703CM_85_ANONYMOUS:4	thankfully i have earphones and an external amplifier for audio; the onboard speakers are just terrible.		multimedia_devices#general	multimedia	general	negative
+658	B0074703CM_85_ANONYMOUS	B0074703CM_85_ANONYMOUS:5	but what should i expect from a unit that is this thin and this light?		laptop#design_features	laptop	design	neutral
+659	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:0	the most disappointing purchase of my life!		laptop#general	laptop	general	negative
+660	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:2	i received a dud and have had nothing but problems since right after i purchased this horrible machine.		laptop#quality	laptop	quality	negative
+661	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:2	i received a dud and have had nothing but problems since right after i purchased this horrible machine.		laptop#general	laptop	general	negative
+662	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:3	within the first few months that i bought it, there was clearly a problem with the hard drive.		hard_disc#quality	disc	quality	negative
+663	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:6	the online customer service was awful.		support#quality	support	quality	negative
+664	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:7	gave me the runaround for an entire day and treated me like an imbecile.		support#quality	support	quality	negative
+665	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:8	no one would ever answer my question as to why i couldn't get another new macbook since this was clearly a factory error and my macbook was still under warranty.		support#quality	support	quality	negative
+666	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:9	as a matter of fact, no matter how many times i asked that question, the employees i spoke purposely ignored it.		support#quality	support	quality	negative
+667	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:10	they didn't say yes and they didn't say no, they just pretended that i never asked it, which was incredibly frustrating.		support#quality	support	quality	negative
+668	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:11	i've been to the &amp;#34;genius&amp;#34; bar several times (they have been very nice).		support#quality	support	quality	positive
+669	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:12	they have now basically replaced everything inside my machine, told me there was a problem with the hardware, so i now have a &amp;#34;refurbished&amp;#34; machine.		laptop#quality	laptop	quality	negative
+670	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:12	they have now basically replaced everything inside my machine, told me there was a problem with the hardware, so i now have a &amp;#34;refurbished&amp;#34; machine.		hardware#quality	hardware	quality	negative
+671	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:13	maybe i'm not being reasonable, but i don't feel that's the same as a new computer because i didn't pay for a refurbished computer.		laptop#miscellaneous	laptop	miscellaneous	negative
+672	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:14	i still have weird freezing problems with it and it's pretty slow, but it's not pinpointed enough yet for me to take it in.		laptop#operation_performance	laptop	performance	negative
+673	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:15	i had delusions of grandeur regarding apple's &amp;#34;great customer service&amp;#34; and the &amp;#34;reliability of their machines&amp;#34; etc.. etc...blah...blah...		support#quality	support	quality	negative
+674	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:15	i had delusions of grandeur regarding apple's &amp;#34;great customer service&amp;#34; and the &amp;#34;reliability of their machines&amp;#34; etc.. etc...blah...blah...		laptop#quality	laptop	quality	negative
+675	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:15	i had delusions of grandeur regarding apple's &amp;#34;great customer service&amp;#34; and the &amp;#34;reliability of their machines&amp;#34; etc.. etc...blah...blah...		company#general	company	general	negative
+676	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:17	i'm sure most people's macbooks work just fine, but fyi, if you get the factory dud, you're stuck with it and no one at apple cares or will give a hoot about the money you threw away.		support#quality	support	quality	negative
+677	B0074703CM_314_ANONYMOUS	B0074703CM_314_ANONYMOUS:17	i'm sure most people's macbooks work just fine, but fyi, if you get the factory dud, you're stuck with it and no one at apple cares or will give a hoot about the money you threw away.		company#general	company	general	negative
+678	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:10	one os for this platform, no oem os paraphernalia and automatic updates.		laptop#design_features	laptop	design	positive
+679	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:10	one os for this platform, no oem os paraphernalia and automatic updates.		os#design_features	os	design	positive
+680	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:11	i am happy with the feel the speed and the seamless transition to the mac!		laptop#quality	laptop	quality	positive
+681	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:11	i am happy with the feel the speed and the seamless transition to the mac!		laptop#operation_performance	laptop	performance	positive
+682	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:11	i am happy with the feel the speed and the seamless transition to the mac!		laptop#usability	laptop	usability	positive
+683	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:15	well she was right, whatever in the world took me so long to get a computer that just works.		laptop#operation_performance	laptop	performance	positive
+684	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:16	i'm no power user, but i have had no learning curve with the mac and i don't do anything geeky enough forcing me to learn the os.		laptop#usability	laptop	usability	positive
+685	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:16	i'm no power user, but i have had no learning curve with the mac and i don't do anything geeky enough forcing me to learn the os.		os#usability	os	usability	positive
+686	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:17	i did buy office 2008 for the mac at a very low price to migrate most of my work files for $64 and that was  a steal in my opinion.		software#price	software	price	positive
+687	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:18	otherwise i am happily a  mac user.		laptop#general	laptop	general	positive
+688	B0074703CM_224_ANONYMOUS	B0074703CM_224_ANONYMOUS:18	otherwise i am happily a  mac user.		company#general	company	general	positive
+689	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:0	for a premium laptop sold in 2013, the apple macbook pro (13 inch, base model) is about as basic as it gets: no ssd, no discrete graphics, no 1080p display, and no touch screen.		laptop#general	laptop	general	neutral
+690	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:0	for a premium laptop sold in 2013, the apple macbook pro (13 inch, base model) is about as basic as it gets: no ssd, no discrete graphics, no 1080p display, and no touch screen.		graphics#design_features	graphics	design	neutral
+691	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:0	for a premium laptop sold in 2013, the apple macbook pro (13 inch, base model) is about as basic as it gets: no ssd, no discrete graphics, no 1080p display, and no touch screen.		laptop#design_features	laptop	design	neutral
+692	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:0	for a premium laptop sold in 2013, the apple macbook pro (13 inch, base model) is about as basic as it gets: no ssd, no discrete graphics, no 1080p display, and no touch screen.		display#design_features	display	design	neutral
+693	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:1	but apple does not pretend it has any of these.		company#general	company	general	positive
+694	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	what it does have is great reliability on the software side and hardware side, apple's osx mountain lion, the sleek looks apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		software#quality	software	quality	positive
+695	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	what it does have is great reliability on the software side and hardware side, apple's osx mountain lion, the sleek looks apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		hardware#quality	hardware	quality	positive
+696	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	what it does have is great reliability on the software side and hardware side, apple's osx mountain lion, the sleek looks apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		os#general	os	general	positive
+697	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	what it does have is great reliability on the software side and hardware side, apple's osx mountain lion, the sleek looks apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		laptop#design_features	laptop	design	positive
+698	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	what it does have is great reliability on the software side and hardware side, apple's osx mountain lion, the sleek looks apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		battery#operation_performance	battery	performance	positive
+699	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	what it does have is great reliability on the software side and hardware side, apple's osx mountain lion, the sleek looks apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		keyboard#general	keyboard	general	positive
+700	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:2	what it does have is great reliability on the software side and hardware side, apple's osx mountain lion, the sleek looks apple always delivers, reasonable specs, good battery life, nice keyboard, and excellent trackpad.		mouse#general	mouse	general	positive
+701	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:4	those looking for a bargain laptop will shy away from the enormous price tag, and those who want to play the latest games do not ever use macs.		laptop#price	laptop	price	negative
+702	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:4	those looking for a bargain laptop will shy away from the enormous price tag, and those who want to play the latest games do not ever use macs.		laptop#miscellaneous	laptop	miscellaneous	negative
+703	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:6	the macbook pro 13.3 inch laptop is for those who want to use a mac, but value performance and upgradability over weight and screen resolution.		laptop#operation_performance	laptop	performance	positive
+704	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:6	the macbook pro 13.3 inch laptop is for those who want to use a mac, but value performance and upgradability over weight and screen resolution.		laptop#usability	laptop	usability	positive
+705	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:6	the macbook pro 13.3 inch laptop is for those who want to use a mac, but value performance and upgradability over weight and screen resolution.		laptop#design_features	laptop	design	negative
+706	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:6	the macbook pro 13.3 inch laptop is for those who want to use a mac, but value performance and upgradability over weight and screen resolution.		display#quality	display	quality	negative
+707	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:7	this mac will last longer than any other simply because it is the easiest to upgrade and repair.		laptop#quality	laptop	quality	positive
+708	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:7	this mac will last longer than any other simply because it is the easiest to upgrade and repair.		laptop#usability	laptop	usability	positive
+709	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:8	hard drives can be replaced, ram can be added as needed, and the internal battery can be replaced after losing its ability to hold a charge.		laptop#usability	laptop	usability	positive
+710	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:12	this, added with the fact that the speed of the hard drive is very slow for the money, detracts from the computer's value.		hard_disc#operation_performance	disc	performance	negative
+711	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:12	this, added with the fact that the speed of the hard drive is very slow for the money, detracts from the computer's value.		laptop#price	laptop	price	negative
+712	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:12	this, added with the fact that the speed of the hard drive is very slow for the money, detracts from the computer's value.		laptop#general	laptop	general	negative
+713	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:13	lowering the price by one hundred dollars would justify the hard drive and screen and make the computer a five-star purchase, but for the price, this is a four star (good) computer.		laptop#price	laptop	price	negative
+714	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:13	lowering the price by one hundred dollars would justify the hard drive and screen and make the computer a five-star purchase, but for the price, this is a four star (good) computer.		laptop#general	laptop	general	positive
+715	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:16	tldr version: good, reliable laptop with mediocre screen and slow hard drive.		hard_disc#operation_performance	disc	performance	negative
+716	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:16	tldr version: good, reliable laptop with mediocre screen and slow hard drive.		display#quality	display	quality	neutral
+717	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:16	tldr version: good, reliable laptop with mediocre screen and slow hard drive.		laptop#quality	laptop	quality	positive
+718	B0074703CM_34_ANONYMOUS	B0074703CM_34_ANONYMOUS:16	tldr version: good, reliable laptop with mediocre screen and slow hard drive.		laptop#general	laptop	general	positive
+719	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:0	i am really sorry i bought this machine.		laptop#general	laptop	general	negative
+720	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:2	i was shocked at how much worse this product has been since my first purchase.		laptop#general	laptop	general	negative
+721	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:4	this machine has made me go there 5 times and has been nothing but a continuous problem.		laptop#quality	laptop	quality	negative
+722	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:4	this machine has made me go there 5 times and has been nothing but a continuous problem.		laptop#general	laptop	general	negative
+723	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:5	finally, they are sending it in for a motherboard replacement.		motherboard#quality	motherboard	quality	neutral
+724	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:6	(it's a lemon).		laptop#quality	laptop	quality	negative
+725	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:7	so, i'm cooled on mac buys.		company#general	company	general	negative
+726	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:11	they did not replace the motherboard.		support#quality	support	quality	negative
+727	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:12	instead they 'tightened' a loose wire.		support#quality	support	quality	negative
+728	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:13	it also has a big new scratch on the top cover.		support#quality	support	quality	negative
+729	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:14	i started it up and it still has the same problem i went in to fix.		support#quality	support	quality	negative
+730	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:15	so i'm going back to genius bar for visit #6.		support#quality	support	quality	negative
+731	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:16	i think it may have to be 'apple don't care' instead of apple care.		support#quality	support	quality	negative
+732	B0074703CM_149_ANONYMOUS	B0074703CM_149_ANONYMOUS:16	i think it may have to be 'apple don't care' instead of apple care.		company#general	company	general	negative
+733	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:1	you get what you pay for, right?		laptop#price	laptop	price	negative
+734	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:1	you get what you pay for, right?		laptop#general	laptop	general	negative
+735	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:5	mac is complicated and frustrating at moments.		os#design_features	os	design	negative
+736	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:5	mac is complicated and frustrating at moments.		os#usability	os	usability	negative
+737	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:6	i watched tutorials and that helped somewhat but not enough.		os#usability	os	usability	negative
+738	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:11	i should have known better.		laptop#general	laptop	general	negative
+739	B0074703CM_157_ANONYMOUS	B0074703CM_157_ANONYMOUS:12	i hope you don't make the same mistake...		laptop#general	laptop	general	negative
+740	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:0	when i first got the computer, i noticed the tracking pad was hard to click.		mouse#usability	mouse	usability	negative
+741	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:3	i took my macbook to the apple store and they had to replace the battery after 1 month of use since it was swelling.		battery#quality	battery	quality	negative
+742	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:4	they tried to tell me that the battery wasn't covered by the warranty and it costs about $150 to replace.		support#quality	support	quality	negative
+743	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:5	they ended up not charging me.		support#quality	support	quality	neutral
+744	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:6	other than that battery issue and the battery life does not last too long, i'm pretty happy with the computer.		battery#quality	battery	quality	negative
+745	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:6	other than that battery issue and the battery life does not last too long, i'm pretty happy with the computer.		battery#operation_performance	battery	performance	negative
+746	B0074703CM_257_ANONYMOUS	B0074703CM_257_ANONYMOUS:6	other than that battery issue and the battery life does not last too long, i'm pretty happy with the computer.		laptop#general	laptop	general	positive
+747	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:0	i'm a designer turned front-end developer and this computer is unusable for front-end development.		laptop#miscellaneous	laptop	miscellaneous	negative
+748	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:2	opening photoshop takes fooooooorrrever, as do all programs that do not begin with an 'i'.		software#operation_performance	software	performance	negative
+749	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:2	opening photoshop takes fooooooorrrever, as do all programs that do not begin with an 'i'.		laptop#usability	laptop	usability	negative
+750	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:3	the free upgrade to mountain lion failed.		os#miscellaneous	os	miscellaneous	negative
+751	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:5	it tried to boot up and the screen just flashed over and over and over again.		display#operation_performance	display	performance	negative
+752	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:6	before and after i resolved that issue, i saw the damn 'beachball' all the time as the computer tries to figure out what the hell it's doing while i wait for it.		laptop#operation_performance	laptop	performance	negative
+753	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:7	i spend so much time waiting for it.		laptop#operation_performance	laptop	performance	negative
+754	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:10	i can't believe people like these computers.		laptop#general	laptop	general	negative
+755	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:10	i can't believe people like these computers.		company#general	company	general	negative
+756	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:11	now that they are not virus free ([...]l) i see absolutely no benefit to apple products as they are slower, more expensive, and do not last as long.		laptop#operation_performance	laptop	performance	negative
+757	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:11	now that they are not virus free ([...]l) i see absolutely no benefit to apple products as they are slower, more expensive, and do not last as long.		laptop#price	laptop	price	negative
+758	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:11	now that they are not virus free ([...]l) i see absolutely no benefit to apple products as they are slower, more expensive, and do not last as long.		laptop#quality	laptop	quality	negative
+759	B0074703CM_282_ANONYMOUS	B0074703CM_282_ANONYMOUS:11	now that they are not virus free ([...]l) i see absolutely no benefit to apple products as they are slower, more expensive, and do not last as long.		company#general	company	general	negative
+760	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:0	don't waste your money.		laptop#general	laptop	general	negative
+761	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:1	my hp seemed great at first, then the problems started.....wireless adapter would just &quot;disappear&quot; and the system said it didn't have a network card.		laptop#general	laptop	general	negative
+762	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:1	my hp seemed great at first, then the problems started.....wireless adapter would just &quot;disappear&quot; and the system said it didn't have a network card.		laptop#connectivity	laptop	connectivity	negative
+763	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:2	sometimes it comes back, sometimes not.		laptop#connectivity	laptop	connectivity	negative
+764	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:3	hp was no help.		support#quality	support	quality	negative
+765	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:4	the lettering wore off the keys, so you better be able to type blind.		keyboard#quality	keyboard	quality	negative
+766	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:4	the lettering wore off the keys, so you better be able to type blind.		keyboard#usability	keyboard	usability	negative
+767	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:5	the battery lasted 12 months, then pffft.....gone.		battery#quality	battery	quality	negative
+768	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:8	when i had a boot up issue, the hp recovery didn't work.		laptop#miscellaneous	laptop	miscellaneous	negative
+769	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:9	the disks i made wouldn't work.....hp support stated &quot;we're a hardware company, not a software company.&quot;		laptop#miscellaneous	laptop	miscellaneous	negative
+770	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:9	the disks i made wouldn't work.....hp support stated &quot;we're a hardware company, not a software company.&quot;		support#quality	support	quality	negative
+771	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:11	then there was a power cord recall....hp never notified us.....and we did register......never again.		company#general	company	general	negative
+772	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:16	i don't have the inclination or time to devote to a companies tech support, search functions, or hold times.....dropped the hp and never looked back.		laptop#general	laptop	general	negative
+773	B00LNFCADQ_5_ALWWKZCL1CKGD	B00LNFCADQ_5_ALWWKZCL1CKGD:16	i don't have the inclination or time to devote to a companies tech support, search functions, or hold times.....dropped the hp and never looked back.		company#general	company	general	negative
+774	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:0	i gave this product 5 stars because i have been looking for a macbook pro for a long time and i found it here for a wonderful price.		laptop#price	laptop	price	positive
+775	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:0	i gave this product 5 stars because i have been looking for a macbook pro for a long time and i found it here for a wonderful price.		laptop#general	laptop	general	positive
+776	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:1	i have used this product for only 2 days, but i can't wait to use it more.		laptop#general	laptop	general	positive
+777	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:2	i really like mac/apple products because of their operating system.		os#general	os	general	positive
+778	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:2	i really like mac/apple products because of their operating system.		company#general	company	general	positive
+779	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:4	i can tweet and use facebook from the sidebar which is really nice.		os#usability	os	usability	positive
+780	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:5	i also like i have the option to push calendars, photos, and contacts to an ipad, ipod touch, or iphone (if i had any of those).		os#usability	os	usability	positive
+781	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:6	the only thing i have had trouble with so far is transferring music to itunes which i would have liked to do though &amp;#34;home sharing&amp;#34; (i used itunes on a computer separate from my linux computer) but i could not figure that out.		software#usability	software	usability	negative
+782	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:7	i just ended up using my ipod to transfer my itunes music and i re-downloaded my amazon music (losing my ratings).		software#usability	software	usability	negative
+783	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:9	i have not tried gaming on it but i have heard that mac/apple does not do games well.		laptop#miscellaneous	laptop	miscellaneous	negative
+784	B0074703CM_6_ANONYMOUS	B0074703CM_6_ANONYMOUS:10	i plan on using my macbook pro for a long time.		laptop#general	laptop	general	positive
+785	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:0	when i decided to buy my first computer, i wish i had bought a mac first.		laptop#general	laptop	general	positive
+786	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:1	if the price doesn't deter you, you'll find it well worth it in terms of trouble-free operation.		laptop#price	laptop	price	negative
+787	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:1	if the price doesn't deter you, you'll find it well worth it in terms of trouble-free operation.		laptop#operation_performance	laptop	performance	positive
+788	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:2	i've had it for more than a year, and i've found that no anti-virus software is needed, as long as you don't download anything without being 100% sure that it's from a legitimate source.		laptop#quality	laptop	quality	positive
+789	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:4	from time to time i get the 'spinning beach ball' that holds up progress.		laptop#operation_performance	laptop	performance	negative
+790	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:5	i can almost always fix that quickly by clicking on the 'show all bookmarks' icon (the open book icon at the upper left).		laptop#usability	laptop	usability	positive
+791	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:6	once in a long while that doesn't work; in that case i turn the computer off, then on again, and sign in -- problem solved.		laptop#usability	laptop	usability	neutral
+792	B0074703CM_173_ANONYMOUS	B0074703CM_173_ANONYMOUS:7	i'll leave the more technical aspects to those more knowledgeable than myself, and just conclude by saying that i'm delighted with my purchase.		laptop#general	laptop	general	positive
+793	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:0	received this item and everything is great except that my touchpad is reversed.		laptop#general	laptop	general	positive
+794	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:0	received this item and everything is great except that my touchpad is reversed.		mouse#operation_performance	mouse	performance	negative
+795	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:1	to go left i have to go right and vice versa and to go up i have to go down.		mouse#operation_performance	mouse	performance	negative
+796	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:1	to go left i have to go right and vice versa and to go up i have to go down.		mouse#usability	mouse	usability	negative
+797	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:2	when i attach a mouse it's fine but the touchpad is really annoying.		mouse#usability	mouse	usability	negative
+798	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:3	i went through the settings and there isn't a way to fix it.		mouse#usability	mouse	usability	negative
+799	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:6	it's a great laptop, but right now it's annoying to use the touchpad.		laptop#general	laptop	general	positive
+800	B00L156USY_7_ANONYMOUS	B00L156USY_7_ANONYMOUS:6	it's a great laptop, but right now it's annoying to use the touchpad.		mouse#usability	mouse	usability	negative
