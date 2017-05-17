@@ -4,9 +4,9 @@ import h5py
 from time import time
 from tqdm import tqdm
 
-from data_loader import TrainData, TestData, EvalData
-from prepare_data import get_w2i, get_a2i
-from model import AspectLevelModel
+from baseline.data_loader import TrainData, EvalData
+from baseline.model import AspectLevelModel
+from baseline.prepare_data import get_w2i, get_a2i
 
 
 def get_emb(word, h):

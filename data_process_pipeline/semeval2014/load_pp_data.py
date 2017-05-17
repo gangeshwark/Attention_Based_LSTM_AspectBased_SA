@@ -60,7 +60,8 @@ def get_vectors(text_vocab, aspect_vocab):
 
     unk = np.random.uniform(-np.sqrt(3.0), np.sqrt(3.0), 300)
     pad = np.random.uniform(-np.sqrt(3.0), np.sqrt(3.0), 300)
-    text_vector = {'__UNK__': unk, '__PAD__': pad}
+    period = np.random.uniform(-np.sqrt(3.0), np.sqrt(3.0), 300)
+    text_vector = {'__UNK__': unk, '__PAD__': pad, '.': period}
     for i, word in enumerate(text_vocab):
         if word[0] in list(text_vector.keys()):
             continue

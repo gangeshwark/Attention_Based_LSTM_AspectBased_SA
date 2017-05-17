@@ -5,8 +5,6 @@ import string
 from nltk import tokenize
 import ast
 
-
-
 contractions = {
     "ain't": "am not",
     "aren't": "are not",
@@ -143,8 +141,8 @@ def preprocess_day(a, b):
     a = pd.read_csv('data/restaurants_train_data.tsv', delimiter='\t')
     b = pd.read_csv('data/restaurants_test_data.tsv', delimiter='\t')
     print(a['text'][10])
-    a['text'] = a['text'].apply(clean).astype(str)
-    b['text'] = b['text'].apply(clean).astype(str)
+    a['text'] = a['text'].apply(clean)
+    b['text'] = b['text'].apply(clean)
 
     # save pre-processed data as pickle file
     a.to_hdf('data/restaurants_train_data_processed.h5', 'table')

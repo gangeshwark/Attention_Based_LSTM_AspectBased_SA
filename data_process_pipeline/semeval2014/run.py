@@ -5,13 +5,11 @@ import h5py
 import pandas as pd
 
 from data_process_pipeline.semeval2014.load_pp_data import get_vocab, get_vectors
-from data_process_pipeline.semeval2014.prepare_data import get_restaurants_train_data, get_restaurants_test_data
+from data_process_pipeline.semeval2014.prepare_2014_data import get_restaurants_train_data, get_restaurants_test_data
 from data_process_pipeline.semeval2014.preprocess import clean
 
 raw_2014_path = '../../data/raw_data/SemEval_14'
-raw_2016_path = '../../data/raw_data/SemEval_14'
 p_2014_path = '../../data/semeval14'
-p_2016_path = '../../data/semeval16'
 
 if __name__ == '__main__':
     # prepare data
@@ -37,45 +35,44 @@ if __name__ == '__main__':
     text_vocab, aspect_vocab = get_vocab(restaurants_train_data, restaurants_test_data)
     print(text_vocab)
     print(len(text_vocab))
-    # contains all the words
-    with open(p_2014_path + '/all_text_vocab.vocab', 'w') as f:
-        for i, word in enumerate(text_vocab):
-            f.write('%d\t%s\n' % (i, word[0]))
-
-    print(aspect_vocab)
-    print(len(aspect_vocab))
-    with open(p_2014_path + '/all_aspect_vocab.vocab', 'w') as f:
-        for i, word in enumerate(aspect_vocab):
-            f.write('%d\t%s\n' % (i, word[0]))
-
+    for i, word in enumerate(sorted(text_vocab)):
+        print(i, word)
 
     def get_vec(text_vocab, aspect_vocab):
+
+        # contains all the words
+        with open(p_2014_path + '/all_text_vocab.vocab', 'w') as f:
+            for i, word in enumerate(sorted(text_vocab)):
+                f.write('%d\t%s\n' % (i, word[0]))
+
+        print(aspect_vocab)
+        print(len(aspect_vocab))
+        with open(p_2014_path + '/all_aspect_vocab.vocab', 'w') as f:
+            for i, word in enumerate(sorted(aspect_vocab)):
+                f.write('%d\t%s\n' % (i, word[0]))
+
         text_vector, aspect_vector = get_vectors(text_vocab, aspect_vocab)
 
         # contains only the words that have embeddings
         with open(p_2014_path + '/text_vocab.vocab', 'w') as f:
-            for i, word in enumerate(text_vector.keys()):
+            for i, word in enumerate(sorted(list(text_vector.keys()))):
                 f.write('%d\t%s\n' % (i, word))
 
         with open(p_2014_path + '/aspect_vocab.vocab', 'w') as f:
-            for i, word in enumerate(aspect_vector.keys()):
+            for i, word in enumerate(sorted(list(aspect_vector.keys()))):
                 f.write('%d\t%s\n' % (i, word))
+
+        text_dict = dict(enumerate(sorted(list(text_vector.keys()))))
+        aspect_dict = dict(enumerate(sorted(list(aspect_vector.keys()))))
+        with open(p_2014_path + '/text_vocab.pkl', 'wb') as f:
+            pickle.dump(text_dict, f)
+        with open(p_2014_path + '/aspect_vocab.pkl', 'wb') as f:
+            pickle.dump(aspect_dict, f)
 
         print(len(text_vector), len(aspect_vector))
         with open(p_2014_path + '/text_vector.pkl', 'wb') as f:
             pickle.dump(text_vector, f)
         with open(p_2014_path + '/aspect_vector.pkl', 'wb') as f:
             pickle.dump(aspect_vector, f)
-
-        h = h5py.File(p_2014_path + '/text_vector.hdf5', 'w')
-        for x in list(text_vector.keys()):
-            h[x] = text_vector[x]
-        h.close()
-
-        h = h5py.File(p_2014_path + '/aspect_vector.hdf5', 'w')
-        for x in list(aspect_vector.keys()):
-            h[x] = aspect_vector[x]
-        h.close()
-
 
     get_vec(text_vocab, aspect_vocab)
