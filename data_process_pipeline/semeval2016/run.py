@@ -15,7 +15,7 @@ def prepare_data(folder):
         train_data = get_data(raw_2016_path + '/ABSA16_Restaurants_Train_SB1_v2.xml')
         test_data = get_data(raw_2016_path + '/EN_REST_SB1_TEST.gold.xml')
     elif folder == 'laptop':
-        print('Yes, laptop')
+        print('Yes, lap')
         train_data = get_data(raw_2016_path + '/ABSA16_Laptops_Train_SB1_v2.xml')
         test_data = get_data(raw_2016_path + '/EN_LAPT_SB1_TEST_.gold.xml')
     else:
@@ -84,13 +84,13 @@ def prepare_data(folder):
         print(len(text_vector), len(entity_vector), len(attribute_vector))
 
         with open(p_2016_path + '/text_vector.pkl', 'wb') as f:
-            pickle.dump(text_vector, f, protocol=pickle.HIGHEST_PROTOCOL)
+            pickle.dump(text_vector, f)
 
         with open(p_2016_path + '/entity_vector.pkl', 'wb') as f:
-            pickle.dump(entity_vector, f, protocol=pickle.HIGHEST_PROTOCOL)
+            pickle.dump(entity_vector, f)
 
         with open(p_2016_path + '/attribute_vector.pkl', 'wb') as f:
-            pickle.dump(attribute_vector, f, protocol=pickle.HIGHEST_PROTOCOL)
+            pickle.dump(attribute_vector, f)
 
     text_vocab, entity_vocab, attribute_vocab = get_vocab(train_data, test_data)
     get_vec(text_vocab, entity_vocab, attribute_vocab)

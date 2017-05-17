@@ -29,18 +29,18 @@ def get_vocab(a, b):
     for word in a['entity']:
         if not word:
             continue
-        if word.lower() in list(entity_vocab.keys()):
-            entity_vocab[word.lower()] += 1
+        if word in list(entity_vocab.keys()):
+            entity_vocab[word] += 1
         else:
-            entity_vocab[word.lower()] = 1
+            entity_vocab[word] = 1
 
     for word in b['entity']:
         if not word:
             continue
-        if word.lower() in list(entity_vocab.keys()):
-            entity_vocab[word.lower()] += 1
+        if word in list(entity_vocab.keys()):
+            entity_vocab[word] += 1
         else:
-            entity_vocab[word.lower()] = 1
+            entity_vocab[word] = 1
 
     entity_vocab = reversed(sorted(list(entity_vocab.items()), key=operator.itemgetter(1)))
 
@@ -48,22 +48,18 @@ def get_vocab(a, b):
     for word in a['attribute']:
         if not word:
             continue
-        if word == 'STYLE_OPTIONS':
-            word = 'STYLE'
         if word.lower() in list(attribute_vocab.keys()):
             attribute_vocab[word.lower()] += 1
         else:
-            attribute_vocab[word.lower()] = 1
+            attribute_vocab[word] = 1
 
     for word in b['attribute']:
         if not word:
             continue
-        if word == 'STYLE_OPTIONS':
-            word = 'STYLE'
-        if word.lower() in list(attribute_vocab.keys()):
-            attribute_vocab[word.lower()] += 1
+        if word in list(attribute_vocab.keys()):
+            attribute_vocab[word] += 1
         else:
-            attribute_vocab[word.lower()] = 1
+            attribute_vocab[word] = 1
 
     attribute_vocab = reversed(sorted(list(attribute_vocab.items()), key=operator.itemgetter(1)))
 

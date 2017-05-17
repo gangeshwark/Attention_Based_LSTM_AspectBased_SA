@@ -52,6 +52,8 @@ def get_data(path):
                         attr = 'design'
                     if attr == 'operation_performance'.upper():
                         attr = 'performance'
+                    if attr == 'style_options'.upper():
+                        attr = 'style'
 
                     p = Opinion.get('polarity')
                     restaurants_df.loc[i] = [r_id, id, text.lower(), t, cat.lower(), ent.lower(), attr.lower(),
