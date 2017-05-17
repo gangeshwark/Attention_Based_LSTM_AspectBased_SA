@@ -19,8 +19,8 @@ def get_emb(word, h):
 def load_emb():
     emb = []
     a_emb = []
-    with open('../data/text_vocab.vocab', 'r') as f:
-        h = h5py.File('../data/text_vector.hdf5')
+    with open('../data/semeval14/text_vocab.vocab', 'r') as f:
+        h = h5py.File('../data/semeval14/text_vector.hdf5')
         lines = f.readlines()
 
         for line in lines:
@@ -28,8 +28,8 @@ def load_emb():
             emb.append(get_emb(word, h))
         emb = np.asarray(emb)
 
-    with open('../data/aspect_vocab.vocab', 'r') as f:
-        h = h5py.File('../data/aspect_vector.hdf5')
+    with open('../data/semeval14/aspect_vocab.vocab', 'r') as f:
+        h = h5py.File('../data/semeval14/aspect_vector.hdf5')
         lines = f.readlines()
 
         for line in lines:
@@ -54,7 +54,7 @@ def convert_ids_sent(ids, i2w):
 
 if __name__ == '__main__':
     w2i, i2w = get_w2i()
-    print 'Len i2w', len(i2w)
+    print('Len i2w', len(i2w))
     a2i, i2a = get_a2i()
     embedding, aspect_embedding, vocab_size, aspect_vocab_size = load_emb()
     tf.reset_default_graph()
@@ -85,14 +85,14 @@ if __name__ == '__main__':
         loss = []
         st = time()
         try:
-            print "Training"
+            print("Training")
 
-            for epoch in xrange(1000):
+            for epoch in range(1000):
                 # print "Epoch: ", epoch
                 train_data = TrainData(batch_size=batch_size, input_len=input_len)
                 # test_data = TestData(batch_size=batch_size, input_len=input_len)
                 test_data = EvalData(batch_size=batch_size, input_len=input_len)
-                tq = tqdm(xrange(140))
+                tq = tqdm(range(140))
                 for batch in tq:
 
                     x, x_len, a, y = next(train_data)
@@ -117,7 +117,7 @@ if __name__ == '__main__':
 
                         x, x_len, a, y = next(test_data)
                         if x.shape[0] < batch_size:
-                            print "No more data to test with"
+                            print("No more data to test with")
                             continue
 
 
@@ -148,11 +148,11 @@ if __name__ == '__main__':
                         # print "\n", n
                         # print "Aspect: ", [i2a[str(i)] for i in input_aspect[c:d]]
                         # print "Class", [a for a in inference[c:d]]
-            print "Training complete!"
-            print "Training Time: ", time() - st, " seconds"
+            print("Training complete!")
+            print("Training Time: ", time() - st, " seconds")
         except KeyboardInterrupt:
-            print "Training Time: ", time() - st, " seconds"
-            print "Training Interrupted"
+            print("Training Time: ", time() - st, " seconds")
+            print("Training Interrupted")
 
         import matplotlib.pyplot as plt
 

@@ -42,7 +42,6 @@ class AspectLevelModel():
         else:
             self._init_placeholders()
 
-        self._init_train_connectors()
         self._init_aspect_embeddings()
         self._init_word_embeddings()
 
@@ -95,17 +94,6 @@ class AspectLevelModel():
             dtype=tf.int32,
             name='targets'
         )
-
-    def _init_train_connectors(self):
-        """
-        During training, `decoder_targets`
-        and decoder logits. This means that their shapes should be compatible.
-        Here we do a bit of plumbing to set this up.
-        """
-        with tf.name_scope('TrainFeeds'):
-            self.train_inputs = self.inputs
-            self.train_length = self.inputs_length
-            self.train_targets = self.targets
 
     def _init_aspect_embeddings(self):
         with tf.variable_scope("AspectEmbedding") as scope:
@@ -163,7 +151,7 @@ class AspectLevelModel():
 
     def _init_simple(self):
         with tf.variable_scope("RNN") as scope:
-            print "inputs_embedded_final : ", self.inputs_embedded_final.get_shape()
+            print("inputs_embedded_final : ", self.inputs_embedded_final.get_shape())
             # shape of state is [batch_size, cell.state_size]
             (self.outputs, self.state) = (
                 tf.nn.dynamic_rnn(cell=self.cell,
@@ -187,31 +175,31 @@ class AspectLevelModel():
                                              stddev=1.0 / tf.sqrt(600.0)), dtype=tf.float32)  # -> [d+da, 1]
 
             H = tf.reshape(self.outputs, [-1, self.hidden_size])  # -> [batch_size x N, d]
-            print "H: ", H.get_shape()
+            print("H: ", H.get_shape())
             a_ = tf.matmul(H, Wh)  # -> [batch_size x N, d]
             a = tf.reshape(a_, tf.shape(self.outputs))  # -> [batch_size, N, d]
-            print "a: ", a.get_shape()
+            print("a: ", a.get_shape())
 
             # input_aspect_embedded shape is [batch_size, da]
             b_ = tf.matmul(self.input_aspect_embedded, Wv)  # [batch_size, da] X [da, da] -> [batch_size, da]
 
             b = tf.reshape(b_, [-1, 1, da])  # -> [batch_size, 1, da]
-            print "b: ", b.get_shape()
+            print("b: ", b.get_shape())
             b = tf.tile(b, (1, N, 1))  # [batch_size, N, da]
-            print "b: ", b.get_shape()
+            print("b: ", b.get_shape())
 
             M = tf.tanh(tf.concat([a, b], 2))  # -> [batch_size, N, d+da]
             M_ = tf.reshape(M, [batch_size * N, d + da])  # -> [batch_size x N, d+da]
-            print "M_: ", M_.get_shape()
+            print("M_: ", M_.get_shape())
 
             alpha_ = tf.nn.softmax(tf.matmul(M_, w))  # -> [batch_size x N, 1]
             alpha = tf.reshape(alpha_, [batch_size, N, 1])  # -> [batch_size, N, 1]
-            print "alpha: ", alpha.get_shape()
+            print("alpha: ", alpha.get_shape())
 
             # [batch_size, N, d] x [batch_size, N, 1]
             r = tf.matmul(tf.transpose(self.outputs, [0, 2, 1]), alpha,
                           name='sentence_weighted_representation')
-            print "r", r.get_shape()
+            print("r", r.get_shape())
 
             Wp = tf.Variable(
                 tf.random_normal(shape=[self.hidden_size, self.hidden_size], stddev=1.0 / tf.sqrt(600.0)),
@@ -223,13 +211,13 @@ class AspectLevelModel():
 
             # -> ([batch_size, d x 1] x [d, d])  + ([batch_size, d] x [d, d]) = [batch_size, d]
             r_ = tf.reshape(r, [batch_size, d])
-            print "r_: ", r_.get_shape()
+            print("r_: ", r_.get_shape())
 
             h_star = tf.tanh(tf.add(tf.matmul(r_, Wp), tf.matmul(self.state.h, Wx)),
                              name='sentence_representation')  # -> [1, d]
             h_star = tf.reshape(h_star, [batch_size, d])
 
-            print "h*: ", h_star.get_shape()
+            print("h*: ", h_star.get_shape())
 
             Ws = tf.Variable(
                 tf.random_normal(shape=[self.hidden_size, self.class_size], stddev=1.0 / tf.sqrt(600.0)),
@@ -241,16 +229,16 @@ class AspectLevelModel():
             # [batch_size, d] x [d, c] = [batch_size, c]
             e = tf.add(tf.reshape(tf.matmul(h_star, Ws), [batch_size, self.class_size]),
                        tf.tile(bs, (batch_size, 1)))
-            print "e: ", e.get_shape()
+            print("e: ", e.get_shape())
             # y -> [batch_size, class_size]
             self.y = tf.nn.softmax(e)
-            print "y: ", self.y.get_shape()
+            print("y: ", self.y.get_shape())
 
             self.logits_train = self.y
-            print "logits_train: ", self.logits_train.get_shape()
+            print("logits_train: ", self.logits_train.get_shape())
             self.prediction_train = tf.reshape(tf.argmax(self.logits_train, axis=-1,
                                                          name='prediction_train'), [batch_size, -1])
-            print "prediction_train: ", self.prediction_train.get_shape()
+            print("prediction_train: ", self.prediction_train.get_shape())
 
     """
     def _init_bidirectional(self):
@@ -295,6 +283,6 @@ class AspectLevelModel():
     def _init_optimizer(self):
         reg_lambda = 0.001
         self.loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=self.logits_train,
-                                                                           labels=self.train_targets)) + tf.reduce_sum(
+                                                                           labels=self.targets)) + tf.reduce_sum(
             [reg_lambda * tf.nn.l2_loss(x) for x in tf.trainable_variables()])
         self.train_op = tf.train.AdagradOptimizer(0.001).minimize(self.loss)

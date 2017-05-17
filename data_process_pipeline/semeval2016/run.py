@@ -1,4 +1,4 @@
-import prepare_2016_data
+from . import prepare_2016_data
 
 if __name__ == '__main__':
-    print 'Hi'
+    print('Hi')

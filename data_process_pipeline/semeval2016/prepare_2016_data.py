@@ -7,7 +7,7 @@ from pprint import pprint
 
 
 def get_data(path):
-    print "Preparing data.."
+    print("Preparing data..")
     e = xml.etree.ElementTree.parse(path).getroot()
 
     restaurants_df = pd.DataFrame(
@@ -51,22 +51,22 @@ if __name__ == '__main__':
     # get_laptop_data()
     restaurants_train_data = get_data(load_base_path + 'ABSA16_Restaurants_Train_SB1_v2.xml')
     # print restaurants_train_data.groupby('polarity').count()
-    print restaurants_train_data.shape[0], " data points"
+    print(restaurants_train_data.shape[0], " data points")
     restaurants_train_data.to_csv(store_base_path + 'restaurants_train_data.tsv', '\t', encoding='utf-8')
 
     restaurants_test_data = get_data(load_base_path + 'EN_REST_SB1_TEST.gold.xml')
     # print restaurants_train_data.groupby('polarity').count()
-    print restaurants_test_data.shape[0], " data points"
+    print(restaurants_test_data.shape[0], " data points")
     restaurants_test_data.to_csv(store_base_path + 'restaurants_test_data.tsv', '\t', encoding='utf-8')
 
     laptop_train_data = get_data(load_base_path + 'ABSA16_Laptops_Train_SB1_v2.xml')
     # print restaurants_train_data.groupby('polarity').count()
-    print laptop_train_data.shape[0], " data points"
+    print(laptop_train_data.shape[0], " data points")
     laptop_train_data.to_csv(store_base_path + 'laptop_train_data.tsv', '\t', encoding='utf-8')
 
     laptop_test_data = get_data(load_base_path + 'EN_LAPT_SB1_TEST_.gold.xml')
     # print restaurants_train_data.groupby('polarity').count()
-    print laptop_test_data.shape[0], " data points"
+    print(laptop_test_data.shape[0], " data points")
     laptop_test_data.to_csv(store_base_path + 'laptop_test_data.tsv', '\t', encoding='utf-8')
 
     train_data = restaurants_train_data.append(laptop_train_data, ignore_index=True)
@@ -76,14 +76,14 @@ if __name__ == '__main__':
     test_data.to_csv(store_base_path + 'test_data.tsv', '\t', encoding='utf-8')
     data = train_data.append(test_data, ignore_index=True)
 
-    print train_data.groupby('category').count().shape[0], " categories in train"
-    print test_data.groupby('category').count().shape[0], " categories in test"
-    print data.groupby('category').count().shape[0], " unique aspect categories"
+    print(train_data.groupby('category').count().shape[0], " categories in train")
+    print(test_data.groupby('category').count().shape[0], " categories in test")
+    print(data.groupby('category').count().shape[0], " unique aspect categories")
 
-    print train_data.groupby('entity').count().shape[0], " entity in train"
-    print test_data.groupby('entity').count().shape[0], " entity in test"
-    print data.groupby('entity').count().shape[0], " unique entities"
+    print(train_data.groupby('entity').count().shape[0], " entity in train")
+    print(test_data.groupby('entity').count().shape[0], " entity in test")
+    print(data.groupby('entity').count().shape[0], " unique entities")
 
-    print train_data.groupby('attribute').count().shape[0], " attribute in train"
-    print test_data.groupby('attribute').count().shape[0], " attribute in test"
-    print data.groupby('attribute').count().shape[0], " unique attributes"
+    print(train_data.groupby('attribute').count().shape[0], " attribute in train")
+    print(test_data.groupby('attribute').count().shape[0], " attribute in test")
+    print(data.groupby('attribute').count().shape[0], " unique attributes")

@@ -5,7 +5,7 @@ import numpy as np
 class TrainData():
     def __init__(self, batch_size, input_len):
         # load training data
-        self.df = pd.read_hdf('../data/train_data_3classes.h5', 'table')[:]
+        self.df = pd.read_hdf('../data/semeval14/train_data_3classes.h5', 'table')[:]
         self.bz = batch_size
         self.i = 0
         self.len = input_len
@@ -15,7 +15,7 @@ class TrainData():
     def __iter__(self):
         return self
 
-    def next(self):
+    def __next__(self):
         x = self.df['text'][self.i:self.i + self.bz]
         a = self.df['aspect'][self.i:self.i + self.bz]
         y = self.df['polarity'][self.i:self.i + self.bz]
@@ -27,9 +27,9 @@ class TrainData():
         a_ = []
         y_ = []
         for i in x:
-            x_.append(np.asarray(map(int, i)))
+            x_.append(np.asarray(list(map(int, i))))
         for i in y:
-            y_.append(np.asarray(map(int, i)))
+            y_.append(np.asarray(list(map(int, i))))
         for i in a:
             a_.append(int(i))
         x = np.asarray(x_)
@@ -42,7 +42,7 @@ class TrainData():
 class EvalData():
     def __init__(self, batch_size, input_len):
         # load training data
-        self.a = pd.read_hdf('../data/train_data_3classes.h5', 'table')
+        self.a = pd.read_hdf('../data/semeval14/train_data_3classes.h5', 'table')
         self.bz = batch_size
         self.i = 0
         self.len = input_len
@@ -50,7 +50,7 @@ class EvalData():
     def __iter__(self):
         return self
 
-    def next(self):
+    def __next__(self):
         x = self.a['text'].tail(self.bz)
         a = self.a['aspect'].tail(self.bz)
 
@@ -62,9 +62,9 @@ class EvalData():
         a_ = []
         y_ = []
         for i in x:
-            x_.append(np.asarray(map(int, i)))
+            x_.append(np.asarray(list(map(int, i))))
         for i in y:
-            y_.append(np.asarray(map(int, i)))
+            y_.append(np.asarray(list(map(int, i))))
         for i in a:
             a_.append(int(i))
         x = np.asarray(x_)
@@ -77,7 +77,7 @@ class EvalData():
 class TestData():
     def __init__(self, batch_size, input_len):
         # load training data
-        self.a = pd.read_hdf('../data/test_data_3classes.h5', 'table')
+        self.a = pd.read_hdf('../data/semeval14/test_data_3classes.h5', 'table')
         self.bz = batch_size
         self.i = 0
         self.len = input_len
@@ -85,7 +85,7 @@ class TestData():
     def __iter__(self):
         return self
 
-    def next(self):
+    def __next__(self):
         x = self.a['text'][self.i:self.i + self.bz]
         a = self.a['aspect'][self.i:self.i + self.bz]
         x_len = self.a['seq_len'][self.i:self.i + self.bz]
@@ -94,7 +94,7 @@ class TestData():
         x_ = []
         a_ = []
         for i in x:
-            x_.append(np.asarray(map(int, i)))
+            x_.append(np.asarray(list(map(int, i))))
 
         for i in a:
             a_.append(int(i))
@@ -112,22 +112,22 @@ if __name__ == '__main__':
     while (1):
         i += 1
         x, x_len, a, y = next(data)
-        print a, y
-        print len(x)
+        print(a, y)
+        print(len(x))
         if len(x) < 1:
             break
-        print '______________________________________________________________________'
+        print('______________________________________________________________________')
 
-    print "i", i
+    print("i", i)
 
     data = EvalData(25, 80)
     i = 0
     while (1):
         i += 1
         x, x_len, a, y = next(data)
-        print len(x), a
+        print(len(x), a)
 
-        print '______________________________________________________________________'
+        print('______________________________________________________________________')
         break
 
-    print "i", i
+    print("i", i)

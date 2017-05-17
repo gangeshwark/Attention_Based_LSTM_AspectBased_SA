@@ -25,6 +25,6 @@ def get_all_word_vectors_hdf5(hdf5_file):
 # totally 4665 words vectors are available
 if __name__ == '__main__':
     h = h5py.File('data/text_vector.hdf5')
-    print(get_word_vector_hdf5(h, '__UNK__'))
+    print((get_word_vector_hdf5(h, '__UNK__')))
     word_vectors = get_all_word_vectors_hdf5(h)
-    print(len(word_vectors))
+    print((len(word_vectors)))

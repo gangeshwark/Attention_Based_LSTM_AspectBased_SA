@@ -130,7 +130,7 @@ contractions = {
 
 def clean(s):
     s = s.lower()
-    for x, y in contractions.items():
+    for x, y in list(contractions.items()):
         s = s.replace(x, y)
     s = re.sub('([' + string.punctuation + '])', r' \1 ', s)
     s = re.sub('\s{2,}', ' ', s)
@@ -142,7 +142,7 @@ def clean(s):
 def preprocess_day(a, b):
     a = pd.read_csv('data/restaurants_train_data.tsv', delimiter='\t')
     b = pd.read_csv('data/restaurants_test_data.tsv', delimiter='\t')
-    print a['text'][10]
+    print(a['text'][10])
     a['text'] = a['text'].apply(clean).astype(str)
     b['text'] = b['text'].apply(clean).astype(str)
 
@@ -155,4 +155,4 @@ def preprocess_day(a, b):
     b = pd.read_hdf('data/restaurants_test_data_processed.h5', 'table')
     b['text'] = b['text'].apply(ast.literal_eval)
 
-    print a['text'][10]
+    print(a['text'][10])
