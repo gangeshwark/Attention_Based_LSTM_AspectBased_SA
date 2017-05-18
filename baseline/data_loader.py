@@ -5,7 +5,7 @@ import numpy as np
 class TrainData():
     def __init__(self, batch_size, input_len):
         # load training data
-        self.df = pd.read_hdf('../data/semeval14/train_data_3classes.h5', 'table')[:]
+        self.df = pd.read_pickle('../data/semeval14/rest_train_data.pkl')
         self.bz = batch_size
         self.i = 0
         self.len = input_len
@@ -42,7 +42,8 @@ class TrainData():
 class EvalData():
     def __init__(self, batch_size, input_len):
         # load training data
-        self.a = pd.read_hdf('../data/semeval14/train_data_3classes.h5', 'table')
+        self.a = pd.read_pickle('../data/semeval14/rest_train_data.pkl')
+
         self.bz = batch_size
         self.i = 0
         self.len = input_len
@@ -77,7 +78,7 @@ class EvalData():
 class TestData():
     def __init__(self, batch_size, input_len):
         # load training data
-        self.a = pd.read_hdf('../data/semeval14/test_data_3classes.h5', 'table')
+        self.a = pd.read_pickle('../data/semeval14/rest_train_data.pkl')
         self.bz = batch_size
         self.i = 0
         self.len = input_len
