@@ -1,4 +1,3 @@
-import numpy as np
 import tensorflow as tf
 
 
@@ -74,14 +73,14 @@ class AspectLevelModel():
 
     def _init_placeholders(self):
         self.keep_prob1 = tf.placeholder(tf.float32)
-        #self.keep_prob2 = tf.placeholder(tf.float32)
+        # self.keep_prob2 = tf.placeholder(tf.float32)
         # input
         self.inputs = tf.placeholder(
             shape=(None, self.N),
             dtype=tf.int32,
             name='inputs',
         )
-        #self.inputs = tf.nn.dropout(self.inputs, keep_prob=self.keep_prob1)
+        # self.inputs = tf.nn.dropout(self.inputs, keep_prob=self.keep_prob1)
         self.input_aspect = tf.placeholder(
             shape=(None,),
             dtype=tf.int32,
@@ -146,6 +145,7 @@ class AspectLevelModel():
 
             self.inputs_embedded_final = tf.concat([self.inputs_embedded, self.input_aspect_embedded_final],
                                                    2)  # -> [batch_size, N, dw+da]
+            self.inputs_embedded_final = tf.nn.dropout(self.inputs_embedded_final, keep_prob=self.keep_prob1)
 
             # self.batch_size = int(self.inputs.get_shape()[0])
             self.N = int(self.inputs.get_shape()[1])
@@ -182,7 +182,7 @@ class AspectLevelModel():
                 regularizer=tf.contrib.layers.l2_regularizer(self.l2_reg)
             )
 
-            #w = tf.Variable(tf.random_normal(shape=[self.hidden_size + self.aspect_embedding_size, 1],
+            # w = tf.Variable(tf.random_normal(shape=[self.hidden_size + self.aspect_embedding_size, 1],
             #                                 stddev=1.0 / tf.sqrt(600.0)), dtype=tf.float32)  # -> [d+da, 1]
 
             H = tf.reshape(self.outputs, [-1, self.hidden_size])  # -> [batch_size x N, d]
@@ -251,49 +251,9 @@ class AspectLevelModel():
                                                          name='prediction_train'), [batch_size, -1])
             print("prediction_train: ", self.prediction_train.get_shape())
 
-    """
-    def _init_bidirectional(self):
-        with tf.variable_scope("BidirectionalRNN") as scope:
-            def output_fn(outputs):
-                return tf.contrib.layers.linear(outputs, self.vocab_size, scope=scope)
-
-            ((fw_outputs,
-              bw_outputs),
-             (fw_state,
-              bw_state)) = (
-                tf.nn.bidirectional_dynamic_rnn(cell_fw=self.cell,
-                                                cell_bw=self.cell,
-                                                inputs=self.inputs_embedded_final,
-                                                sequence_length=self.inputs_length,
-                                                time_major=True,
-                                                dtype=tf.float32)
-            )
-
-            self.outputs = tf.concat((fw_outputs, bw_outputs), 2)
-
-            if isinstance(fw_state, LSTMStateTuple):
-
-                state_c = tf.concat(
-                    (fw_state.c, bw_state.c), 1, name='bidirectional_concat_c')
-                state_h = tf.concat(
-                    (fw_state.h, bw_state.h), 1, name='bidirectional_concat_h')
-                self.state = LSTMStateTuple(c=state_c, h=state_h)
-
-
-            elif isinstance(fw_state, tf.Tensor):
-                self.state = tf.concat((fw_state, bw_state), 1, name='bidirectional_concat')
-
-            self.logits_train = output_fn(self.outputs)
-            self.prediction_train = tf.argmax(self.logits_train, axis=-1,
-                                              name='prediction_train')
-            
-            self.prediction_inference = tf.argmax(self.logits_inference, axis=-1,
-                                                        name='prediction_inference')
-    """
-
     def _init_optimizer(self):
         reg_lambda = 0.001
-        self.loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=self.logits_train,
-                                                                           labels=self.targets)) + tf.reduce_sum(
+        # self.loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=self.logits_train, labels=self.targets))
+        self.loss = - tf.reduce_mean(tf.cast(self.targets, tf.float32) * tf.log(self.logits_train)) + tf.reduce_sum(
             [reg_lambda * tf.nn.l2_loss(x) for x in tf.trainable_variables()])
         self.train_op = tf.train.AdagradOptimizer(0.001).minimize(self.loss)
